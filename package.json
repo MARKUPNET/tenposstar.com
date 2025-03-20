@@ -4,14 +4,21 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "sass": "npm-run-all -p compile:*",
         "compile:sass": "node-sass common/sass/main.scss common/css/style.css --source-map common/css/style.css.map --source-map-contents -w",
+        "compile:discovery": "node-sass discovery/sass/style.scss discovery/css/style.css --source-map discovery/css/style.css.map --source-map-contents -w",
+        "compile:eatlist": "node-sass eatlist/sass/style.scss eatlist/css/style.css --source-map eatlist/css/style.css.map --source-map-contents -w",
+        "compile:eattop": "node-sass eattop/sass/style.scss eattop/css/style.css --source-map eattop/css/style.css.map --source-map-contents -w",
+        "compile:postdetail": "node-sass postdetail/sass/style.scss postdetail/css/style.css --source-map postdetail/css/style.css.map --source-map-contents -w",
         "compile:store": "node-sass store/sass/style.scss store/css/style.css --source-map store/css/style.css.map --source-map-contents -w",
+        "compile:toppage": "node-sass toppage/sass/style.scss toppage/css/style.css --source-map toppage/css/style.css.map --source-map-contents -w",
         "serve": "serve"
     },
     "author": "",
     "license": "ISC",
     "devDependencies": {
         "node-sass": "^9.0.0",
+        "npm-run-all": "^4.1.5",
         "serve": "^14.2.4"
     }
 }
