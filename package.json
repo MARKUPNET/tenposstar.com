@@ -1,0 +1,17 @@
+{
+    "name": "tenposstar",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "compile:sass": "node-sass common/sass/main.scss common/css/style.css --source-map common/css/style.css.map --source-map-contents -w",
+        "compile:store": "node-sass store/sass/style.scss store/css/style.css --source-map store/css/style.css.map --source-map-contents -w",
+        "serve": "serve"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "node-sass": "^9.0.0",
+        "serve": "^14.2.4"
+    }
+}

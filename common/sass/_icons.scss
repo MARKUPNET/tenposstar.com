@@ -1,0 +1,66 @@
+$icon-path: '../images/';
+$icons: (
+    '1': (file: 'icon_ctegory_1.svg', width: 20px, height: 25px),
+    '2': (file: 'icon_ctegory_2.svg', width: 16px, height: 25px),
+    '3': (file: 'icon_ctegory_3.svg', width: 32px, height: 25px),
+    '4': (file: 'icon_ctegory_4.svg', width: 30px, height: 25px),
+    '5': (file: 'icon_ctegory_5.svg', width: 26px, height: 25px)
+);
+
+@mixin icon-base {
+    display: inline-block;
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+.icon {
+    @include icon-base; // 共通スタイルを適用
+}
+
+@each $key, $value in $icons {
+    .cate#{$key} {
+        width: map-get($value, width); // マップから幅を取得
+        height: map-get($value, height); // マップから高さを取得
+
+        &::before {
+            background-image: url(#{$icon-path + map-get($value, file)});
+        }
+    }
+}
+
+
+.navIcon{
+    display: none;
+    @media  screen and (min-width: 768px) {
+        display: inline-block;
+    }
+}
+
+.iconScorp{
+    width: 20px;
+    height: 20px;
+    &::before {
+        background-image: url(../images/icon_scorp.svg);
+    }
+}
+
+
+.iconPicker{
+    width: 16px;
+    height: 24px;
+    &::before {
+        background-image: url(../images/icon_picker.svg);
+    }
+}

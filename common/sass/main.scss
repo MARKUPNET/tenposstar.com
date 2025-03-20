@@ -1,0 +1,26 @@
+
+@import "reset";
+@import 'variables';
+@import 'icons';
+@import 'default';
+
+// モック
+body{
+    // background-image: url(../../_mock/1_TOP_SP.jpg);
+    // background-image: url(../../_mock/1_TOP_スクロール後のグロナビ.jpg);
+    // background-size: 100% auto;
+    // background-repeat: no-repeat;
+    // opacity: 0.6;
+}
+
+body{
+    color: var(--black);
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 12px;
+    @media  screen and (min-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+@import "header";
+@import "footer";

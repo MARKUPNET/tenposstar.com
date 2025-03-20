@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../sass/style.scss"
+	],
+	"sourcesContent": [
+		".contents{\r\n    height: 200px;\r\n}"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,SAAS,CAAA;EACL,MAAM,EAAE,KAAK,GAChB"
+}

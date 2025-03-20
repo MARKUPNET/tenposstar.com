@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32.923" height="26.014" viewBox="0 0 32.923 26.014">
+  <g id="グループ_130" data-name="グループ 130" transform="translate(0.5 0.5)">
+    <g id="グループ_107" data-name="グループ 107" transform="translate(0 0)">
+      <path id="パス_75" data-name="パス 75" d="M15.514,12.05c0,1.267-3.362,2.293-7.509,2.293S.5,13.317.5,12.05,3.859,9.757,8.006,9.757s7.509,1.027,7.509,2.293" transform="translate(-0.497 -6.798)" fill="none" stroke="#313131" stroke-width="1"/>
+      <path id="パス_76" data-name="パス 76" d="M68.423,2.789c0,1.267-3.362,2.293-7.509,2.293s-7.509-1.027-7.509-2.293S56.768.5,60.915.5s7.509,1.027,7.509,2.293" transform="translate(-36.5 -0.496)" fill="none" stroke="#313131" stroke-width="1"/>
+      <path id="パス_77" data-name="パス 77" d="M46.6,29.468c0,1.267-3.362,2.293-7.509,2.293s-7.509-1.027-7.509-2.293,3.362-2.293,7.509-2.293S46.6,28.2,46.6,29.468" transform="translate(-21.652 -18.651)" fill="none" stroke="#656565" stroke-width="1"/>
+      <path id="パス_78" data-name="パス 78" d="M39.088,36.549c-4.147,0-7.509-1.027-7.509-2.293h0V46.19c0,1.266,3.362,2.293,7.509,2.293s7.509-1.027,7.509-2.293v-11.9c-.054,1.252-3.393,2.262-7.506,2.262" transform="translate(-21.646 -23.469)" fill="none" stroke="#313131" stroke-linejoin="round" stroke-width="1"/>
+      <path id="パス_80" data-name="パス 80" d="M60.917,9.87c-4.147,0-7.509-1.027-7.509-2.293h0v6.269c.178,0,.358-.006.539-.006,4.147,0,7.509,1.027,7.509,2.293,0,.01,0,.02,0,.031V21.8c3.9-.084,6.972-1.075,6.972-2.286V7.608C68.369,8.86,65.03,9.87,60.917,9.87" transform="translate(-36.5 -5.315)" fill="none" stroke="#313131" stroke-linejoin="round" stroke-width="1"/>
+      <path id="パス_82" data-name="パス 82" d="M10.432,22.4c0,.005,0,.01,0,.015.021-1,2.14-1.848,5.08-2.154v-3.4c-.054,1.252-3.393,2.262-7.506,2.262C3.86,19.131.5,18.1.5,16.838h0V28.772C.5,30.038,3.858,31.065,8,31.065a23.5,23.5,0,0,0,2.425-.123V22.4Z" transform="translate(-0.496 -11.616)" fill="none" stroke="#313131" stroke-linejoin="round" stroke-width="1"/>
+      <ellipse id="楕円形_28" data-name="楕円形 28" cx="3.379" cy="1.032" rx="3.379" ry="1.032" transform="translate(4.127 4.22)" fill="#fff" stroke="#313131" stroke-miterlimit="10" stroke-width="1"/>
+      <ellipse id="楕円形_29" data-name="楕円形 29" cx="3.379" cy="1.032" rx="3.379" ry="1.032" transform="translate(21.035 1.262)" fill="#fff" stroke="#313131" stroke-miterlimit="10" stroke-width="1"/>
+      <ellipse id="楕円形_30" data-name="楕円形 30" cx="3.379" cy="1.032" rx="3.379" ry="1.032" transform="translate(14.061 9.786)" fill="#fff" stroke="#313131" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
