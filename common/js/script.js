@@ -51,12 +51,51 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     };
 
-    // メニュー項目にクリックイベントを設定
+    /**
+     * 言語選択メニュー開閉、選択イベント
+     */
     addCloseOnClick(".languages a", document.querySelector(".languages"));
     addCloseOnClick(".languages_sub a", document.querySelector(".languages_sub"));
 
+    /**
+     * ハンバーガーメニュー開閉イベント
+     */
+    const menuBtn = document.getElementById('hamburgerMenuBtn');
+    const closeBtn = document.getElementById('hamburgerMenuCloseBtn');
+    const hamburgerWrapper = document.querySelector('.hamburgerWrapper');
+    const hamburgerBg = document.querySelector('.hamburgerBg');
 
-    // 料理ジャンルから探すを表示する
+    // メニューボタンをクリックしたとき
+    menuBtn.addEventListener('click', () => {
+        hamburgerWrapper.classList.add('visible'); // visible クラスを追加
+    });
+
+    // 閉じるボタンをクリックしたとき
+    closeBtn.addEventListener('click', () => {
+        hamburgerWrapper.classList.remove('visible'); // visible クラスを削除
+    });
+
+    // 背景をクリックしたとき
+    hamburgerBg.addEventListener('click', () => {
+        hamburgerWrapper.classList.remove('visible'); // visible クラスを削除
+    });
+
+    /**
+     * サブメニューボタンを取得
+     */
+    const subMenuButtons = document.querySelectorAll('.subMenuBtn');
+    subMenuButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const parentItem = button.closest('.hamburgerItem');
+            if (parentItem) {
+            parentItem.classList.toggle('visible');
+            }
+        });
+    });
+
+    /**
+     * 料理ジャンルから探すを表示する
+     */
     const modalGenreBtn = document.getElementById('modalGenreBtn');
     const modalGenreWrap = document.getElementById('modalGenreWrap');
     const modalCloseButton = modalGenreWrap.querySelector('.modalCloseButton');

@@ -396,16 +396,35 @@ body {
       border-bottom: 1px solid #D5D5D5; }
       .headerFlexBox .languages a:hover, .headerFlexBox .languages_sub a:hover {
         color: var(--orange); }
-  @media screen and (min-width: 768px) {
-    .headerFlexBox .mapButton {
-      display: block;
-      margin-left: 30px; } }
-  @media screen and (min-width: 768px) {
-    .headerFlexBox .mapButton span {
-      margin-left: 7px;
-      font-family: "Outfit", sans-serif;
-      font-size: 18px;
-      font-weight: 500; } }
+  .headerFlexBox .mapButton {
+    display: none; }
+    @media screen and (min-width: 768px) {
+      .headerFlexBox .mapButton {
+        display: block;
+        margin-left: 30px; } }
+    @media screen and (min-width: 768px) {
+      .headerFlexBox .mapButton span {
+        margin-left: 7px;
+        font-family: "Outfit", sans-serif;
+        font-size: 18px;
+        font-weight: 500; } }
+  .headerFlexBox .menuBtn {
+    margin-left: 5px;
+    width: 26px;
+    height: 26px;
+    position: relative; }
+    .headerFlexBox .menuBtn::before, .headerFlexBox .menuBtn::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0%;
+      width: 26px;
+      height: 1px;
+      background: #333333; }
+    .headerFlexBox .menuBtn::before {
+      margin-top: -5px; }
+    .headerFlexBox .menuBtn::after {
+      margin-top: 5px; }
 
 .headerNavigation {
   padding: 25px 0;
@@ -494,6 +513,156 @@ body {
         font-size: 16px; }
   .headerScrollNavi .navIcon {
     display: none; }
+
+.hamburgerWrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 0 0 0 40px;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  transition: opacity 0.5s ease; }
+  .hamburgerWrapper.visible {
+    display: block;
+    opacity: 1; }
+
+.hamburgerBg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.hamburgerContent {
+  margin: 0 0 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  position: relative;
+  z-index: 1; }
+
+.hamburgerHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px 10px 10px;
+  background-color: var(--orange); }
+  .hamburgerHeader .closeBtn {
+    width: 20px;
+    height: 20px;
+    position: relative; }
+    .hamburgerHeader .closeBtn::before, .hamburgerHeader .closeBtn::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 1px;
+      height: 19px;
+      background: var(--white); }
+    .hamburgerHeader .closeBtn::before {
+      transform: translate(-50%, -50%) rotate(45deg); }
+    .hamburgerHeader .closeBtn::after {
+      transform: translate(-50%, -50%) rotate(-45deg); }
+
+.hamburgerBody {
+  margin-top: 34px;
+  height: calc(100% - 90px);
+  overflow-y: auto; }
+
+.hamburgerList {
+  padding-bottom: 60px; }
+
+.hamburgerItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+  border-top: 1px solid #EAE7E7; }
+  .hamburgerItem > a {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 19px;
+    font-weight: 700; }
+    .hamburgerItem > a .icon {
+      margin-right: 10px;
+      width: 34px;
+      height: 27px; }
+  .hamburgerItem > span {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 19px;
+    font-weight: 700; }
+  .hamburgerItem .subMenuBtn {
+    width: 28px;
+    height: 28px;
+    position: relative; }
+    .hamburgerItem .subMenuBtn::before, .hamburgerItem .subMenuBtn::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 1px;
+      height: 28px;
+      background: #333333; }
+    .hamburgerItem .subMenuBtn::before {
+      margin-top: -4px;
+      transform: translate(-50%, -50%) rotate(90deg); }
+    .hamburgerItem .subMenuBtn::after {
+      margin-top: 4px;
+      transform: translate(-50%, -50%) rotate(-90deg); }
+  .hamburgerItem .subMenu {
+    display: none;
+    width: 100%; }
+  .hamburgerItem.visible .subMenuBtn::before {
+    margin: 0; }
+  .hamburgerItem.visible .subMenuBtn::after {
+    display: none; }
+  .hamburgerItem.visible .subMenu {
+    display: block; }
+    .hamburgerItem.visible .subMenu.genreMenu {
+      margin: 20px 0; }
+
+.subMenuList {
+  border-top: 1px solid #EAE7E7; }
+  .subMenuList.genreIcons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 20px 20px 0 12px; }
+    .subMenuList.genreIcons .iconGenre {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 13px;
+      height: 26px;
+      color: #fff;
+      font-weight: 700;
+      background-color: var(--orange);
+      border-radius: 13px; }
+  .subMenuList.curatorList {
+    padding: 0 0 0 30px; }
+    .subMenuList.curatorList .subMenuItem {
+      padding: 20px 0;
+      font-size: 16px;
+      font-weight: 700;
+      border-top: 1px solid #EAE7E7; }
+      .subMenuList.curatorList .subMenuItem a {
+        display: block; }
+  .subMenuList.tagList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 10px;
+    padding: 20px 20px 0 30px; }
+    .subMenuList.tagList a {
+      font-size: 16px; }
 
 .footerNavigations {
   padding: 70px 18px 30px;
