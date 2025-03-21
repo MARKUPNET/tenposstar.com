@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" viewBox="0 0 26 26">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_624" data-name="長方形 624" width="26" height="26" transform="translate(-0.31)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="グループ_271" data-name="グループ 271" transform="translate(0.31)">
+    <g id="グループ_270" data-name="グループ 270" clip-path="url(#clip-path)">
+      <path id="パス_105" data-name="パス 105" d="M23.46,25.5H2.04A2.04,2.04,0,0,1,0,23.46V2.04A2.04,2.04,0,0,1,2.04,0H23.46A2.04,2.04,0,0,1,25.5,2.04V23.46a2.04,2.04,0,0,1-2.04,2.04" fill="#f7931e"/>
+      <path id="パス_106" data-name="パス 106" d="M25.221,19.587a5.633,5.633,0,1,1-5.633-5.633,5.633,5.633,0,0,1,5.633,5.633" transform="translate(-6.837 -6.837)" fill="#fff"/>
+      <line id="線_162" data-name="線 162" y1="3.141" transform="translate(12.75 2.547)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="線_163" data-name="線 163" y1="2.221" x2="2.221" transform="translate(17.744 5.536)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="線_164" data-name="線 164" x2="3.141" transform="translate(19.812 12.75)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="線_165" data-name="線 165" x2="2.221" y2="2.221" transform="translate(17.744 17.744)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="線_166" data-name="線 166" y2="3.141" transform="translate(12.75 19.812)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="線_167" data-name="線 167" x1="2.221" y2="2.221" transform="translate(5.536 17.744)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="線_168" data-name="線 168" x1="3.141" transform="translate(2.547 12.75)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="線_169" data-name="線 169" x1="2.221" y1="2.221" transform="translate(5.536 5.536)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
