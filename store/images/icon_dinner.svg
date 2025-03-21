@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="26" viewBox="0 0 26 26">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_625" data-name="長方形 625" width="26" height="26" transform="translate(-0.5)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="グループ_273" data-name="グループ 273" transform="translate(0.5)">
+    <g id="グループ_272" data-name="グループ 272" clip-path="url(#clip-path)">
+      <path id="パス_107" data-name="パス 107" d="M23.46,25.5H2.04A2.04,2.04,0,0,1,0,23.46V2.04A2.04,2.04,0,0,1,2.04,0H23.46A2.04,2.04,0,0,1,25.5,2.04V23.46a2.04,2.04,0,0,1-2.04,2.04" fill="#00058b"/>
+      <path id="パス_108" data-name="パス 108" d="M19.677,8.813a8.478,8.478,0,0,0-3.539-.486,8.508,8.508,0,0,1-5.31,14.588,8.514,8.514,0,1,0,8.848-14.1" transform="translate(-5.306 -4.069)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

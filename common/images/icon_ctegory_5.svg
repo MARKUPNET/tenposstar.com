@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26.722" height="26.017" viewBox="0 0 26.722 26.017">
+  <g id="グループ_128" data-name="グループ 128" transform="translate(0.267 0.501)">
+    <g id="グループ_24" data-name="グループ 24" transform="translate(0 -0.001)">
+      <path id="パス_42" data-name="パス 42" d="M27.569,20.6H10.14a.834.834,0,0,1-.834-.834V4a2.5,2.5,0,0,1,2.5-2.5H25.9A2.5,2.5,0,0,1,28.4,4V19.764A.834.834,0,0,1,27.569,20.6Z" transform="translate(-5.761 -1.501)" fill="none" stroke="#313131" stroke-miterlimit="10" stroke-width="1"/>
+      <rect id="長方形_17" data-name="長方形 17" width="9.548" height="6.751" transform="translate(3.545 6.173)" fill="none" stroke="#313131" stroke-miterlimit="10" stroke-width="1"/>
+      <rect id="長方形_18" data-name="長方形 18" width="9.548" height="6.751" transform="translate(13.094 6.173)" fill="none" stroke="#313131" stroke-miterlimit="10" stroke-width="1"/>
+      <ellipse id="楕円形_9" data-name="楕円形 9" cx="1.517" cy="1.517" rx="1.517" ry="1.517" transform="translate(5.338 14.566)" fill="none" stroke="#313131" stroke-miterlimit="10" stroke-width="1"/>
+      <ellipse id="楕円形_10" data-name="楕円形 10" cx="1.517" cy="1.517" rx="1.517" ry="1.517" transform="translate(17.472 14.566)" fill="none" stroke="#313131" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="線_10" data-name="線 10" y1="5.929" x2="9.376" transform="translate(0 19.166)" fill="none" stroke="#313131" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="線_11" data-name="線 11" x2="9.376" y2="5.929" transform="translate(16.811 19.165)" fill="none" stroke="#313131" stroke-miterlimit="10" stroke-width="1"/>
+      <line id="線_12" data-name="線 12" x2="17.684" transform="translate(4.252 22.406)" fill="none" stroke="#313131" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

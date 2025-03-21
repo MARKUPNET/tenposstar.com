@@ -1,0 +1,733 @@
+.iconMorning {
+  width: 26px;
+  height: 26px; }
+  .iconMorning::before {
+    background-image: url(../images/icon_morning.svg); }
+
+.iconLunch {
+  width: 26px;
+  height: 26px; }
+  .iconLunch::before {
+    background-image: url(../images/icon_lunch.svg); }
+
+.iconDinner {
+  width: 26px;
+  height: 26px; }
+  .iconDinner::before {
+    background-image: url(../images/icon_dinner.svg); }
+
+.iconBookmark {
+  width: 34px;
+  height: 34px; }
+  .iconBookmark::before {
+    background-image: url(../images/icon_bookmark.svg); }
+
+.iconTelephone {
+  width: 16px;
+  height: 16px; }
+  @media screen and (min-width: 768px) {
+    .iconTelephone {
+      width: 24px;
+      height: 24px; } }
+  .iconTelephone::before {
+    background-image: url(../images/icon_telephone.svg); }
+
+.iconStarOn {
+  width: 25px;
+  height: 25px; }
+  .iconStarOn::before {
+    background-image: url(../images/icon_star_on.svg); }
+
+.iconStarOff {
+  width: 25px;
+  height: 25px; }
+  .iconStarOff::before {
+    background-image: url(../images/icon_star_off.svg); }
+
+@media screen and (min-width: 768px) {
+  .storeHeader {
+    display: flex;
+    flex-direction: column; } }
+
+.mainvisual {
+  margin: 0; }
+  @media screen and (min-width: 768px) {
+    .mainvisual {
+      order: 2;
+      margin-top: 40px;
+      display: flex; } }
+  .mainvisual img {
+    width: 100%; }
+
+.storeInformation {
+  margin-top: 12px; }
+  @media screen and (min-width: 768px) {
+    .storeInformation {
+      order: 1;
+      margin-top: 48px; } }
+  .storeInformation .leadText {
+    font-weight: 700; }
+  .storeInformation .pageTitle {
+    display: flex;
+    font-size: 22px; }
+    @media screen and (min-width: 768px) {
+      .storeInformation .pageTitle {
+        margin-top: 8px;
+        font-size: 32px; } }
+  .storeInformation .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 18px; }
+    @media screen and (min-width: 768px) {
+      .storeInformation .tags {
+        gap: 5px 8px;
+        margin-top: 7px; } }
+  .storeInformation .tagItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    padding: 2px 9px;
+    background-color: var(--orange);
+    border-radius: 16px; }
+    @media screen and (min-width: 768px) {
+      .storeInformation .tagItem {
+        padding: 0 9px; } }
+    .storeInformation .tagItem span {
+      color: var(--white); }
+  @media screen and (min-width: 768px) {
+    .storeInformation .budgetSection {
+      display: flex;
+      align-items: center;
+      gap: 0 15px;
+      margin-top: 18px; } }
+  .storeInformation .yosan {
+    display: flex;
+    align-items: center;
+    margin-top: 5px; }
+    @media screen and (min-width: 768px) {
+      .storeInformation .yosan {
+        margin-top: 0; } }
+    .storeInformation .yosan span.ttl {
+      font-size: 11px;
+      font-weight: 700; }
+      @media screen and (min-width: 768px) {
+        .storeInformation .yosan span.ttl {
+          margin-right: 6px; } }
+    .storeInformation .yosan span.morning, .storeInformation .yosan span.lunch, .storeInformation .yosan span.dinner {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+      font-size: 12px;
+      font-weight: 500; }
+      @media screen and (min-width: 768px) {
+        .storeInformation .yosan span.morning, .storeInformation .yosan span.lunch, .storeInformation .yosan span.dinner {
+          margin-right: 25px; } }
+    @media screen and (min-width: 768px) {
+      .storeInformation .yosan .iconMorning,
+      .storeInformation .yosan .iconLunch,
+      .storeInformation .yosan .iconDinner {
+        margin-right: 7px;
+        width: 20px;
+        height: 20px; } }
+  .storeInformation .station {
+    margin-top: 5px; }
+    @media screen and (min-width: 768px) {
+      .storeInformation .station {
+        margin-top: 0; } }
+    .storeInformation .station span.ttl {
+      font-size: 12px;
+      font-weight: 700; }
+  .storeInformation .translation {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 7px; }
+    @media screen and (min-width: 768px) {
+      .storeInformation .translation {
+        margin-top: 13px; } }
+    .storeInformation .translation li {
+      margin: 3px 0 0; }
+    .storeInformation .translation a {
+      display: block;
+      padding: 0 8px;
+      color: var(--orange);
+      border: 1px solid var(--orange);
+      border-radius: 3px; }
+      @media screen and (min-width: 768px) {
+        .storeInformation .translation a {
+          padding: 0 10px;
+          font-size: 14px; } }
+      .storeInformation .translation a:hover {
+        color: var(--white);
+        background-color: var(--orange); }
+
+@media screen and (min-width: 768px) {
+  .mainContents {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 46px; } }
+
+@media screen and (min-width: 768px) {
+  .mainContents .rightSide {
+    padding-left: 3px;
+    width: 300px; } }
+
+@media screen and (min-width: 768px) {
+  .mainContents .leftSide {
+    padding-bottom: 65px;
+    width: calc(100% - 344px); } }
+
+.reserveBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  margin-top: 26px; }
+  @media screen and (min-width: 768px) {
+    .reserveBox {
+      flex-direction: column-reverse;
+      gap: 28px 0;
+      margin: 0; } }
+  .reserveBox .telephone {
+    margin: 0;
+    width: calc(50% - 10px); }
+    @media screen and (min-width: 768px) {
+      .reserveBox .telephone {
+        width: 100%; } }
+    .reserveBox .telephone a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 5px 10px;
+      width: 100%;
+      height: 40px;
+      font-size: 16px;
+      border: 1px solid var(--gray);
+      border-radius: 20px; }
+      @media screen and (min-width: 768px) {
+        .reserveBox .telephone a {
+          height: 70px;
+          font-size: 26px; } }
+    .reserveBox .telephone .iconTelephone {
+      margin-right: 5px; }
+      @media screen and (min-width: 768px) {
+        .reserveBox .telephone .iconTelephone {
+          margin-right: 8px;
+          width: 24px;
+          height: 24px; } }
+  .reserveBox .booking {
+    margin: 0;
+    width: calc(50% - 10px); }
+    @media screen and (min-width: 768px) {
+      .reserveBox .booking {
+        width: 100%; } }
+    .reserveBox .booking a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 10px;
+      width: 100%;
+      height: 40px;
+      color: var(--white);
+      font-size: 15px;
+      background-color: var(--orange);
+      border-radius: 20px; }
+      @media screen and (min-width: 768px) {
+        .reserveBox .booking a {
+          height: 78px;
+          font-size: 20px;
+          border-radius: 36px; } }
+      .reserveBox .booking a:hover {
+        opacity: 0.6; }
+
+.curatorComment {
+  margin-top: 52px; }
+  @media screen and (min-width: 768px) {
+    .curatorComment {
+      margin: 0;
+      display: flex;
+      gap: 0 50px; } }
+  .curatorComment .curator {
+    display: flex;
+    align-items: center; }
+    @media screen and (min-width: 768px) {
+      .curatorComment .curator {
+        display: block;
+        width: 66px;
+        text-align: center; } }
+    .curatorComment .curator .img {
+      margin: 0 16px 0 0; }
+      @media screen and (min-width: 768px) {
+        .curatorComment .curator .img {
+          margin: 0; } }
+    .curatorComment .curator .post {
+      color: var(--orange);
+      font-size: 12px; }
+    .curatorComment .curator .name {
+      font-size: 15px; }
+  .curatorComment .textarea {
+    margin-top: 20px; }
+    @media screen and (min-width: 768px) {
+      .curatorComment .textarea {
+        margin: 0;
+        width: calc(100% - 120px); } }
+    .curatorComment .textarea .ttl {
+      font-size: 15px;
+      font-weight: 500; }
+      @media screen and (min-width: 768px) {
+        .curatorComment .textarea .ttl {
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 1.8; } }
+    .curatorComment .textarea .txt {
+      margin-top: 10px;
+      line-height: 1.9; }
+      @media screen and (min-width: 768px) {
+        .curatorComment .textarea .txt {
+          font-size: 16px; } }
+
+section {
+  margin: 50px 0; }
+  section h2 {
+    font-size: 20px;
+    font-weight: 700; }
+    @media screen and (min-width: 768px) {
+      section h2 {
+        font-size: 22px; } }
+
+@media screen and (min-width: 768px) {
+  .recommendedMenu {
+    margin-top: 70px; } }
+
+.recommendedMenu .menuList {
+  margin-top: 24px; }
+  @media screen and (min-width: 768px) {
+    .recommendedMenu .menuList {
+      margin-top: 20px; } }
+  .recommendedMenu .menuList .menuItem {
+    display: flex;
+    gap: 38px;
+    padding: 10px 0;
+    border-top: 1px solid var(--gray); }
+    @media screen and (min-width: 768px) {
+      .recommendedMenu .menuList .menuItem {
+        gap: 54px;
+        padding: 9px 0; } }
+    .recommendedMenu .menuList .menuItem:last-child {
+      border-bottom: 1px solid var(--gray); }
+  .recommendedMenu .menuList .thumb {
+    width: 96px;
+    border-radius: 10px;
+    overflow: hidden; }
+    @media screen and (min-width: 768px) {
+      .recommendedMenu .menuList .thumb {
+        width: 140px; } }
+    .recommendedMenu .menuList .thumb img {
+      width: 100%; }
+  .recommendedMenu .menuList .menu {
+    padding: 0;
+    width: calc(100% - 134px); }
+    @media screen and (min-width: 768px) {
+      .recommendedMenu .menuList .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: calc(100% - 194px); } }
+  .recommendedMenu .menuList .name {
+    font-size: 14px;
+    font-weight: 700;
+    overflow-wrap: anywhere; }
+    @media screen and (min-width: 768px) {
+      .recommendedMenu .menuList .name {
+        width: calc(100% - 100px);
+        font-size: 18px; } }
+  .recommendedMenu .menuList .price {
+    margin-top: 9px;
+    font-size: 15px; }
+    @media screen and (min-width: 768px) {
+      .recommendedMenu .menuList .price {
+        margin: 0;
+        font-size: 16px; } }
+
+.tableDefault {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; }
+  .tableDefault tr {
+    border-top: 1px solid var(--gray); }
+    .tableDefault tr:last-child {
+      border-bottom: 1px solid var(--gray); }
+  .tableDefault th {
+    padding: 15px 10px;
+    width: 85px;
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 700;
+    text-align: left;
+    vertical-align: top;
+    background-color: #FFFCF4; }
+    @media screen and (min-width: 768px) {
+      .tableDefault th {
+        padding: 22px 20px;
+        width: 208px;
+        font-size: 16px; } }
+  .tableDefault td {
+    padding: 15px;
+    font-size: 12px; }
+    @media screen and (min-width: 768px) {
+      .tableDefault td {
+        padding: 20px 0 20px 22px;
+        font-size: 14px;
+        line-height: 2; } }
+
+@media (max-width: 767px) {
+  .verticalTable {
+    border-top: 1px solid var(--gray);
+    border-bottom: 1px solid var(--gray); }
+    .verticalTable th, .verticalTable td {
+      display: block;
+      padding: 0;
+      width: 100%;
+      text-align: left; }
+    .verticalTable tr {
+      display: block;
+      margin-bottom: 28px;
+      border: 0; }
+      .verticalTable tr:last-child {
+        border: 0; }
+    .verticalTable th {
+      margin-bottom: 5px;
+      background-color: transparent;
+      font-weight: bold; }
+    .verticalTable td {
+      margin-top: -5px; }
+    .verticalTable .addressHeader {
+      padding: 15px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      text-align: left;
+      vertical-align: top;
+      background-color: #FFFCF4; }
+    .verticalTable .tableRow.flex {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 10px;
+      padding: 0 12px; }
+      .verticalTable .tableRow.flex:last-child {
+        margin-bottom: 10px; }
+    .verticalTable .tableRow.flex th,
+    .verticalTable .tableRow.flex td {
+      margin: 0;
+      width: auto;
+      text-align: left;
+      flex: 1; }
+    .verticalTable .tableRow.flex th {
+      flex-basis: auto;
+      flex-grow: 0;
+      flex-shrink: 1;
+      margin-right: 10px; }
+    .verticalTable .tableRow.flex td {
+      flex-basis: auto;
+      flex-grow: 1;
+      flex-shrink: 1; } }
+
+@media screen and (min-width: 768px) {
+  .basicInfo {
+    margin: 74px 0 50px; } }
+
+.basicInfo h2 {
+  display: flex;
+  align-items: end;
+  gap: 0 10px; }
+  @media screen and (min-width: 768px) {
+    .basicInfo h2 {
+      gap: 0 26px; } }
+
+.basicInfo .infoNote {
+  width: calc(100% - 95px);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.5; }
+  @media screen and (min-width: 768px) {
+    .basicInfo .infoNote {
+      width: calc(100% - 114px);
+      font-size: 13px; } }
+
+.seatDetails {
+  display: flex;
+  gap: 0 20px; }
+  .seatDetails .seatNumber {
+    display: block; }
+  .seatDetails .seatOptions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 10px; }
+
+.genreTimeSlots .genreWrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 0 16px; }
+  .genreTimeSlots .genreWrap:not(:last-child) {
+    margin-bottom: 3px; }
+    @media screen and (min-width: 768px) {
+      .genreTimeSlots .genreWrap:not(:last-child) {
+        margin-bottom: 17px; } }
+  .genreTimeSlots .genreWrap .iconMorning, .genreTimeSlots .genreWrap .iconLunch, .genreTimeSlots .genreWrap .iconDinner {
+    width: 23px;
+    height: 23px; }
+
+.genreTimeSlots .genreList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 5px;
+  width: calc(100% - 40px); }
+  @media screen and (min-width: 768px) {
+    .genreTimeSlots .genreList {
+      gap: 2px 20px; } }
+
+.genreTimeSlots .genreItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  height: 23px;
+  color: var(--white);
+  font-size: 12px;
+  background-color: var(--orange);
+  border-radius: 13px; }
+  @media screen and (min-width: 768px) {
+    .genreTimeSlots .genreItem {
+      padding: 5px 14px; } }
+
+.budgetTimeSlots .timeSlot {
+  display: flex;
+  gap: 0 16px; }
+  .budgetTimeSlots .timeSlot:not(:last-child) {
+    margin-bottom: 10px; }
+    @media screen and (min-width: 768px) {
+      .budgetTimeSlots .timeSlot:not(:last-child) {
+        margin-bottom: 14px; } }
+  .budgetTimeSlots .timeSlot .iconMorning, .budgetTimeSlots .timeSlot .iconLunch, .budgetTimeSlots .timeSlot .iconDinner {
+    width: 23px;
+    height: 23px; }
+  .budgetTimeSlots .timeSlot span {
+    display: block;
+    width: calc(100% - 40px); }
+
+.operatingTimeSlots .timeSlot {
+  display: flex;
+  gap: 0 16px; }
+  .operatingTimeSlots .timeSlot:not(:nth-last-of-type(1)) {
+    margin-bottom: 10px; }
+    @media screen and (min-width: 768px) {
+      .operatingTimeSlots .timeSlot:not(:nth-last-of-type(1)) {
+        margin-bottom: 14px; } }
+  .operatingTimeSlots .timeSlot .iconMorning, .operatingTimeSlots .timeSlot .iconLunch, .operatingTimeSlots .timeSlot .iconDinner {
+    width: 23px;
+    height: 23px; }
+  .operatingTimeSlots .timeSlot span {
+    display: block;
+    width: calc(100% - 40px); }
+
+@media screen and (min-width: 768px) {
+  .operatingTimeSlots .notes {
+    margin-top: 8px; } }
+
+.mediaContainer .mediaItem {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 4px; }
+  .mediaContainer .mediaItem dt {
+    width: 56px;
+    flex-shrink: 0; }
+  .mediaContainer .mediaItem dd {
+    flex: 1;
+    word-break: break-word;
+    margin: 0; }
+
+@media screen and (min-width: 768px) {
+  .paymentOption {
+    display: flex;
+    gap: 0 10px; } }
+
+.paymentOption:not(:last-child) {
+  margin-bottom: 10px; }
+
+.paymentOption dt {
+  font-weight: 700; }
+  @media screen and (min-width: 768px) {
+    .paymentOption dt {
+      width: 142px; } }
+
+.paymentOption dd {
+  margin-top: 5px;
+  line-height: 1.4; }
+  @media screen and (min-width: 768px) {
+    .paymentOption dd {
+      margin-top: 0;
+      width: calc(100% - 152px);
+      line-height: 2.8; } }
+
+.access .addressText {
+  margin-top: 20px; }
+  @media screen and (min-width: 768px) {
+    .access .addressText {
+      margin-top: 0; } }
+
+.access .googleMap {
+  margin-top: 20px; }
+
+.access .routeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 0 36px;
+  height: 50px;
+  border: 1px solid #707070;
+  border-radius: 25px; }
+  @media screen and (min-width: 768px) {
+    .access .routeButton {
+      margin: 20px 0 0;
+      padding: 0 30px; } }
+
+.facilityScene .facilityList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px 0 0;
+  padding-top: 20px;
+  border-top: 1px solid var(--gray); }
+  @media screen and (min-width: 768px) {
+    .facilityScene .facilityList {
+      padding: 0;
+      border: 0;
+      gap: 16px; } }
+  .facilityScene .facilityList li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(50% - 10px);
+    height: 45px;
+    background-color: #F5F3F0;
+    border-radius: 6px; }
+    @media screen and (min-width: 768px) {
+      .facilityScene .facilityList li {
+        width: calc(25% - 12px); } }
+
+.snsSection .snsImage {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .snsSection .snsImage {
+      gap: 23px; } }
+  .snsSection .snsImage .snsItem {
+    margin: 10px 0;
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      .snsSection .snsImage .snsItem {
+        width: calc(33% - 13px); } }
+    .snsSection .snsImage .snsItem img {
+      width: 100%; }
+
+.reviewComment {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #F9FAF2; }
+  @media screen and (min-width: 768px) {
+    .reviewComment {
+      margin-top: 50px;
+      padding: 60px 40px 40px; } }
+  @media screen and (min-width: 768px) {
+    .reviewComment .reviewerInfo {
+      display: flex; } }
+  @media screen and (min-width: 768px) {
+    .reviewComment .ratingStars {
+      margin-top: 8px; } }
+  @media screen and (min-width: 768px) {
+    .reviewComment .ratingStars .icon {
+      margin-right: 5px; } }
+  @media screen and (min-width: 768px) {
+    .reviewComment .commentText {
+      margin-top: 10px;
+      font-size: 16px;
+      line-height: 1.8; } }
+  .reviewComment .dishComment {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: var(--white); }
+    @media screen and (min-width: 768px) {
+      .reviewComment .dishComment {
+        margin-top: 20px;
+        padding: 22px 30px; } }
+    .reviewComment .dishComment dl {
+      display: flex;
+      font-size: 16px; }
+      .reviewComment .dishComment dl dt {
+        font-weight: 500; }
+      .reviewComment .dishComment dl dd {
+        font-weight: 400; }
+  @media screen and (min-width: 768px) {
+    .reviewComment .commentReason {
+      margin-top: 20px;
+      font-size: 16px; } }
+
+@media screen and (min-width: 768px) {
+  .recommendedSpots {
+    margin-top: 70px; } }
+
+.recommendedSpots .gotoReco {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .recommendedSpots .gotoReco {
+      flex-wrap: nowrap;
+      gap: 23px;
+      overflow: hidden; } }
+  .recommendedSpots .gotoReco .card {
+    width: calc(50% - 10px); }
+    @media screen and (min-width: 768px) {
+      .recommendedSpots .gotoReco .card {
+        width: calc(33% - 13px); } }
+    .recommendedSpots .gotoReco .card img {
+      width: 100%;
+      border-radius: 10px; }
+    .recommendedSpots .gotoReco .card h3 {
+      margin-top: 10px;
+      font-size: 15px;
+      font-weight: 700; }
+      @media screen and (min-width: 768px) {
+        .recommendedSpots .gotoReco .card h3 {
+          margin-top: 15px; } }
+    .recommendedSpots .gotoReco .card .tagWrap {
+      display: flex; }
+      @media screen and (min-width: 768px) {
+        .recommendedSpots .gotoReco .card .tagWrap {
+          margin-top: 8px; } }
+      .recommendedSpots .gotoReco .card .tagWrap .ttl {
+        width: 60px; }
+        @media screen and (min-width: 768px) {
+          .recommendedSpots .gotoReco .card .tagWrap .ttl {
+            width: 40px;
+            font-size: 13px; } }
+      .recommendedSpots .gotoReco .card .tagWrap .tag {
+        display: inline-block; }
+      .recommendedSpots .gotoReco .card .tagWrap a {
+        color: #656565;
+        font-size: 12px; }
+        @media screen and (min-width: 768px) {
+          .recommendedSpots .gotoReco .card .tagWrap a {
+            font-size: 13px; } }
+
+/*# sourceMappingURL=style.css.map */

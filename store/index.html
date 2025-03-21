@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../common/css/style.css"></link>
+    <link rel="stylesheet" href="./css/style.css"></link>
+
+    <title>店舗詳細</title>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="headerWrap">
+                <div class="headerFlexBox">
+                    <div class="logo"><a href="#"><img src="../common/images/logo.svg" alt="TENPOS STAR"></a></div>
+                    <div class="searchBox">
+                        <form>
+                            <label><input type="text" name="s" value="" placeholder="レストラン、地名など"></label>
+                            <button class="searchButton" type="submit"><i class="icon iconScorp"></i><span class="isPC">検索</span></button>
+                        </form>
+                    </div>
+                    <div class="rightBox">
+                        <button id="searchBtn" class="searchBtn"><i class="icon iconScorp"></i></button>
+                        <div class="translation">
+                            <span id="langBtn">EN</span>
+                            <ul class="languages">
+                                <li><a href="#">EN</a></li>
+                                <li><a href="#">JP</a></li>
+                                <li><a href="#">CN</a></li>
+                                <li><a href="#">KO</a></li>
+                                <li><a href="#">ES</a></li>
+                                <li><a href="#">TH</a></li>
+                                <li><a href="#">FR</a></li>
+                                <li><a href="#">DE</a></li>
+                                <li><a href="#">AR</a></li>
+                            </ul>
+                        </div>
+                        <div class="mapButton">
+                            <button id="mapBtn"><i class="icon iconPicker mapIcon"></i><span>MAP</span></button>
+                        </div>
+                    </div>
+                </div>
+                <nav class="headerNavigation">
+                    <ul class="naviFlexBox">
+                        <li><a href="#"><i class="navIcon icon cate1"></i><span>食べる</span></a></li>
+                        <li><a href="#"><i class="navIcon icon cate2"></i><span>泊まる</span></a></li>
+                        <li><a href="#"><i class="navIcon icon cate3"></i><span>体験する</span></a></li>
+                        <li><a href="#"><i class="navIcon icon cate4"></i><span>発見する</span></a></li>
+                        <li><a href="#"><i class="navIcon icon cate5"></i><span>移動する</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="scrollNavi" class="headerScrollNavi">
+                <div class="headerFlexBox">
+                    <div class="logo"><a href="#"><img src="../common/images/logo.svg" alt="TENPOS STAR"></a></div>
+                    <div class="searchBox">
+                        <form>
+                            <label><input type="text" name="s" value="" placeholder="レストラン、地名など"></label>
+                            <button class="searchButton" type="submit"><i class="icon iconScorp"></i></button>
+                        </form>
+                    </div>
+                    <nav class="headerNavigation">
+                        <ul class="naviFlexBox">
+                            <li><a href="#"><i class="navIcon icon cate1"></i><span>食べる</span></a></li>
+                            <li><a href="#"><i class="navIcon icon cate2"></i><span>泊まる</span></a></li>
+                            <li><a href="#"><i class="navIcon icon cate3"></i><span>体験する</span></a></li>
+                            <li><a href="#"><i class="navIcon icon cate4"></i><span>発見する</span></a></li>
+                            <li><a href="#"><i class="navIcon icon cate5"></i><span>移動する</span></a></li>
+                        </ul>
+                    </nav>
+                    <div class="rightBox">
+                        <div class="translation">
+                            <span id="langBtn_sub">EN</span>
+                            <ul class="languages_sub">
+                                <li><a href="#">EN</a></li>
+                                <li><a href="#">JP</a></li>
+                                <li><a href="#">CN</a></li>
+                                <li><a href="#">KO</a></li>
+                                <li><a href="#">ES</a></li>
+                                <li><a href="#">TH</a></li>
+                                <li><a href="#">FR</a></li>
+                                <li><a href="#">DE</a></li>
+                                <li><a href="#">AR</a></li>
+                            </ul>
+                        </div>
+                        <div class="mapButton">
+                            <button id="mapBtn"><i class="icon iconPicker mapIcon"></i><span>MAP</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="contents">
+
+            <div class="storeHeader">
+                
+                <div class="mainvisual">
+                    <img src="./images/main1.jpg" alt="" class="isPC">
+                    <img src="./images/main2.jpg" alt="">
+                </div>
+
+                <div class="storeInformation">
+                    <p class="leadText">店舗サブタイトルが入ります。売り文句のようなものです。</p>
+                    <h1 class="pageTitle">店舗名が入ります。店舗名が入ります。<i class="icon iconBookmark"></i></h1>
+                    <ul class="tags">
+                        <li class="tagItem"><span>居酒屋</span></li>
+                        <li class="tagItem"><span>立ち飲み</span></li>
+                        <li class="tagItem"><span>焼鳥</span></li>
+                        <li class="tagItem"><span>串焼き</span></li>
+                    </ul>
+                    <div class="budgetSection">
+                        <div class="yosan"><span class="ttl">予算：</span>
+                            <span class="morning"><i class="icon iconMorning"></i>～1,000円</span>
+                            <span class="lunch"><i class="icon iconLunch"></i>～2,000円</span>
+                            <span class="dinner"><i class="icon iconDinner"></i>～3,000円</span>
+                        </div>
+                        <div class="station"><span class="ttl">最寄り駅：</span>
+                            <span>◯◯◯線　◯◯◯駅（◯◯県◯◯市）</span>
+                        </div>
+                    </div>
+                    <ul class="translation">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Chinese</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mainContents">
+                <div class="rightSide">
+                    <div class="reserveBox">
+                        <div class="telephone">
+                            <a href="tel:03-3994-6006"><i class="icon iconTelephone"></i>03-3994-6006</a>
+                        </div>
+                        <div class="booking">
+                            <a href="#">ネット予約</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="leftSide">
+                    <div class="curatorComment">
+                        <div class="curator">
+                            <div class="img">
+                                <img src="./images/man.jpg" alt="山田 太郎">
+                            </div>
+                            <div class="nameCard">
+                                <p class="post">Curator</p>
+                                <p class="name">山田 太郎</p>
+                            </div>
+                        </div>
+                        <div class="textarea">
+                            <p class="ttl">キュレーターのコメント見出しが入ります。キュレーターのコメント見出しが入ります。キュレーターのコメント見出しが</p>
+                            <p class="txt">キュレーターのコメント本文が入ります。キュレーターのコメント本文が入ります。キュレーターのコメント本文が入ります。キュレーターのコメント本文が入ります。キュレーターのコメント本文が入ります。キュレーターのコメント本文が入ります。キュレーターのコメント本文が入ります。キュレーターのコメント本文が入ります。</p>
+                        </div>
+                    </div>
+
+                    <section class="recommendedMenu">
+                        <h2>おすすめメニュー</h2>
+                        <div class="menuList">
+                            <article class="menuItem">
+                                <div class="thumb"><img src="./images/menu1.jpg" alt=""></div>
+                                <div class="menu">
+                                    <p class="name">◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</p>
+                                    <p class="price">000円</p>
+                                </div>
+                            </article>
+                            <article class="menuItem">
+                                <div class="thumb"><img src="./images/menu2.jpg" alt=""></div>
+                                <div class="menu">
+                                    <p class="name">◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</p>
+                                    <p class="price">000円</p>
+                                </div>
+                            </article>
+                            <article class="menuItem">
+                                <div class="thumb"><img src="./images/menu3.jpg" alt=""></div>
+                                <div class="menu">
+                                    <p class="name">◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</p>
+                                    <p class="price">000円</p>
+                                </div>
+                            </article>
+                            <article class="menuItem">
+                                <div class="thumb"><img src="./images/menu4.jpg" alt=""></div>
+                                <div class="menu">
+                                    <p class="name">◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</p>
+                                    <p class="price">000円</p>
+                                </div>
+                            </article>
+                            <article class="menuItem">
+                                <div class="thumb"><img src="./images/menu5.jpg" alt=""></div>
+                                <div class="menu">
+                                    <p class="name">◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</p>
+                                    <p class="price">000円</p>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="basicInfo">
+                        <h2>基本情報<span class="infoNote">情報は予告なく変更になる場合がございます。ご来店の際はお店にお問い合わせください。</span></h2>
+                        <table class="tableDefault basicInfoTable">
+                            <tbody>
+                                <tr>
+                                    <th>店名</th>
+                                    <td>串焼処　竹次（ふり仮名が入ります。）　◯◯◯◯店</td>
+                                </tr>
+                                <tr>
+                                    <th>電話番号</th>
+                                    <td>03-3994-6006</td>
+                                </tr>
+                                <tr>
+                                    <th>席数</th>
+                                    <td>
+                                        <div class="seatDetails">
+                                            <span class="seatNumber">19</span>
+                                            <ul class="seatOptions">
+                                                <li class="seatOption">個室あり</li>
+                                                <li class="seatOption">座敷あり</li>
+                                                <li class="seatOption">カップルシートあり</li>
+                                                <li class="seatOption">ソファー席あり</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>料理<br class="isSP">ジャンル</th>
+                                    <td>
+                                        <div class="genreTimeSlots">
+                                            <div class="genreWrap morning"><i class="icon iconMorning"></i>
+                                                <ul class="genreList">
+                                                    <li class="genreItem"><span>和食居酒屋</span></li>
+                                                    <li class="genreItem"><span>立ち飲み定食</span></li>
+                                                </ul>
+                                            </div>
+                                            <div class="genreWrap lunch"><i class="icon iconLunch"></i>
+                                                <ul class="genreList">
+                                                    <li class="genreItem"><span>どんぶり寿司焼鳥</span></li>
+                                                    <li class="genreItem"><span>串焼きとんかつ</span></li>
+                                                </ul>
+                                            </div>
+                                            <div class="genreWrap dinner"><i class="icon iconDinner"></i>
+                                                <ul class="genreList">
+                                                    <li class="genreItem"><span>揚げ物天ぷらふぐ</span></li>
+                                                    <li class="genreItem"><span>うなぎ</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>予算</th>
+                                    <td>
+                                        <div class="budgetTimeSlots">
+                                            <div class="timeSlot morning"><i class="icon iconMorning"></i><span>500円～1,000円</span></div>
+                                            <div class="timeSlot lunch"><i class="icon iconLunch"></i><span>700円～1,200円</span></div>
+                                            <div class="timeSlot dinner"><i class="icon iconDinner"></i><span>2,500円～4,000円</span></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>営業時間</th>
+                                    <td>
+                                        <div class="operatingTimeSlots">
+                                            <div class="timeSlot morning"><i class="icon iconMorning"></i><span>8:00 〜 10:00　L.O. 9:30<br class="isSP">（朝食あり）</span></div>
+                                            <div class="timeSlot lunch"><i class="icon iconLunch"></i><span>12:00 〜 15:00　L.O. 14:30<br class="isSP">（ランチあり）</span></div>
+                                            <div class="timeSlot dinner"><i class="icon iconDinner"></i><span>17:00 〜 23:00　L.O. 22:30<br class="isSP">（ディナーあり）</span></div>
+                                            <p class="notes">夜10時以降入店可　日曜営業あり</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>定休日</th>
+                                    <td>日・祝</td>
+                                </tr>
+                                <tr>
+                                    <th>メニューの<br class="isSP">こだわり</th>
+                                    <td>魚料理にこだわる</td>
+                                </tr>
+                                <tr>
+                                    <th>ドリンク<br class="isSP">メニュー</th>
+                                    <td>飲み放題あり　ノンアルコールドリンクが豊富　ワインあり　日本酒あり　カクテルあり　焼酎あり　日本酒が10種類以上あり</td>
+                                </tr>
+                                <tr>
+                                    <th>予約</th>
+                                    <td>電話予約可</td>
+                                </tr>
+                                <tr>
+                                    <th>公式ホーム<br class="isSP">ページ</th>
+                                    <td>
+                                        <a href="https://www.XXXXXX.com" target="_blank">https://www.XXXXXX.com</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>メディア</th>
+                                    <td>
+                                        <div class="mediaContainer">
+                                            <dl class="mediaItem">
+                                                <dt>Retty</dt>
+                                                <dd><a href="#">https://www.XXXXXX.com/XXXXXX.html</a></dd>
+                                            </dl>
+                                            <dl class="mediaItem">
+                                                <dt>Facebook</dt>
+                                                <dd><a href="#">https://www.XXXXXX.com</a></dd>
+                                            </dl>
+                                            <dl class="mediaItem">
+                                                <dt>Instagram</dt>
+                                                <dd><a href="#">https://www.XXXXXX.com</a></dd>
+                                            </dl>
+                                            <dl class="mediaItem">
+                                                <dt>twitter</dt>
+                                                <dd><a href="#">https://www.XXXXXX.com</a></dd>
+                                            </dl>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>支払い方法</th>
+                                    <td>
+                                        <dl class="paymentOption">
+                                            <dt>現金</dt>
+                                            <dd></dd>
+                                        </dl>
+                                        <dl class="paymentOption">
+                                            <dt>クレジット決済可</dt>
+                                            <dd>VISA　MASTER　JCB　American express　交通系IC　nanaco　楽天Edy</dd>
+                                        </dl>
+                                        <dl class="paymentOption">
+                                            <dt>QRコード決済可</dt>
+                                            <dd>Pay Pay　LINE Pay　楽天ペイ　au PAY　d払い</dd>
+                                        </dl>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <section class="access">
+                        <h2>アクセス</h2>
+                        <table class="tableDefault verticalTable">
+                            <tbody>
+                                <tr class="tableRow">
+                                    <th class="tableHeader addressHeader">住所</th>
+                                    <td class="tableCell addressCell">
+                                        <p class="addressText">〒000-0000　東京都練馬区豊玉北5-18-13　◯◯ビル</p>
+                                        <div class="googleMap">
+                                            <img src="./images/map_pc.jpg" alt="" class="mapImage isPC">
+                                            <img src="./images/map_sp.jpg" alt="" class="mapImage isSP">
+                                            <div id="canvas" class="mapCanvas"></div>
+                                        </div>
+                                        <button type="button" class="routeButton">現在地からの経路</button>
+                                    </td>
+                                </tr>
+                                <tr class="tableRow flex">
+                                    <th class="tableHeader transportationHeader">交通機関</th>
+                                    <td class="tableCell transportationCell">練馬駅から徒歩2分</td>
+                                </tr>
+                                <tr class="tableRow flex">
+                                    <th class="tableHeader parkingHeader">駐車場</th>
+                                    <td class="tableCell parkingCell">有（◯台）</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <section class="service">
+                        <h2>サービス</h2>
+                        <table class="tableDefault">
+                            <tbody>
+                                <tr>
+                                    <th>日本語<br class="isSP">以外の<br class="isSP">対応言語</th>
+                                    <td><span>英語対応可</span><span>中国語対応可</span></td>
+                                </tr>
+                                <tr>
+                                    <th>メニュー<br class="isSP">ブック</th>
+                                    <td><span>英語メニューあり</span><span>中国語メニューあり</span></td>
+                                </tr>
+                                <tr>
+                                    <th>B級グルメ</th>
+                                    <td>B級グルメがある</td>
+                                </tr>
+                                <tr>
+                                    <th>食体験<br class="isSP">できる</th>
+                                    <td>手打ちそば体験</td>
+                                </tr>
+                                <tr>
+                                    <th>臨機応変に<br class="isSP">対応</th>
+                                    <td>車いす可</td>
+                                </tr>
+                                <tr>
+                                    <th>サプライズ</th>
+                                    <td>お祝い・サプライズ可</td>
+                                </tr>
+                                <tr>
+                                    <th>喫煙・禁煙</th>
+                                    <td>全席禁煙</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <section class="facilityScene">
+                        <h2>設備・シーン</h2>
+                        <ul class="facilityList">
+                            <li><span>個室あり</span></li>
+                            <li><span>バリアフリー</span></li>
+                            <li><span>充電・電源設備あり</span></li>
+                            <li><span>駐車場あり</span></li>
+                            <li><span>座敷あり</span></li>
+                            <li><span>カップルシートあり</span></li>
+                            <li><span>ソファー席あり</span></li>
+                            <li><span>掘りごたつ席あり</span></li>
+                            <li><span>オープンテラスあり</span></li>
+                        </ul>
+                    </section>
+
+                    <section class="snsSection">
+                        <h2>SNS</h2>
+                        <div class="snsImage">
+                            <div class="snsItem">
+                                <img src="./images/sns.jpg" alt="">
+                            </div>
+                            <div class="snsItem">
+                                <img src="./images/sns.jpg" alt="">
+                            </div>
+                            <div class="snsItem">
+                                <img src="./images/sns.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="reviewComment">
+                            <div class="commentWrapper">
+                                <div class="reviewerInfo">
+                                    <p class="reviewerName">格付け診断士（20代・男性）</p>
+                                    <p class="reviewDate">実施日：2025年3月19日（水）</p>
+                                </div>
+                                <div class="ratingStars">
+                                    <i class="icon iconStarOn"></i><i class="icon iconStarOn"></i><i class="icon iconStarOn"></i><i class="icon iconStarOff"></i><i class="icon iconStarOff"></i>
+                                </div>
+                                <p class="commentText">格付け診断士のコメント本文が入ります。格付け診断士のコメント本文が入ります。格付け診断士のコメント本文が入ります。格付け診断士のコメント本文が入ります。格付け診断士のコメント本文が入ります。格付け診断士のコメント本文が入ります。格</p>
+                                <div class="dishComment">
+                                    <dl>
+                                        <dt>注文した料理の中で良かった料理名</dt>
+                                        <dd>角煮定食</dd>
+                                    </dl>
+                                    <p class="commentReason">理由が入ります。理由が入ります。理由が入ります。理由が入ります。理由が入ります。理由が入ります。理由が入ります。理由が入ります。理由が入ります。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="recommendedSpots">
+                        <h2>次に行きたい近隣のおすすめ</h2>
+                        <div class="gotoReco">
+                            <article class="card">
+                                <img src="./images/reco1.jpg" alt="">
+                                <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                                <div class="tagWrap"><span class="ttl">タグ：</span>
+                                    <ul class="tags">
+                                        <li class="tag"><a href="#">タグ1</a>、</li>
+                                        <li class="tag"><a href="#">タグ2</a>、</li>
+                                        <li class="tag"><a href="#">タグ3</a></li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article class="card">
+                                <img src="./images/reco2.jpg" alt="">
+                                <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                                <div class="tagWrap"><span class="ttl">タグ：</span>
+                                    <ul class="tags">
+                                        <li class="tag"><a href="#">タグ1</a>、</li>
+                                        <li class="tag"><a href="#">タグ2</a>、</li>
+                                        <li class="tag"><a href="#">タグ3</a></li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article class="card">
+                                <img src="./images/reco3.jpg" alt="">
+                                <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                                <div class="tagWrap"><span class="ttl">タグ：</span>
+                                    <ul class="tags">
+                                        <li class="tag"><a href="#">タグ1</a>、</li>
+                                        <li class="tag"><a href="#">タグ2</a>、</li>
+                                        <li class="tag"><a href="#">タグ3</a></li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article class="card">
+                                <img src="./images/reco1.jpg" alt="">
+                                <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                                <div class="tagWrap"><span class="ttl">タグ：</span>
+                                    <ul class="tags">
+                                        <li class="tag"><a href="#">タグ1</a>、</li>
+                                        <li class="tag"><a href="#">タグ2</a>、</li>
+                                        <li class="tag"><a href="#">タグ3</a></li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footerNavigations">
+                <div class="inner">
+                    <div class="navigationBox">
+                        <h3 class="title">目的から探す</h3>
+                        <ul class="items">
+                            <li><a href="#">食べる</a></li>
+                            <li><a href="#">泊まる</a></li>
+                            <li><a href="#">体験する</a></li>
+                            <li><a href="#">発見する</a></li>
+                            <li><a href="#">移動する</a></li>
+                        </ul>
+                    </div>
+                    <div class="navigationBox">
+                        <h3 class="title">タグから探す</h3>
+                        <ul class="items">
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                        </ul>
+                    </div>
+                    <div class="navigationBox">
+                        <h3 class="title">キュレーターから探す</h3>
+                        <ul class="items">
+                            <li><a href="#">キュレーター名</a></li>
+                            <li><a href="#">キュレーター名</a></li>
+                            <li><a href="#">キュレーター名</a></li>
+                            <li><a href="#">キュレーター名</a></li>
+                        </ul>
+                    </div>
+                    <div class="navigationBox">
+                        <ul class="items">
+                            <li><a href="#" class="title">地図から探す</a></li>
+                            <li><a href="#" class="title">地名から探す</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footerTranslation">
+                <div class="inner">
+                    <ul class="languages">
+                        <li><a href="#">EN</a></li>
+                        <li><a href="#">JP</a></li>
+                        <li><a href="#">CN</a></li>
+                        <li><a href="#">KO</a></li>
+                        <li><a href="#">ES</a></li>
+                        <li><a href="#">TH</a></li>
+                        <li><a href="#">FR</a></li>
+                        <li><a href="#">DE</a></li>
+                        <li><a href="#">AR</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerInfomation">
+                <div class="inner">
+                    <div class="infoItems">
+                        <div class="logo"><a href="#"><img src="../common/images/logo.svg" alt="TENPOS STAR"></a></div>
+                        <ul class="links">
+                            <li><a href="#">利用規約</a></li>
+                            <li><a href="#">プライバシーポリシー</a></li>
+                        </ul>
+                        <div class="copyright">Copyright © tenpos busters. All Rights Reserved.</div>
+                    </div>
+                    <div class="japanLogo">
+                        <img src="../common/images/logo_japan_endless_discovery.svg" alt="Japan. Endress Discovery">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../common/js/script.js"></script>
+</body>
+</html>

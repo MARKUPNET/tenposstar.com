@@ -1,0 +1,198 @@
+.footerNavigations{
+    padding: 70px 18px 30px;
+    background-color: var(--lightbeigepink);
+    @media screen and (min-width: 768px){
+        padding: 70px 18px;
+    }
+    
+    .inner{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1100px;
+    }
+
+    .navigationBox{
+        margin-bottom: 30px;
+
+        &:last-child{
+            margin-bottom: 0;
+
+            .title{
+                margin: 0;
+            }
+        }
+
+        .title{
+            margin: 0 0 14px;
+            font-size: 16px;
+            font-weight: 700;
+            @media screen and (min-width: 768px){
+                margin: 0 0 8px;
+            }
+        }
+
+        .items{
+            font-size: 14px;
+            font-weight: 400;
+
+            li{
+                display: inline-block;
+                margin: 6px 0;
+                padding: 0 18px 0 0;
+
+                &:last-child{
+                    padding: 0;
+                }
+            }
+
+            a{
+                display: block;
+
+                &:hover{
+                    color: var(--orange);
+                }
+            }
+        }
+    }
+}
+
+.footerTranslation{
+    padding: 30px 18px;
+    @media screen and (min-width: 768px){
+        padding: 24px 18px;
+    }
+
+    .inner{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1100px;
+        text-align: center;
+    }
+
+    .languages{
+        display: inline-block;
+        text-align: left;
+        @media screen and (min-width: 768px){
+            text-align: center;
+        }
+
+        li{
+            display: inline-block;
+            margin: 8px 0;
+
+            &:last-child{
+                a{
+                    border-right: 1px solid var(--gray);
+                }
+            }
+        }
+
+        a{
+            display: block;
+            padding: 0 14px;
+            font-size: 15px;
+            font-weight: 500;
+            border-left: 1px solid var(--gray);
+            @media screen and (min-width: 768px){
+                padding: 0 12px;
+            }
+
+            &:hover{
+                color: var(--orange);
+            }
+
+        }
+    }
+
+}
+
+.footerInfomation{
+    padding: 25px 18px 30px;
+    @media screen and (min-width: 768px){
+        padding: 64px 48px 70px;
+    }
+    @media screen and (min-width: 1050px){
+        padding: 64px 48px 30px;
+    }
+
+    .inner{
+        margin: 0 auto;
+        padding: 40px 0 20px;
+        border-top: 1px solid #EAE7E7;
+        position: relative;
+        @media screen and (min-width: 768px){
+            padding: 30px 0;
+        }
+    }
+
+    .infoItems{
+        text-align: center;
+        @media screen and (min-width: 768px){
+            display: flex;
+            align-items: center;
+            text-align: inherit;
+        }
+
+        .logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            @media screen and (min-width: 768px){
+                display: block;
+                margin: 0;
+                width: 126px;
+            }
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .links{
+            margin: 0 0 144px;
+            @media screen and (min-width: 768px){
+                margin: 0;
+                padding: 0 10px 0 30px;
+            }
+
+            li{
+                display: inline-block;
+            }
+
+            a{
+                display: block;
+                padding: 0 5px;
+                font-size: 14px;
+
+                &:hover{
+                    color: var(--orange);
+                }
+            }
+        }
+
+        .copyright{
+            color: #A0A0A0;
+        }
+    }
+
+    .japanLogo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 170px;
+        @media screen and (min-width: 768px){
+            top: 110px;
+        }
+        @media screen and (min-width: 1050px){
+            display: block;
+            width: auto;
+            right: 0;
+            left: auto;
+            top: 33px;
+        }
+    }
+}
