@@ -193,6 +193,58 @@ a {
   width: 100%;
   max-width: 1126px; }
 
+.paginationWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 50px; }
+  @media screen and (min-width: 768px) {
+    .paginationWrapper {
+      margin-top: 80px; } }
+  .paginationWrapper .linkToTop:hover {
+    color: var(--orange); }
+  .paginationWrapper .linkToBottom:hover {
+    color: var(--orange); }
+  .paginationWrapper .pageNumbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; }
+    @media screen and (min-width: 768px) {
+      .paginationWrapper .pageNumbers {
+        gap: 10px;
+        margin: 0 40px; } }
+    .paginationWrapper .pageNumbers span:not(.ellipsis), .paginationWrapper .pageNumbers a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      font-family: "Outfit", sans-serif;
+      border: 1px solid #EAE7E7;
+      border-radius: 50%; }
+      @media screen and (min-width: 768px) {
+        .paginationWrapper .pageNumbers span:not(.ellipsis), .paginationWrapper .pageNumbers a {
+          width: 40px;
+          height: 40px;
+          font-size: 18px; } }
+    .paginationWrapper .pageNumbers span.ellipsis {
+      padding: 0 5px; }
+    .paginationWrapper .pageNumbers span.currentPage {
+      color: var(--white);
+      background-color: var(--orange); }
+    .paginationWrapper .pageNumbers a:hover {
+      background-color: #EFEFEF;
+      border: 1px solid #EAE7E7; }
+
+@media screen and (max-width: 768px) {
+  .paginationWrapper .pageNumbers a:nth-of-type(3),
+  .paginationWrapper .pageNumbers a:nth-of-type(4),
+  .paginationWrapper .pageNumbers a:nth-of-type(5),
+  .paginationWrapper .pageNumbers a:nth-of-type(6) {
+    display: none; } }
+
 body {
   color: var(--black);
   font-family: "Noto Sans JP", sans-serif;
@@ -313,6 +365,7 @@ body {
     .headerFlexBox .translation span {
       display: block;
       width: 60px;
+      font-family: "Outfit", sans-serif;
       font-size: 18px;
       cursor: pointer; }
   .headerFlexBox .languages, .headerFlexBox .languages_sub {
@@ -338,6 +391,7 @@ body {
       width: 100%;
       height: 58px;
       color: #AAAAAA;
+      font-family: "Outfit", sans-serif;
       font-size: 18px;
       border-bottom: 1px solid #D5D5D5; }
       .headerFlexBox .languages a:hover, .headerFlexBox .languages_sub a:hover {
@@ -349,6 +403,7 @@ body {
   @media screen and (min-width: 768px) {
     .headerFlexBox .mapButton span {
       margin-left: 7px;
+      font-family: "Outfit", sans-serif;
       font-size: 18px;
       font-weight: 500; } }
 
@@ -501,6 +556,7 @@ body {
     .footerTranslation .languages a {
       display: block;
       padding: 0 14px;
+      font-family: "Outfit", sans-serif;
       font-size: 15px;
       font-weight: 500;
       border-left: 1px solid var(--gray); }
@@ -560,6 +616,7 @@ body {
         .footerInfomation .infoItems .links a:hover {
           color: var(--orange); }
     .footerInfomation .infoItems .copyright {
+      font-family: "Outfit", sans-serif;
       color: #A0A0A0; }
   .footerInfomation .japanLogo {
     display: flex;

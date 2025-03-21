@@ -6,12 +6,12 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../common/css/style.css"></link>
     <link rel="stylesheet" href="./css/style.css"></link>
 
-    <title>Document</title>
+    <title>食べる一覧</title>
 </head>
 <body>
     <div class="wrap">
@@ -99,6 +99,335 @@
 
         <div class="contents">
 
+            <section class="eatWrap">
+                <h1 class="pageTitle">食べる<button id="modalGenreBtn" class="genreBtn" type="button">ジャンル</button></h1>
+                <div class="eatList">
+                    <article class="card">
+                        <img src="./images/reco1.jpg" alt="">
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/reco2.jpg" alt="">
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/reco3.jpg" alt="">
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/reco4.jpg" alt="">
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/reco1.jpg" alt="">
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/reco2.jpg" alt="">
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/reco3.jpg" alt="">
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/reco4.jpg" alt="">
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/reco1.jpg" alt="">
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/reco2.jpg" alt="">
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/reco3.jpg" alt="">
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/reco4.jpg" alt="">
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/reco1.jpg" alt="">
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/reco2.jpg" alt="">
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/reco3.jpg" alt="">
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/reco4.jpg" alt="">
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/reco1.jpg" alt="">
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/reco2.jpg" alt="">
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/reco3.jpg" alt="">
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/reco4.jpg" alt="">
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/reco1.jpg" alt="">
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/reco2.jpg" alt="">
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/reco3.jpg" alt="">
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./images/reco4.jpg" alt="">
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <div class="paginationWrapper">
+                <a href="#" class="linkToTop">最初へ</a>
+                <div class="pageNumbers">
+                    <span class="currentPage">1</span>
+                    <a href="#" class="pageLink">2</a>
+                    <a href="#" class="pageLink">3</a>
+                    <a href="#" class="pageLink">4</a>
+                    <a href="#" class="pageLink">5</a>
+                    <a href="#" class="pageLink">6</a>
+                    <span class="ellipsis">…</span>
+                    <a href="#" class="pageLink">13</a>
+                    <a href="#" class="pageLink">14</a>
+                    <a href="#" class="pageLink">15</a>
+                </div>
+                <a href="#" class="linkToBottom">最後へ</a>
+            </div>
+
+            <div id="modalGenreWrap" class="modalWrapper">
+                <div class="modalBackground"></div>
+                <div class="modalContent">
+                    <button type="button" class="modalCloseButton"><i class="iconClose"></i></button>
+                    <div class="modalBody">
+                        <h2 class="modalHeading">料理ジャンルから探す</h2>
+                        <div class="genreListWrap">
+                            <ul class="genreList">
+                                <li class="genreItem"><a href="#" class="genreLink"><span class="genreText">和食</span></a></li>
+                                <li class="genreItem"><a href="#" class="genreLink"><span class="genreText">居酒屋・立ち飲み</span></a></li>
+                                <li class="genreItem"><a href="#" class="genreLink"><span class="genreText">定食・どんぶり</span></a></li>
+                                <li class="genreItem"><a href="#" class="genreLink"><span class="genreText">寿司</span></a></li>
+                                <li class="genreItem"><a href="#" class="genreLink"><span class="genreText">焼鳥・串焼き</span></a></li>
+                                <li class="genreItem"><a href="#" class="genreLink"><span class="genreText">とんかつ・揚げ物</span></a></li>
+                                <li class="genreItem"><a href="#" class="genreLink"><span class="genreText">天ぷら</span></a></li>
+                                <li class="genreItem"><a href="#" class="genreLink"><span class="genreText">ふぐ・うなぎ・海鮮</span></a></li>
+                                <li class="genreItem"><a href="#" class="genreLink"><span class="genreText">鍋料理（すき焼き・<br class="isPC">しゃぶしゃぶ等）</span></a></li>
+                                <li class="genreItem"><a href="#" class="genreLink"><span class="genreText">うどん・そば</span></a></li>
+                                <li class="genreItem"><a href="#" class="genreLink"><span class="genreText">お好み焼き・<br class="isPC">もんじゃ・たこ焼き</span></a></li>
+                                <li class="genreItem"><a href="#" class="genreLink"><span class="genreText">からあげ</span></a></li>
+                                <li class="genreItem"><a href="#" class="genreLink"><span class="genreText">ラーメン・つけ麺</span></a></li>
+                                <li class="genreItem"><a href="#" class="genreLink"><span class="genreText">焼肉</span></a></li>
+                                <li class="genreItem"><a href="#" class="genreLink"><span class="genreText">鉄板焼・ステーキ・<br class="isPC">ハンバーグ</span></a></li>
+                                <li class="genreItem"><a href="#" class="genreLink"><span class="genreText">イタリア料理</span></a></li>
+                                <li class="genreItem"><a href="#" class="genreLink"><span class="genreText">フランス料理</span></a></li>
+                                <li class="genreItem"><a href="#" class="genreLink"><span class="genreText">洋食・西洋料理</span></a></li>
+                                <li class="genreItem"><a href="#" class="genreLink"><span class="genreText">中華料理</span></a></li>
+                                <li class="genreItem"><a href="#" class="genreLink"><span class="genreText">各国料理専門店</span></a></li>
+                                <li class="genreItem"><a href="#" class="genreLink"><span class="genreText">カレー</span></a></li>
+                                <li class="genreItem"><a href="#" class="genreLink"><span class="genreText">ハンバーガー</span></a></li>
+                                <li class="genreItem"><a href="#" class="genreLink"><span class="genreText">ダイニング<br class="isPC">（和洋・創作）</span></a></li>
+                                <li class="genreItem"><a href="#" class="genreLink"><span class="genreText">バー</span></a></li>
+                                <li class="genreItem"><a href="#" class="genreLink"><span class="genreText">カフェ・喫茶</span></a></li>
+                                <li class="genreItem"><a href="#" class="genreLink"><span class="genreText">製菓・スイーツ</span></a></li>
+                                <li class="genreItem"><a href="#" class="genreLink"><span class="genreText">惣菜・弁当</span></a></li>
+                                <li class="genreItem"><a href="#" class="genreLink"><span class="genreText">ファストフード</span></a></li>
+                                <li class="genreItem"><a href="#" class="genreLink"><span class="genreText">アミューズメント（<br class="isPC">ダーツ・ゴルフ・<br class="isPC">カラオケ）</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
