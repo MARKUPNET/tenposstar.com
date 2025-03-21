@@ -187,13 +187,21 @@ a {
     .isPC {
       display: inherit; } }
 
+.contents {
+  margin: 0 auto;
+  padding: 0 18px;
+  width: 100%;
+  max-width: 1126px; }
+
 body {
   color: var(--black);
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 12px; }
+  font-size: 14px;
+  line-height: 1.75; }
   @media screen and (min-width: 768px) {
     body {
-      font-size: 14px; } }
+      font-size: 16px;
+      line-height: 1.75; } }
 
 .headerWrap {
   position: relative;
@@ -551,6 +559,8 @@ body {
         font-size: 14px; }
         .footerInfomation .infoItems .links a:hover {
           color: var(--orange); }
+    .footerInfomation .infoItems .copyright {
+      color: #A0A0A0; }
   .footerInfomation .japanLogo {
     display: flex;
     align-items: center;
