@@ -21,6 +21,9 @@
   height: 34px; }
   .iconBookmark::before {
     background-image: url(../images/icon_bookmark.svg); }
+  @media screen and (min-width: 768px) {
+    .iconBookmark {
+      margin-top: 6px; } }
 
 .iconTelephone {
   width: 16px;
@@ -89,6 +92,7 @@
     justify-content: center;
     margin-top: 5px;
     padding: 2px 9px;
+    color: var(--white);
     background-color: var(--orange);
     border-radius: 16px; }
     @media screen and (min-width: 768px) {
@@ -212,7 +216,8 @@
       @media screen and (min-width: 768px) {
         .reserveBox .telephone a {
           height: 70px;
-          font-size: 26px; } }
+          font-size: 26px;
+          border-radius: 0; } }
     .reserveBox .telephone .iconTelephone {
       margin-right: 5px; }
       @media screen and (min-width: 768px) {
@@ -490,20 +495,6 @@ section {
   @media screen and (min-width: 768px) {
     .genreTimeSlots .genreList {
       gap: 2px 20px; } }
-
-.genreTimeSlots .genreItem {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px 10px;
-  height: 23px;
-  color: var(--white);
-  font-size: 12px;
-  background-color: var(--orange);
-  border-radius: 13px; }
-  @media screen and (min-width: 768px) {
-    .genreTimeSlots .genreItem {
-      padding: 5px 14px; } }
 
 .budgetTimeSlots .timeSlot {
   display: flex;
