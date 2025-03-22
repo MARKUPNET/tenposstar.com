@@ -171,6 +171,16 @@
   .iconPicker::before {
     background-image: url(../images/icon_picker.svg); }
 
+.iconGenre {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  color: #fff;
+  font-weight: 700;
+  background-color: var(--orange);
+  border-radius: 15px; }
+
 a {
   text-decoration: none; }
 
@@ -192,6 +202,75 @@ a {
   padding: 0 18px;
   width: 100%;
   max-width: 1126px; }
+
+.pageTitle {
+  font-size: 25px;
+  font-weight: 700; }
+  @media screen and (min-width: 768px) {
+    .pageTitle {
+      font-size: 50px; } }
+
+.sctionTitle {
+  font-size: 20px;
+  font-weight: 700; }
+  @media screen and (min-width: 768px) {
+    .sctionTitle {
+      font-size: 24px; } }
+
+.cardWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 20px;
+  margin-top: 40px; }
+  @media screen and (min-width: 768px) {
+    .cardWrap {
+      gap: 60px 20px;
+      margin-top: 90px; } }
+  .cardWrap .card {
+    width: calc(50% - 10px); }
+    @media screen and (min-width: 768px) {
+      .cardWrap .card {
+        width: calc(25% - 15px); } }
+    .cardWrap .card .thumb {
+      width: 100%;
+      border-radius: 10px;
+      overflow: hidden; }
+    .cardWrap .card h3 {
+      margin-top: 10px;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.4; }
+      @media screen and (min-width: 768px) {
+        .cardWrap .card h3 {
+          margin-top: 15px;
+          line-height: 1.5; } }
+    .cardWrap .card .tagWrap {
+      display: flex;
+      margin-top: 5px;
+      font-size: 12px; }
+      @media screen and (min-width: 768px) {
+        .cardWrap .card .tagWrap {
+          margin-top: 14px; } }
+      .cardWrap .card .tagWrap .ttl {
+        display: inline-block;
+        width: 40px;
+        line-height: 1; }
+        @media screen and (min-width: 768px) {
+          .cardWrap .card .tagWrap .ttl {
+            width: 40px;
+            font-size: 13px; } }
+      .cardWrap .card .tagWrap .tags {
+        display: flex;
+        flex-wrap: wrap;
+        width: calc(100% - 40px); }
+      .cardWrap .card .tagWrap .tag {
+        line-height: 1; }
+      .cardWrap .card .tagWrap a {
+        color: #656565;
+        font-size: 12px; }
+        @media screen and (min-width: 768px) {
+          .cardWrap .card .tagWrap a {
+            font-size: 13px; } }
 
 .paginationWrapper {
   display: flex;
@@ -649,16 +728,6 @@ body {
     flex-wrap: wrap;
     gap: 8px;
     padding: 20px 20px 0 12px; }
-    .subMenuList.genreIcons .iconGenre {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0 13px;
-      height: 26px;
-      color: #fff;
-      font-weight: 700;
-      background-color: var(--orange);
-      border-radius: 13px; }
   .subMenuList.curatorList {
     padding: 0 0 0 30px; }
     .subMenuList.curatorList .subMenuItem {
@@ -687,34 +756,34 @@ body {
     width: 100%;
     max-width: 1100px; }
   .footerNavigations .navigationBox {
-    margin-bottom: 30px; }
+    margin-bottom: 40px; }
     .footerNavigations .navigationBox:last-child {
       margin-bottom: 0; }
       .footerNavigations .navigationBox:last-child .title {
         margin: 0; }
     .footerNavigations .navigationBox .title {
-      margin: 0 0 14px;
+      margin-bottom: 18px;
       font-size: 16px;
       font-weight: 700; }
       @media screen and (min-width: 768px) {
         .footerNavigations .navigationBox .title {
-          margin: 0 0 8px; } }
+          margin-bottom: 8px; } }
     .footerNavigations .navigationBox .items {
-      font-size: 14px;
-      font-weight: 400; }
-      .footerNavigations .navigationBox .items li {
-        display: inline-block;
-        margin: 6px 0;
-        padding: 0 18px 0 0; }
-        .footerNavigations .navigationBox .items li:last-child {
-          padding: 0; }
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 20px; }
       .footerNavigations .navigationBox .items a {
-        display: block; }
+        display: block;
+        font-size: 14px;
+        font-weight: 400; }
         .footerNavigations .navigationBox .items a:hover {
           color: var(--orange); }
+        .footerNavigations .navigationBox .items a.title {
+          font-size: 16px;
+          font-weight: 700; }
 
 .footerTranslation {
-  padding: 30px 18px; }
+  padding: 25px 18px; }
   @media screen and (min-width: 768px) {
     .footerTranslation {
       padding: 24px 18px; } }
