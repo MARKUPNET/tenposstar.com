@@ -858,7 +858,7 @@ section{
     background-color: #F9FAF2;
     @media  screen and (min-width: 768px) {
         margin-top: 50px;
-        padding: 60px 40px 40px;
+        padding: 40px;
     }
 
     .reviewerInfo{
@@ -867,16 +867,28 @@ section{
         }
     }
 
-    .reviewerName{}
+    .reviewerName{
+        font-size: 15px;
+        font-weight: 500;
+    }
 
-    .reviewDate{}
+    .reviewDate{
+        margin-top: 10px;
+        font-size: 15px;
+        font-weight: 500;
+        @media  screen and (min-width: 768px) {
+            margin: 0;
+        }
+    }
 
     .ratingStars{
+        margin-top: 18px;
         @media  screen and (min-width: 768px) {
             margin-top: 8px;
         }
 
         .icon {
+            margin-right: 5px;
             @media  screen and (min-width: 768px) {
                 margin-right: 5px;
             }
@@ -884,10 +896,12 @@ section{
     }
 
     .commentText{
+        margin-top: 10px;
+        line-height: 1.9;
         @media  screen and (min-width: 768px) {
             margin-top: 10px;
-            font-size: 16px;
-            line-height: 1.8;
+            font-size: 14px;
+            line-height: 1.7;
         }
     }
 
@@ -901,23 +915,56 @@ section{
         }
 
         dl{
-            display: flex;
             font-size: 16px;
+            text-align: center;
+            @media  screen and (min-width: 768px) {
+                display: flex;
+                text-align: inherit;
+            }
 
             dt{
                 font-weight: 500;
+                @media  screen and (min-width: 768px) {
+                    margin-right: 10px;
+                    padding-right: 10px;
+                    border-right: 1px solid #707070;
+
+                }
             }
 
             dd{
-                font-weight: 400
+                margin-top: 10px;
+                padding-top: 10px;
+                font-weight: 400;
+                position: relative;
+                @media  screen and (min-width: 768px) {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                &:before{
+                    content: "";
+                    display: block;
+                    width: 24px;
+                    height: 1px;
+                    border-top: 1px solid #707070;
+                    position: absolute;
+                    left: 50%;
+                    top: 0;
+                    transform: translateX(-50%);
+                    @media  screen and (min-width: 768px) {
+                        display: none;
+                    }
+                }
             }
         }
     }
 
     .commentReason{
+        margin-top: 15px;
+        line-height: 1.9;
         @media  screen and (min-width: 768px) {
-            margin-top: 20px;
-            font-size: 16px;
+            font-size: 14px;
         }
     }
 }
