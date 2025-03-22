@@ -40,7 +40,6 @@ $icons: (
     }
 }
 
-
 .navIcon{
     display: none;
     @media  screen and (min-width: 768px) {
@@ -56,11 +55,21 @@ $icons: (
     }
 }
 
-
 .iconPicker{
     width: 16px;
     height: 24px;
     &::before {
         background-image: url(../images/icon_picker.svg);
     }
+}
+
+.iconGenre{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    color: #fff;
+    font-weight: 700;
+    background-color: var(--orange);
+    border-radius: 15px;
 }
