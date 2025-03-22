@@ -1,0 +1,231 @@
+.contents {
+  padding-bottom: 80px; }
+  @media screen and (min-width: 768px) {
+    .contents {
+      padding-bottom: 130px; } }
+
+.eatWrap {
+  margin-top: 10px; }
+  @media screen and (min-width: 768px) {
+    .eatWrap {
+      margin-top: 80px; } }
+  .eatWrap .pageTitle {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700; }
+    @media screen and (min-width: 768px) {
+      .eatWrap .pageTitle {
+        font-size: 50px; } }
+  .eatWrap .genreBtn {
+    margin-left: 10px;
+    padding: 6px 25px 6px 10px;
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+    border-radius: 6px;
+    position: relative; }
+    @media screen and (min-width: 768px) {
+      .eatWrap .genreBtn {
+        margin-left: 20px;
+        color: var(--black);
+        border: 1px solid var(--black);
+        background-color: var(--white); } }
+    .eatWrap .genreBtn:before {
+      content: "";
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      margin-top: -5px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-color: var(--white) transparent transparent transparent;
+      border-width: 8.66px 5px 0px 5px; }
+      @media screen and (min-width: 768px) {
+        .eatWrap .genreBtn:before {
+          border-color: var(--black) transparent transparent transparent; } }
+    @media screen and (min-width: 768px) {
+      .eatWrap .genreBtn:hover {
+        color: var(--white);
+        background-color: var(--orange);
+        border: 1px solid var(--orange); } }
+    @media screen and (min-width: 768px) {
+      .eatWrap .genreBtn:hover:before {
+        border-color: var(--white) transparent transparent transparent; } }
+
+.eatList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 20px;
+  margin-top: 40px; }
+  @media screen and (min-width: 768px) {
+    .eatList {
+      gap: 60px 20px;
+      margin-top: 90px; } }
+  .eatList .card {
+    width: calc(50% - 10px); }
+    @media screen and (min-width: 768px) {
+      .eatList .card {
+        width: calc(25% - 15px); } }
+    .eatList .card img {
+      width: 100%;
+      border-radius: 10px; }
+    .eatList .card h3 {
+      margin-top: 10px;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.4; }
+      @media screen and (min-width: 768px) {
+        .eatList .card h3 {
+          margin-top: 15px;
+          line-height: 1.5; } }
+    .eatList .card .tagWrap {
+      display: flex;
+      margin-top: 5px;
+      font-size: 12px; }
+      @media screen and (min-width: 768px) {
+        .eatList .card .tagWrap {
+          margin-top: 14px; } }
+      .eatList .card .tagWrap .ttl {
+        display: inline-block;
+        width: 40px;
+        line-height: 1; }
+        @media screen and (min-width: 768px) {
+          .eatList .card .tagWrap .ttl {
+            width: 40px;
+            font-size: 13px; } }
+      .eatList .card .tagWrap .tags {
+        display: flex;
+        flex-wrap: wrap;
+        width: calc(100% - 40px); }
+      .eatList .card .tagWrap .tag {
+        line-height: 1; }
+      .eatList .card .tagWrap a {
+        color: #656565;
+        font-size: 12px; }
+        @media screen and (min-width: 768px) {
+          .eatList .card .tagWrap a {
+            font-size: 13px; } }
+
+.modalWrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  padding: 70px 20px 20px;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  transition: opacity 0.5s ease; }
+  .modalWrapper.visible {
+    display: block;
+    opacity: 1; }
+  .modalWrapper .modalBackground {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); }
+  .modalWrapper .modalContent {
+    margin: 0 auto;
+    padding: 26px 15px 0;
+    width: 100%;
+    height: 100%;
+    max-width: 950px;
+    background-color: var(--white);
+    box-shadow: 0 0 16px;
+    border-top: 6px solid var(--orange);
+    position: relative;
+    z-index: 1; }
+    @media screen and (min-width: 768px) {
+      .modalWrapper .modalContent {
+        padding: 36px 60px 0; } }
+  .modalWrapper .modalCloseButton {
+    position: absolute;
+    top: -55px;
+    right: 0;
+    width: 42px;
+    height: 42px;
+    background-color: var(--white);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); }
+    .modalWrapper .modalCloseButton::before, .modalWrapper .modalCloseButton::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 2px;
+      height: 14px;
+      background: #707070; }
+    .modalWrapper .modalCloseButton::before {
+      transform: translate(-50%, -50%) rotate(45deg); }
+    .modalWrapper .modalCloseButton::after {
+      transform: translate(-50%, -50%) rotate(-45deg); }
+  .modalWrapper .modalBody {
+    height: 100%; }
+  .modalWrapper .modalHeading {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center; }
+    @media screen and (min-width: 768px) {
+      .modalWrapper .modalHeading {
+        font-size: 24px;
+        position: relative; } }
+    @media screen and (min-width: 768px) {
+      .modalWrapper .modalHeading::before {
+        content: "";
+        display: block;
+        width: calc(100% + 30px);
+        height: 1px;
+        border-top: 1px solid #EAE7E7;
+        position: absolute;
+        left: -15px;
+        bottom: -20px; } }
+  .modalWrapper .genreListWrap {
+    height: calc(100% - 50px);
+    overflow-y: auto; }
+    @media screen and (min-width: 768px) {
+      .modalWrapper .genreListWrap {
+        padding-top: 30px; } }
+  @media screen and (min-width: 768px) {
+    .modalWrapper .genreList {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      padding-bottom: 30px; } }
+  .modalWrapper .genreItem {
+    border-top: 1px solid #EAE7E7; }
+    @media screen and (min-width: 768px) {
+      .modalWrapper .genreItem {
+        width: calc(20% - 12px);
+        border: 0; } }
+    .modalWrapper .genreItem:last-child {
+      border-bottom: 1px solid #EAE7E7; }
+      @media screen and (min-width: 768px) {
+        .modalWrapper .genreItem:last-child {
+          border: 0; } }
+  .modalWrapper .genreLink {
+    display: block;
+    padding: 9px 0; }
+    @media screen and (min-width: 768px) {
+      .modalWrapper .genreLink {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        min-height: 68px;
+        font-size: 13px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 1.45;
+        border: 1px solid #D5D5D5;
+        border-radius: 4px; } }
+
+/*# sourceMappingURL=style.css.map */
