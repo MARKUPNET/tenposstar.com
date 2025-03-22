@@ -57,60 +57,6 @@
       .eatWrap .genreBtn:hover:before {
         border-color: var(--white) transparent transparent transparent; } }
 
-.eatList {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px 20px;
-  margin-top: 40px; }
-  @media screen and (min-width: 768px) {
-    .eatList {
-      gap: 60px 20px;
-      margin-top: 90px; } }
-  .eatList .card {
-    width: calc(50% - 10px); }
-    @media screen and (min-width: 768px) {
-      .eatList .card {
-        width: calc(25% - 15px); } }
-    .eatList .card img {
-      width: 100%;
-      border-radius: 10px; }
-    .eatList .card h3 {
-      margin-top: 10px;
-      font-size: 15px;
-      font-weight: 700;
-      line-height: 1.4; }
-      @media screen and (min-width: 768px) {
-        .eatList .card h3 {
-          margin-top: 15px;
-          line-height: 1.5; } }
-    .eatList .card .tagWrap {
-      display: flex;
-      margin-top: 5px;
-      font-size: 12px; }
-      @media screen and (min-width: 768px) {
-        .eatList .card .tagWrap {
-          margin-top: 14px; } }
-      .eatList .card .tagWrap .ttl {
-        display: inline-block;
-        width: 40px;
-        line-height: 1; }
-        @media screen and (min-width: 768px) {
-          .eatList .card .tagWrap .ttl {
-            width: 40px;
-            font-size: 13px; } }
-      .eatList .card .tagWrap .tags {
-        display: flex;
-        flex-wrap: wrap;
-        width: calc(100% - 40px); }
-      .eatList .card .tagWrap .tag {
-        line-height: 1; }
-      .eatList .card .tagWrap a {
-        color: #656565;
-        font-size: 12px; }
-        @media screen and (min-width: 768px) {
-          .eatList .card .tagWrap a {
-            font-size: 13px; } }
-
 .modalWrapper {
   display: none;
   position: fixed;
