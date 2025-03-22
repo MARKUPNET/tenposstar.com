@@ -197,6 +197,9 @@ a {
     .isPC {
       display: inherit; } }
 
+.wrap {
+  overflow: hidden; }
+
 .contents {
   margin: 0 auto;
   padding: 0 18px;
@@ -271,6 +274,37 @@ a {
         @media screen and (min-width: 768px) {
           .cardWrap .card .tagWrap a {
             font-size: 13px; } }
+
+.cardWrap.column-1 {
+  gap: 0; }
+  .cardWrap.column-1 .card {
+    width: 100%; }
+
+.cardWrap.inline {
+  display: block;
+  white-space: nowrap;
+  overflow-x: auto;
+  margin-top: 0; }
+  @media screen and (min-width: 768px) {
+    .cardWrap.inline {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 20px;
+      overflow-x: inherit; } }
+  .cardWrap.inline .card {
+    display: inline-block;
+    margin-right: 10px;
+    width: 260px;
+    vertical-align: top; }
+    @media screen and (min-width: 768px) {
+      .cardWrap.inline .card {
+        margin: 0;
+        width: calc(33% - 10px); } }
+    .cardWrap.inline .card .tagWrap {
+      margin-top: 14px;
+      font-size: 13px; }
+      .cardWrap.inline .card .tagWrap a {
+        font-size: 13px; }
 
 .paginationWrapper {
   display: flex;

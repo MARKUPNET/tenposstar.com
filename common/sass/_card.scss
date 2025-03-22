@@ -69,3 +69,44 @@
         }
     }
 }
+
+.cardWrap.column-1{
+    gap: 0;
+
+    .card{
+        width: 100%;
+    }
+}
+
+.cardWrap.inline{
+    display: block;
+    white-space:nowrap;
+    overflow-x: auto;
+    margin-top: 0;
+    @media  screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 20px;
+        overflow-x: inherit;
+    }
+
+    .card{
+        display: inline-block;
+        margin-right: 10px;
+        width: 260px;
+        vertical-align: top;
+        @media  screen and (min-width: 768px) {
+            margin: 0;
+            width: calc(33% - 10px);
+        }
+
+        .tagWrap{
+            margin-top: 14px;
+            font-size: 13px;
+
+            a{
+                font-size: 13px;
+            }
+        }
+    }
+}
