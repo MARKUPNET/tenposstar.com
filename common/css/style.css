@@ -402,6 +402,9 @@ body {
       .headerFlexBox .mapButton {
         display: block;
         margin-left: 30px; } }
+    .headerFlexBox .mapButton button {
+      display: flex;
+      align-items: center; }
     @media screen and (min-width: 768px) {
       .headerFlexBox .mapButton span {
         margin-left: 7px;
@@ -486,8 +489,11 @@ body {
   .headerScrollNavi.visible {
     top: 0; }
   .headerScrollNavi .headerFlexBox {
-    padding: 18px 40px; }
+    padding: 10px 30px 10px 40px; }
+    .headerScrollNavi .headerFlexBox .logo {
+      width: 108px; }
     .headerScrollNavi .headerFlexBox .searchBox input {
+      padding: 6px 24px;
       border-radius: 10px; }
     .headerScrollNavi .headerFlexBox .searchBox .searchButton {
       width: 50px;
@@ -498,7 +504,7 @@ body {
         display: inherit; }
     .headerScrollNavi .headerFlexBox .mapButton {
       margin-left: 10px;
-      width: 60px; }
+      width: 70px; }
   .headerScrollNavi .headerNavigation {
     margin-left: 30px;
     padding: 0;
