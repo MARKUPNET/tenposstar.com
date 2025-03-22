@@ -735,39 +735,5 @@ section {
       flex-wrap: nowrap;
       gap: 23px;
       overflow: hidden; } }
-  .recommendedSpots .gotoReco .card {
-    width: calc(50% - 10px); }
-    @media screen and (min-width: 768px) {
-      .recommendedSpots .gotoReco .card {
-        width: calc(33% - 13px); } }
-    .recommendedSpots .gotoReco .card img {
-      width: 100%;
-      border-radius: 10px; }
-    .recommendedSpots .gotoReco .card h3 {
-      margin-top: 10px;
-      font-size: 15px;
-      font-weight: 700; }
-      @media screen and (min-width: 768px) {
-        .recommendedSpots .gotoReco .card h3 {
-          margin-top: 15px; } }
-    .recommendedSpots .gotoReco .card .tagWrap {
-      display: flex; }
-      @media screen and (min-width: 768px) {
-        .recommendedSpots .gotoReco .card .tagWrap {
-          margin-top: 8px; } }
-      .recommendedSpots .gotoReco .card .tagWrap .ttl {
-        width: 60px; }
-        @media screen and (min-width: 768px) {
-          .recommendedSpots .gotoReco .card .tagWrap .ttl {
-            width: 40px;
-            font-size: 13px; } }
-      .recommendedSpots .gotoReco .card .tagWrap .tag {
-        display: inline-block; }
-      .recommendedSpots .gotoReco .card .tagWrap a {
-        color: #656565;
-        font-size: 12px; }
-        @media screen and (min-width: 768px) {
-          .recommendedSpots .gotoReco .card .tagWrap a {
-            font-size: 13px; } }
 
 /*# sourceMappingURL=style.css.map */

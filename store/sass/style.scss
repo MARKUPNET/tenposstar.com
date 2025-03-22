@@ -974,53 +974,5 @@ section{
             gap: 23px;
             overflow: hidden;
         }
-
-        .card{
-            width: calc(50% - 10px);
-            @media  screen and (min-width: 768px) {
-                width: calc(33% - 13px);
-            }
-
-            img{
-                width: 100%;
-                border-radius: 10px;
-            }
-
-            h3{
-                margin-top: 10px;
-                font-size: 15px;
-                font-weight: 700;
-                @media  screen and (min-width: 768px) {
-                    margin-top: 15px;
-                }
-            }
-
-            .tagWrap{
-                display: flex;
-                @media  screen and (min-width: 768px) {
-                    margin-top: 8px;
-                }
-
-                .ttl{
-                    width: 60px;
-                    @media  screen and (min-width: 768px) {
-                        width: 40px;
-                        font-size: 13px;
-                    }
-                }
-
-                .tag{
-                    display: inline-block;
-                }
-
-                a{
-                    color: #656565;
-                    font-size: 12px;
-                    @media  screen and (min-width: 768px) {
-                        font-size: 13px;
-                    }
-                }
-            }
-        }
     }
 }
