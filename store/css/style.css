@@ -21,6 +21,9 @@
   height: 34px; }
   .iconBookmark::before {
     background-image: url(../images/icon_bookmark.svg); }
+  @media screen and (min-width: 768px) {
+    .iconBookmark {
+      margin-top: 6px; } }
 
 .iconTelephone {
   width: 16px;
@@ -89,6 +92,7 @@
     justify-content: center;
     margin-top: 5px;
     padding: 2px 9px;
+    color: var(--white);
     background-color: var(--orange);
     border-radius: 16px; }
     @media screen and (min-width: 768px) {
@@ -212,7 +216,8 @@
       @media screen and (min-width: 768px) {
         .reserveBox .telephone a {
           height: 70px;
-          font-size: 26px; } }
+          font-size: 26px;
+          border-radius: 0; } }
     .reserveBox .telephone .iconTelephone {
       margin-right: 5px; }
       @media screen and (min-width: 768px) {
@@ -491,20 +496,6 @@ section {
     .genreTimeSlots .genreList {
       gap: 2px 20px; } }
 
-.genreTimeSlots .genreItem {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px 10px;
-  height: 23px;
-  color: var(--white);
-  font-size: 12px;
-  background-color: var(--orange);
-  border-radius: 13px; }
-  @media screen and (min-width: 768px) {
-    .genreTimeSlots .genreItem {
-      padding: 5px 14px; } }
-
 .budgetTimeSlots .timeSlot {
   display: flex;
   gap: 0 16px; }
@@ -744,39 +735,5 @@ section {
       flex-wrap: nowrap;
       gap: 23px;
       overflow: hidden; } }
-  .recommendedSpots .gotoReco .card {
-    width: calc(50% - 10px); }
-    @media screen and (min-width: 768px) {
-      .recommendedSpots .gotoReco .card {
-        width: calc(33% - 13px); } }
-    .recommendedSpots .gotoReco .card img {
-      width: 100%;
-      border-radius: 10px; }
-    .recommendedSpots .gotoReco .card h3 {
-      margin-top: 10px;
-      font-size: 15px;
-      font-weight: 700; }
-      @media screen and (min-width: 768px) {
-        .recommendedSpots .gotoReco .card h3 {
-          margin-top: 15px; } }
-    .recommendedSpots .gotoReco .card .tagWrap {
-      display: flex; }
-      @media screen and (min-width: 768px) {
-        .recommendedSpots .gotoReco .card .tagWrap {
-          margin-top: 8px; } }
-      .recommendedSpots .gotoReco .card .tagWrap .ttl {
-        width: 60px; }
-        @media screen and (min-width: 768px) {
-          .recommendedSpots .gotoReco .card .tagWrap .ttl {
-            width: 40px;
-            font-size: 13px; } }
-      .recommendedSpots .gotoReco .card .tagWrap .tag {
-        display: inline-block; }
-      .recommendedSpots .gotoReco .card .tagWrap a {
-        color: #656565;
-        font-size: 12px; }
-        @media screen and (min-width: 768px) {
-          .recommendedSpots .gotoReco .card .tagWrap a {
-            font-size: 13px; } }
 
 /*# sourceMappingURL=style.css.map */

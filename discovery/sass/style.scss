@@ -1,0 +1,112 @@
+.discoveryWrap{
+    margin-top: 10px;
+    @media  screen and (min-width: 768px) {
+        margin-top: 80px;
+    }
+
+    .genreIcons{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+        margin-top: 20px;
+        @media  screen and (min-width: 768px) {
+            gap: 4px;
+            margin-top: 15px;
+        }
+    }
+
+    .iconGenre{
+        font-size: 13px;
+    }
+}
+
+.gourmeSection{
+    margin-top: 40px;
+    @media  screen and (min-width: 768px) {
+        margin-top: 90px;
+    }
+
+    .gourmetList{
+        margin-top: 25px;
+
+    }
+
+    .buttonWrap{
+        margin-top: 50px;
+        margin-bottom: 80px;
+        @media  screen and (min-width: 768px) {
+            margin-top: 64px;
+        }
+    }
+
+    .viewAllButton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 30px;
+        width: 200px;
+        height: 60px;
+        font-size: 16px;
+        font-weight: 700;
+        background-color: var(--white);
+        border: 1px solid #707070;
+        border-radius: 30px;
+        @media  screen and (min-width: 768px) {
+            width: 260px;
+            height: 75px;
+            font-size: 18px;
+            border-radius: 38px;
+        }
+
+        &:hover{
+            color: var(--white);
+            background-color: var(--orange);
+        }
+    }
+}
+
+
+.monthlySection{
+    margin-top: 80px;
+    @media  screen and (min-width: 768px) {
+        margin-top: 90px;
+    }
+
+    .monthlyWrap{
+        overflow-x: auto;
+        white-space:nowrap;
+        margin-top: 25px;
+    
+        .inner{
+            white-space:nowrap;
+            @media  screen and (min-width: 768px) {
+                display: flex;
+            }
+        }
+    
+        .item{
+            display: inline-block;
+            margin-right: 20px;
+        }
+    }
+}
+
+
+.articleContentsSection{
+    margin-top: 70px;
+    @media  screen and (min-width: 768px) {
+        margin-top: 92px;
+    }
+
+    .articleContentsList{
+        margin-top: 25px;
+    }
+}
+
+.paginationWrapper{
+    padding-bottom: 80px;
+    @media  screen and (min-width: 768px) {
+        padding-bottom: 120px;
+    }
+}
