@@ -1,0 +1,145 @@
+.contents{
+    padding-bottom: 80px;
+    @media  screen and (min-width: 768px) {
+        padding-bottom: 120px;
+    }
+}
+
+.mainvisual{
+    position: relative;
+
+    .imageContainer{
+        position: relative;
+
+        img{
+            width: 100%;
+        }
+        
+        .overText{
+            position: absolute;
+            left: 5.3%;
+            bottom: 20px;
+            @media  screen and (min-width: 768px) {
+                left: 8.87%;
+                bottom: 50px;
+            }
+        }
+
+        .overTextTitle{
+            color: var(--white);
+            font-size: 25px;
+            font-weight: 700;
+        }
+    }
+
+    .thumsWrap{
+        white-space:nowrap;
+        overflow: auto;
+    }
+
+    .thumbs{
+        white-space:nowrap;
+
+        li{
+            display: inline-block;
+            width: 126px;
+            height: 80px;
+            @media  screen and (min-width: 768px) {
+                width: 190px;
+                height: 122px;
+            }
+        }
+    }
+
+}
+
+.curatorSection{
+    margin-top: 40px;
+    @media  screen and (min-width: 768px) {
+        margin-top: 80px;
+    }
+
+    .sctionTitle{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .btn{
+            font-size: 13px;
+            font-weight: 700;
+        }
+    }
+
+    .curatorWrap{
+        margin-top: 10px;
+    }
+
+    .curatorCard{
+
+        .cardBody{
+            padding-left: 56px;
+            position: relative;
+
+            .curatorIcon{
+                width: 46px;
+                height: 46px;
+                border-radius: 50%;overflow: hidden;
+                position: absolute;
+                left: 0;
+                top: 0;
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        h3{
+            font-size: 18px;
+            text-wrap: auto;
+        }
+    }
+}
+
+.restaurantSection{
+    margin-top: 40px;
+    @media  screen and (min-width: 768px) {
+        margin-top: 60px;
+    }
+
+    .cardWrap{
+        margin-top: 25px;
+    }
+}
+
+section.bgGray{
+    padding: 40px 0;
+    position: relative;
+    @media  screen and (min-width: 768px) {
+        margin-top: 50px;
+    }
+
+    &::after{
+        content: "";
+        display: block;
+        width: 100vw;
+        height: 100%;
+        background-color: var(--lightgray);
+        position: absolute;
+        left: 50%;
+        top: 0;
+        z-index: -1;
+        transform: translateX(-50%);
+    }
+}
+
+.recommendSection{
+    margin-top: 40px;
+    @media  screen and (min-width: 768px) {
+        margin-top: 60px;
+    }
+
+    .cardWrap{
+        margin-top: 25px;
+    }
+}

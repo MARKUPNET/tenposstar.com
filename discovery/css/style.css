@@ -1,2 +1,68 @@
+<<<<<<< HEAD
+=======
+.discoveryWrap {
+  margin-top: 10px; }
+  @media screen and (min-width: 768px) {
+    .discoveryWrap {
+      margin-top: 80px; } }
+  .discoveryWrap .genreIcons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 20px; }
+    @media screen and (min-width: 768px) {
+      .discoveryWrap .genreIcons {
+        gap: 4px;
+        margin-top: 15px; } }
+  .discoveryWrap .iconGenre {
+    font-size: 13px; }
+
+.gourmeSection {
+  margin-top: 40px; }
+  @media screen and (min-width: 768px) {
+    .gourmeSection {
+      margin-top: 90px; } }
+  .gourmeSection .gourmetList {
+    margin-top: 25px; }
+
+.buttonWrap {
+  margin-top: 50px;
+  margin-bottom: 80px; }
+  @media screen and (min-width: 768px) {
+    .buttonWrap {
+      margin-top: 64px; } }
+
+.monthlySection {
+  margin-top: 80px; }
+  @media screen and (min-width: 768px) {
+    .monthlySection {
+      margin-top: 90px; } }
+  .monthlySection .monthlyWrap {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-top: 25px; }
+    .monthlySection .monthlyWrap .inner {
+      white-space: nowrap; }
+      @media screen and (min-width: 768px) {
+        .monthlySection .monthlyWrap .inner {
+          display: flex; } }
+    .monthlySection .monthlyWrap .item {
+      display: inline-block;
+      margin-right: 20px; }
+
+.articleContentsSection {
+  margin-top: 70px; }
+  @media screen and (min-width: 768px) {
+    .articleContentsSection {
+      margin-top: 92px; } }
+  .articleContentsSection .articleContentsList {
+    margin-top: 25px; }
+
+.paginationWrapper {
+  padding-bottom: 80px; }
+  @media screen and (min-width: 768px) {
+    .paginationWrapper {
+      padding-bottom: 120px; } }
+>>>>>>> aedb365779814da11eec02d1766e9f93883c8c10
 
 /*# sourceMappingURL=style.css.map */

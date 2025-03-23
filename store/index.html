@@ -6,7 +6,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../common/css/style.css"></link>
     <link rel="stylesheet" href="./css/style.css"></link>
@@ -44,6 +44,7 @@
                         <div class="mapButton">
                             <button id="mapBtn"><i class="icon iconPicker mapIcon"></i><span>MAP</span></button>
                         </div>
+                        <button type="button" class="menuBtn" id="hamburgerMenuBtn"></button>
                     </div>
                 </div>
                 <nav class="headerNavigation">
@@ -95,6 +96,66 @@
                     </div>
                 </div>
             </div>
+            <div class="hamburgerWrapper">
+                <div class="hamburgerBg"></div>
+                <div class="hamburgerContent">
+                    <div class="hamburgerHeader">
+                        <a href="#"><img src="../common/images/logo-white.svg" alt=""></a>
+                        <button type="button" class="closeBtn" id="hamburgerMenuCloseBtn"></button>
+                    </div>
+                    <div class="hamburgerBody">
+                        <ul class="hamburgerList">
+                            <li class="hamburgerItem"><a href="#"><i class="icon cate1"></i><span>食べる</span></a></li>
+                            <li class="hamburgerItem"><a href="#"><i class="icon cate2"></i><span>泊まる</span></a></li>
+                            <li class="hamburgerItem"><a href="#"><i class="icon cate3"></i><span>体験する</span></a></li>
+                            <li class="hamburgerItem"><a href="#"><i class="icon cate4"></i><span>発見する</span></a></li>
+                            <li class="hamburgerItem"><a href="#"><i class="icon cate5"></i><span>移動する</span></a></li>
+                            <li class="hamburgerItem"><span>料理ジャンルから探す</span><button type="button" class="subMenuBtn"></button></a>
+                                <div class="subMenu genreMenu">
+                                    <ul class="subMenuList genreIcons">
+                                        <li class="subMenuItem"><a href="#" class="iconGenre">居酒屋</a></li>
+                                        <li class="subMenuItem"><a href="#" class="iconGenre">立ち飲み</a></li>
+                                        <li class="subMenuItem"><a href="#" class="iconGenre">焼鳥</a></li>
+                                        <li class="subMenuItem"><a href="#" class="iconGenre">串焼き</a></li>
+                                        <li class="subMenuItem"><a href="#" class="iconGenre">居酒屋</a></li>
+                                        <li class="subMenuItem"><a href="#" class="iconGenre">立ち飲み</a></li>
+                                        <li class="subMenuItem"><a href="#" class="iconGenre">焼鳥</a></li>
+                                        <li class="subMenuItem"><a href="#" class="iconGenre">お好み焼き</a></li>
+                                        <li class="subMenuItem"><a href="#" class="iconGenre">居酒屋</a></li>
+                                        <li class="subMenuItem"><a href="#" class="iconGenre">立ち飲み</a></li>
+                                    </ul>
+                                </div>
+                            
+                            </li>
+                            <li class="hamburgerItem"><span>キュレーターから探す</span><button type="button" class="subMenuBtn"></button></a>
+                                <div class="subMenu curatorMenu">
+                                    <ul class="subMenuList curatorList">
+                                        <li class="subMenuItem"><a href="#">山田太郎</a></li>
+                                        <li class="subMenuItem"><a href="#">山田太郎</a></li>
+                                        <li class="subMenuItem"><a href="#">山田太郎</a></li>
+                                        <li class="subMenuItem"><a href="#">山田太郎</a></li>
+                                    </ul>
+                                </div>
+                            
+                            </li>
+                            <li class="hamburgerItem"><a href="#"><span>地図から探す</span></a></li>
+                            <li class="hamburgerItem"><a href="#"><span>地名から探す</span></a></li>
+                            <li class="hamburgerItem"><span>タグから探す</span><button type="button" class="subMenuBtn"></button></a>
+                                <div class="subMenu tagMenu">
+                                    <ul class="subMenuList tagList">
+                                        <li class="subMenuItem"><a href="#">タグ1</a></li>
+                                        <li class="subMenuItem"><a href="#">タグ2</a></li>
+                                        <li class="subMenuItem"><a href="#">タグ3</a></li>
+                                        <li class="subMenuItem"><a href="#">タグ4</a></li>
+                                        <li class="subMenuItem"><a href="#">タグ5</a></li>
+                                        <li class="subMenuItem"><a href="#">タグ6</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </header>
 
         <div class="contents">
@@ -110,10 +171,10 @@
                     <p class="leadText">店舗サブタイトルが入ります。売り文句のようなものです。</p>
                     <h1 class="pageTitle">店舗名が入ります。店舗名が入ります。<i class="icon iconBookmark"></i></h1>
                     <ul class="tags">
-                        <li class="tagItem"><span>居酒屋</span></li>
-                        <li class="tagItem"><span>立ち飲み</span></li>
-                        <li class="tagItem"><span>焼鳥</span></li>
-                        <li class="tagItem"><span>串焼き</span></li>
+                        <li><a href="#" class="tagItem">居酒屋</a></li>
+                        <li><a href="#" class="tagItem">立ち飲み</a></li>
+                        <li><a href="#" class="tagItem">焼鳥</a></li>
+                        <li><a href="#" class="tagItem">串焼き</a></li>
                     </ul>
                     <div class="budgetSection">
                         <div class="yosan"><span class="ttl">予算：</span>
@@ -233,20 +294,20 @@
                                         <div class="genreTimeSlots">
                                             <div class="genreWrap morning"><i class="icon iconMorning"></i>
                                                 <ul class="genreList">
-                                                    <li class="genreItem"><span>和食居酒屋</span></li>
-                                                    <li class="genreItem"><span>立ち飲み定食</span></li>
+                                                    <li class="genreItem"><a href="#" class="iconGenre">和食居酒屋</a></li>
+                                                    <li class="genreItem"><a href="#" class="iconGenre">立ち飲み定食</a></li>
                                                 </ul>
                                             </div>
                                             <div class="genreWrap lunch"><i class="icon iconLunch"></i>
                                                 <ul class="genreList">
-                                                    <li class="genreItem"><span>どんぶり寿司焼鳥</span></li>
-                                                    <li class="genreItem"><span>串焼きとんかつ</span></li>
+                                                    <li class="genreItem"><a href="#" class="iconGenre">どんぶり寿司焼鳥</a></li>
+                                                    <li class="genreItem"><a href="#" class="iconGenre">串焼きとんかつ</a></li>
                                                 </ul>
                                             </div>
                                             <div class="genreWrap dinner"><i class="icon iconDinner"></i>
                                                 <ul class="genreList">
-                                                    <li class="genreItem"><span>揚げ物天ぷらふぐ</span></li>
-                                                    <li class="genreItem"><span>うなぎ</span></li>
+                                                    <li class="genreItem"><a href="#" class="iconGenre">揚げ物天ぷらふぐ</a></li>
+                                                    <li class="genreItem"><a href="#" class="iconGenre">うなぎ</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -399,6 +460,10 @@
                                     <th>喫煙・禁煙</th>
                                     <td>全席禁煙</td>
                                 </tr>
+                                <tr>
+                                    <th>wifi</th>
+                                    <td>無料利用可</td>
+                                </tr>
                             </tbody>
                         </table>
                     </section>
@@ -415,6 +480,10 @@
                             <li><span>ソファー席あり</span></li>
                             <li><span>掘りごたつ席あり</span></li>
                             <li><span>オープンテラスあり</span></li>
+                            <li><span>1人で入りやすい</span></li>
+                            <li><span>隠れ家レストラン</span></li>
+                            <li><span>フォトスポットあり</span></li>
+                            <li><span>インスタ映え料理あり</span></li>
                         </ul>
                     </section>
 
@@ -454,9 +523,11 @@
 
                     <section class="recommendedSpots">
                         <h2>次に行きたい近隣のおすすめ</h2>
-                        <div class="gotoReco">
+                        <div class="gotoReco cardWrap">
                             <article class="card">
-                                <img src="./images/reco1.jpg" alt="">
+                                <div class="thumb">
+                                    <img src="./images/reco1.jpg" alt="">
+                                </div>
                                 <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
                                 <div class="tagWrap"><span class="ttl">タグ：</span>
                                     <ul class="tags">
@@ -467,7 +538,9 @@
                                 </div>
                             </article>
                             <article class="card">
-                                <img src="./images/reco2.jpg" alt="">
+                                <div class="thumb">
+                                    <img src="./images/reco2.jpg" alt="">
+                                </div>
                                 <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
                                 <div class="tagWrap"><span class="ttl">タグ：</span>
                                     <ul class="tags">
@@ -478,7 +551,9 @@
                                 </div>
                             </article>
                             <article class="card">
-                                <img src="./images/reco3.jpg" alt="">
+                                <div class="thumb">
+                                    <img src="./images/reco3.jpg" alt="">
+                                </div>
                                 <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
                                 <div class="tagWrap"><span class="ttl">タグ：</span>
                                     <ul class="tags">
@@ -489,7 +564,9 @@
                                 </div>
                             </article>
                             <article class="card">
-                                <img src="./images/reco1.jpg" alt="">
+                                <div class="thumb">
+                                    <img src="./images/reco1.jpg" alt="">
+                                </div>
                                 <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
                                 <div class="tagWrap"><span class="ttl">タグ：</span>
                                     <ul class="tags">

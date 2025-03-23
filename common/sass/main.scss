@@ -3,16 +3,17 @@
 @import 'variables';
 @import 'icons';
 @import 'default';
+@import 'card';
+@import 'pagination';
 
 // モック
-body{
-    // background-image: url(../../_mock/店舗詳細_SP.jpg);
-    // background-image: url(../../_mock/店舗詳細.jpg);
-    // background-size: 100% auto;
-    // background-repeat: no-repeat;
-    // background-position: 50% 0;
-    // opacity: 0.6;
-}
+// body{
+//     background-image: url(../../_mock/食べる_TOP.jpg);
+//     background-size: 100% auto;
+//     background-repeat: no-repeat;
+//     background-position: 50% 10px;
+//     opacity: 0.6;
+// }
 
 body{
     color: var(--black);
