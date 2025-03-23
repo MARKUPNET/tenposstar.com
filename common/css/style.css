@@ -413,6 +413,9 @@ body {
       font-size: 16px;
       line-height: 1.75; } }
 
+header {
+  position: relative; }
+
 .headerWrap {
   position: relative;
   z-index: 99;
