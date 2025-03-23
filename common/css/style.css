@@ -261,6 +261,8 @@ a {
       width: 100%;
       border-radius: 10px;
       overflow: hidden; }
+      .cardWrap .card .thumb img {
+        width: 100%; }
     .cardWrap .card h3 {
       margin-top: 10px;
       font-size: 15px;
