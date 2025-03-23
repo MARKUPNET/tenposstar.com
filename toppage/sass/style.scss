@@ -18,17 +18,20 @@
         .overText{
             position: absolute;
             left: 5.3%;
-            bottom: 20px;
+            bottom: 30px;
             @media  screen and (min-width: 768px) {
                 left: 8.87%;
-                bottom: 50px;
+                bottom: 70px;
             }
         }
 
         .overTextTitle{
             color: var(--white);
             font-size: 25px;
-            font-weight: 700;
+            @media  screen and (min-width: 768px) {
+                font-size: 50px;
+                line-height: 1.5;
+            }
         }
     }
 
@@ -97,6 +100,9 @@
         h3{
             font-size: 18px;
             text-wrap: auto;
+            @media  screen and (min-width: 768px) {
+                margin-top: 10px;
+            }
         }
     }
 }
@@ -109,6 +115,9 @@
 
     .cardWrap{
         margin-top: 25px;
+        @media  screen and (min-width: 768px) {
+            margin-top: 20px;
+        }
     }
 }
 
