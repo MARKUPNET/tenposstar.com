@@ -1,2 +1,137 @@
+.contents {
+  padding-top: 40px;
+  padding-bottom: 80px; }
+  @media screen and (min-width: 768px) {
+    .contents {
+      padding-top: 0;
+      padding-bottom: 120px; } }
+
+.mainvisual {
+  position: relative; }
+  .mainvisual .imageContainer {
+    position: relative; }
+    .mainvisual .imageContainer img {
+      width: 100%; }
+    @media screen and (min-width: 768px) {
+      .mainvisual .imageContainer .overText {
+        padding: 0 20px;
+        width: 100%;
+        max-width: 1100px;
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: transform 0.3s ease; } }
+    @media screen and (min-width: 1180px) {
+      .mainvisual .imageContainer .overText {
+        transform: translateX(calc(-1*(50% + 40px))); } }
+    @media screen and (min-width: 768px) {
+      .mainvisual .imageContainer .overTextTitle {
+        color: var(--white);
+        font-size: 36px;
+        font-weight: 700; } }
+
+.contentBlock {
+  margin: 20px auto 0;
+  max-width: 800px; }
+  @media screen and (min-width: 768px) {
+    .contentBlock {
+      margin-top: 85px; } }
+  .contentBlock h2 {
+    margin: 90px 0 30px;
+    font-size: 22px;
+    line-height: 1.43; }
+    @media screen and (min-width: 768px) {
+      .contentBlock h2 {
+        font-size: 30px; } }
+  .contentBlock h3 {
+    margin: 70px 0 30px;
+    font-size: 20px;
+    line-height: 1.6; }
+  .contentBlock h4 {
+    margin: 50px 0 30px;
+    font-size: 18px;
+    line-height: 1.77; }
+  .contentBlock p {
+    margin: 40px 0;
+    font-size: 16px;
+    line-height: 2.25; }
+  .contentBlock img {
+    margin: 40px 0; }
+  .contentBlock > p {
+    margin-top: 0; }
+
+.curatorSection {
+  margin: 50px auto 0;
+  max-width: 800px; }
+  @media screen and (min-width: 768px) {
+    .curatorSection {
+      margin: 80px auto 0; } }
+  .curatorSection .sectionTitle {
+    font-size: 16px;
+    font-weight: 700; }
+  .curatorSection .curatorWrap {
+    margin-top: 17px;
+    padding: 20px;
+    border: 1px solid #EAE7E7; }
+    @media screen and (min-width: 768px) {
+      .curatorSection .curatorWrap {
+        padding: 30px 160px 30px 30px;
+        position: relative; } }
+  .curatorSection .curatorCard .cardHead {
+    display: flex;
+    justify-content: space-between; }
+  .curatorSection .curatorCard .curatorImageWrapper {
+    width: 98px;
+    height: 98px;
+    border-radius: 50%;
+    overflow: hidden; }
+    @media screen and (min-width: 768px) {
+      .curatorSection .curatorCard .curatorImageWrapper {
+        position: absolute;
+        right: 30px;
+        top: 40px; } }
+  .curatorSection .curatorCard .curatorDetails {
+    display: block; }
+    @media screen and (min-width: 768px) {
+      .curatorSection .curatorCard .curatorDetails {
+        display: flex;
+        gap: 10px 20px; } }
+  .curatorSection .curatorCard .curatorTtl {
+    color: var(--orange);
+    font-family: "Outfit", sans-serif;
+    font-size: 14px; }
+  .curatorSection .curatorCard .curatorPost {
+    margin-top: 15px;
+    font-size: 14px; }
+    @media screen and (min-width: 768px) {
+      .curatorSection .curatorCard .curatorPost {
+        margin-top: 0; } }
+  .curatorSection .curatorCard .curatorName {
+    margin-top: 3px;
+    font-size: 16px;
+    font-weight: 500; }
+    @media screen and (min-width: 768px) {
+      .curatorSection .curatorCard .curatorName {
+        margin-top: 0; } }
+  .curatorSection .curatorCard .cardBody {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.71; }
+    @media screen and (min-width: 768px) {
+      .curatorSection .curatorCard .cardBody {
+        margin-top: 10px; } }
+
+.buttonWrap {
+  margin-top: 70px;
+  margin-bottom: 80px; }
+  @media screen and (min-width: 768px) {
+    .buttonWrap {
+      margin-top: 80px;
+      margin-bottom: 120px; } }
+
+@media screen and (min-width: 768px) {
+  .recommendSection .cardWrap {
+    margin-top: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
