@@ -202,9 +202,9 @@ a {
 
 .contents {
   margin: 0 auto;
-  padding: 0 18px;
+  padding: 0 20px;
   width: 100%;
-  max-width: 1126px; }
+  max-width: 1140px; }
 
 .pageTitle {
   font-size: 25px;
@@ -219,6 +219,29 @@ a {
   @media screen and (min-width: 768px) {
     .sctionTitle {
       font-size: 24px; } }
+
+.viewAllButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 200px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: var(--white);
+  border: 1px solid #707070;
+  border-radius: 30px; }
+  @media screen and (min-width: 768px) {
+    .viewAllButton {
+      width: 260px;
+      height: 75px;
+      font-size: 18px;
+      border-radius: 38px; } }
+  .viewAllButton:hover {
+    color: var(--white);
+    background-color: var(--orange); }
 
 .cardWrap {
   display: flex;
@@ -279,6 +302,28 @@ a {
   gap: 0; }
   .cardWrap.column-1 .card {
     width: 100%; }
+
+.cardWrap.column-2 {
+  gap: 25px 40px; }
+  .cardWrap.column-2 .card {
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      .cardWrap.column-2 .card {
+        width: calc(50% - 20px); } }
+
+.cardWrap.column-3 {
+  gap: 40px; }
+  .cardWrap.column-3 .card {
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      .cardWrap.column-3 .card {
+        width: calc(33% - 24px); } }
+
+@media screen and (max-width: 767px) {
+  .cardWrap.column-sp-1 {
+    gap: 25px; }
+    .cardWrap.column-sp-1 .card {
+      width: 100%; } }
 
 .cardWrap.inline {
   display: block;

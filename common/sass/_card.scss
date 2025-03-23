@@ -78,6 +78,38 @@
     }
 }
 
+.cardWrap.column-2{
+    gap: 25px 40px;
+
+    .card{
+        width: 100%;
+        @media  screen and (min-width: 768px) {
+            width: calc(50% - 20px);
+        }
+    }
+}
+
+.cardWrap.column-3{
+    gap: 40px;
+
+    .card{
+        width: 100%;
+        @media  screen and (min-width: 768px) {
+            width: calc(33% - 24px);
+        }
+    }
+}
+
+.cardWrap.column-sp-1{
+    @media screen and (max-width: 767px) {
+        gap: 25px;
+
+        .card{
+            width: 100%;
+        }
+    }
+}
+
 .cardWrap.inline{
     display: block;
     white-space:nowrap;
