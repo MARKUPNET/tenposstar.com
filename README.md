@@ -46,4 +46,6 @@ npm run sass
 5.食べるTOP・・・eattop
 6.記事詳細・・・postdetail
 
+7.ご当地グルメ一覧・・・gourmet
+
 ```
