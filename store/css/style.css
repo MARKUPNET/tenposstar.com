@@ -299,10 +299,10 @@
 section {
   margin: 50px 0; }
 
-.sctionTitle {
+.sectionTitle {
   font-size: 22px; }
   @media screen and (min-width: 768px) {
-    .sctionTitle {
+    .sectionTitle {
       font-size: 22px; } }
 
 @media screen and (min-width: 768px) {
@@ -446,12 +446,12 @@ section {
   .basicInfo {
     margin: 74px 0 50px; } }
 
-.basicInfo .sctionTitle {
+.basicInfo .sectionTitle {
   display: flex;
   align-items: end;
   gap: 0 10px; }
   @media screen and (min-width: 768px) {
-    .basicInfo .sctionTitle {
+    .basicInfo .sectionTitle {
       gap: 0 26px; } }
 
 .basicInfo .infoNote {
