@@ -370,6 +370,9 @@ a {
         flex-wrap: nowrap; } }
     @media screen and (min-width: 768px) {
       .tagCardWrap .tagCard .thumb {
+        width: 300px; } }
+    @media screen and (min-width: 900px) {
+      .tagCardWrap .tagCard .thumb {
         width: 408px; } }
     .tagCardWrap .tagCard .thumb img {
       width: 100%; }
@@ -378,8 +381,14 @@ a {
       @media screen and (min-width: 768px) {
         .tagCardWrap .tagCard .cardContainer {
           padding: 30px 40px 20px;
-          width: calc(100% - 408px);
+          width: calc(100% - 300px);
           position: relative; } }
+      @media screen and (min-width: 900px) {
+        .tagCardWrap .tagCard .cardContainer {
+          width: calc(100% - 408px); } }
+    @media screen and (min-width: 768px) {
+      .tagCardWrap .tagCard .contentWrapper {
+        padding-right: 50px; } }
     .tagCardWrap .tagCard .contentWrapper .shopName {
       font-size: 16px;
       font-weight: 700;
