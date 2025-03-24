@@ -1,0 +1,32 @@
+.contents{
+    padding-top: 0;
+    padding-bottom: 80px;
+    @media  screen and (min-width: 768px) {
+        padding-top: 0;
+        padding-bottom: 120px;
+    }
+}
+
+.gourmetWrap{
+    margin-top: 10px;
+    @media  screen and (min-width: 768px) {
+        margin-top: 80px;
+    }
+
+    .pageTitle{
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        font-weight: 700;
+        @media  screen and (min-width: 768px) {
+            font-size: 50px;
+        }
+    }
+}
+
+.gourmetList {
+    margin-top: 20px;
+    @media  screen and (min-width: 768px) {
+        margin-top: 140px;
+    }
+}

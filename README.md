@@ -46,4 +46,12 @@ npm run sass
 5.食べるTOP・・・eattop
 6.記事詳細・・・postdetail
 
+7.ご当地グルメ一覧・・・gourmet
+8.タグ一覧・・・tag
+9.キュレータ個別ページ・・・curator
+10.地名検索・・・region
+11.地図検索・・・map
+12.移動する・・・moved
+13.食体験ツアー詳細・・・tour
+
 ```
