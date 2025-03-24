@@ -13,6 +13,7 @@
         "compile:store": "node-sass store/sass/style.scss store/css/style.css --source-map store/css/style.css.map --source-map-contents -w",
         "compile:toppage": "node-sass toppage/sass/style.scss toppage/css/style.css --source-map toppage/css/style.css.map --source-map-contents -w",
         "compile:gourmet": "node-sass gourmet/sass/style.scss gourmet/css/style.css --source-map gourmet/css/style.css.map --source-map-contents -w",
+        "compile:tags": "node-sass tag/sass/style.scss tag/css/style.css --source-map tag/css/style.css.map --source-map-contents -w",
         "serve": "serve"
     },
     "author": "",

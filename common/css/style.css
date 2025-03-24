@@ -353,6 +353,83 @@ a {
       .cardWrap.inline .card .tagWrap a {
         font-size: 13px; }
 
+.tagCardWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; }
+  @media screen and (min-width: 768px) {
+    .tagCardWrap {
+      gap: 30px; } }
+  .tagCardWrap .tagCard {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    overflow: hidden; }
+    @media screen and (min-width: 768px) {
+      .tagCardWrap .tagCard {
+        display: flex;
+        flex-wrap: nowrap; } }
+    @media screen and (min-width: 768px) {
+      .tagCardWrap .tagCard .thumb {
+        width: 408px; } }
+    .tagCardWrap .tagCard .thumb img {
+      width: 100%; }
+    .tagCardWrap .tagCard .cardContainer {
+      padding: 20px; }
+      @media screen and (min-width: 768px) {
+        .tagCardWrap .tagCard .cardContainer {
+          padding: 30px 40px 20px;
+          width: calc(100% - 408px);
+          position: relative; } }
+    .tagCardWrap .tagCard .contentWrapper .shopName {
+      font-size: 16px;
+      font-weight: 700;
+      text-wrap: inherit; }
+      @media screen and (min-width: 768px) {
+        .tagCardWrap .tagCard .contentWrapper .shopName {
+          font-size: 18px; } }
+    .tagCardWrap .tagCard .contentWrapper .shopInfo {
+      display: none; }
+      @media screen and (min-width: 768px) {
+        .tagCardWrap .tagCard .contentWrapper .shopInfo {
+          display: block;
+          margin-top: 13px; } }
+      .tagCardWrap .tagCard .contentWrapper .shopInfo .address {
+        font-size: 14px; }
+      .tagCardWrap .tagCard .contentWrapper .shopInfo .telephone {
+        font-size: 14px; }
+    .tagCardWrap .tagCard .contentWrapper .curatorInfo {
+      display: none; }
+      @media screen and (min-width: 768px) {
+        .tagCardWrap .tagCard .contentWrapper .curatorInfo {
+          display: block;
+          position: absolute;
+          right: 15px;
+          top: 15px; } }
+      .tagCardWrap .tagCard .contentWrapper .curatorInfo .curatorRole {
+        color: var(--orange);
+        font-family: "Outfit", sans-serif;
+        font-size: 12px; }
+      .tagCardWrap .tagCard .contentWrapper .curatorInfo .curatorName {
+        border-top: 1px solid #EAE7E7;
+        font-size: 15px; }
+    .tagCardWrap .tagCard .tagSection {
+      margin-top: 20px; }
+      .tagCardWrap .tagCard .tagSection .tagList {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px; }
+      .tagCardWrap .tagCard .tagSection a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 8px;
+        height: 24px;
+        color: var(--white);
+        border-radius: 13px;
+        background-color: var(--orange); }
+    .tagCardWrap .tagCard .textarea {
+      margin-top: 16px; }
+
 .paginationWrapper {
   display: flex;
   align-items: center;

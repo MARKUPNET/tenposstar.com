@@ -1,0 +1,112 @@
+.tagCardWrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    @media  screen and (min-width: 768px) {
+        gap: 30px;
+    }
+
+    .tagCard{
+        box-shadow: 0 0 10px rgba(0,0,0,0.12);
+        border-radius: 10px;
+        overflow: hidden;
+        @media  screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        .thumb{
+            @media  screen and (min-width: 768px) {
+                width: 408px;
+            }
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .cardContainer{
+            padding: 20px;
+
+            @media  screen and (min-width: 768px) {
+                padding: 30px 40px 20px;
+                width: calc(100% - 408px);
+                position: relative;
+            }
+        }
+
+        .contentWrapper{
+            
+            .shopName{
+                font-size: 16px;
+                font-weight: 700;
+                text-wrap: inherit;
+                @media  screen and (min-width: 768px) {
+                    font-size: 18px;
+                }
+            }
+
+            .shopInfo{
+                display: none;
+                @media  screen and (min-width: 768px) {
+                    display: block;
+                    margin-top: 13px;
+                }
+
+                .address{
+                    font-size: 14px;
+                }
+
+                .telephone{
+                    font-size: 14px;
+                }
+            }
+
+            .curatorInfo{
+                display: none;
+                @media  screen and (min-width: 768px) {
+                    display: block;
+                    position: absolute;
+                    right: 15px;
+                    top: 15px;
+                }
+
+                .curatorRole{
+                    color: var(--orange);
+                    font-family: "Outfit", sans-serif;
+                    font-size: 12px;
+                }
+
+                .curatorName{
+                    border-top: 1px solid #EAE7E7;
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .tagSection{
+            margin-top: 20px;
+
+            .tagList{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 7px;
+            }
+
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 8px;
+                height: 24px;
+                color: var(--white);
+                border-radius: 13px;
+                background-color: var(--orange);
+            }
+        }
+
+        .textarea{
+            margin-top: 16px;
+        }
+    }
+}
