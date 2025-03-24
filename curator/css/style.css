@@ -48,6 +48,7 @@
         right: 0;
         top: 0; } }
     .curatorInformation .curatorImageWrapper picture {
+      display: block;
       width: 306px;
       height: 306px;
       border-radius: 50%;
