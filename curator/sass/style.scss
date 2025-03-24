@@ -1,0 +1,211 @@
+.contents {
+    padding-bottom: 80px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 130px;
+    }
+}
+
+.curatorInformation {
+    margin-top: 5px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 58px;
+        padding-right: 310px;
+        position: relative;
+    }
+
+    .curatorDetails {
+        .curatorRole {
+            color: var(--orange);
+            font-family: "Outfit", sans-serif;
+            font-size: 13px;
+        }
+
+        .curatorName {
+            font-size: 25px;
+            font-weight: 700;
+
+            @media screen and (min-width: 768px) {
+                font-size: 50px;
+                line-height: 1.44;
+            }
+        }
+    }
+
+    .curatorTextarea {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid #EAE7E7;
+
+        @media screen and (min-width: 768px) {
+            padding-top: 34px;
+        }
+
+        h3 {
+            font-size: 15px;
+
+            @media screen and (min-width: 768px) {
+                font-size: 18px;
+            }
+        }
+
+        p {
+            margin-top: 15px;
+
+            @media screen and (min-width: 768px) {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .curatorImageWrapper {
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        picture {
+            width: 306px;
+            height: 306px;
+            border-radius: 50%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.recentTagsWrap {
+    margin-top: 20px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 30px;
+    }
+
+    .sectionTitle {
+        small {
+            font-size: 16px;
+        }
+    }
+
+    .tagList {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 10px;
+
+        @media screen and (min-width: 768px) {
+            margin-top: 18px;
+        }
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 8px;
+        height: 24px;
+        color: var(--white);
+        font-size: 14px;
+        font-weight: 700;
+        border-radius: 13px;
+        background-color: var(--orange);
+    }
+}
+
+.recommendWrap {
+    margin-top: 80px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 80px;
+    }
+
+    .pageTitle {
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        font-weight: 700;
+
+        @media screen and (min-width: 768px) {
+            font-size: 50px;
+        }
+    }
+
+    .recommendList {
+        margin-top: 25px;
+    }
+}
+
+.otherCurator {
+    margin-top: 80px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 160px;
+    }
+}
+
+.curatorCardWrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px 20px;
+    margin-top: 26px;
+
+    @media screen and (min-width: 768px) {
+        gap: 60px;
+        margin-top: 20px;
+    }
+
+    .curatorCard {
+        width: calc(50% - 10px);
+
+        @media screen and (min-width: 768px) {
+            width: calc(25% - 45px);
+        }
+    }
+
+    .curatorImageWrapper {
+        padding: 0 10px;
+
+        @media screen and (min-width: 768px) {
+            padding: 0;
+        }
+
+        picture {
+            display: block;
+            width: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .curatorDetails {
+        margin-top: 5px;
+
+        .curatorRole {
+            color: var(--orange);
+            font-family: "Outfit", sans-serif;
+            font-size: 14px;
+            line-height: 1;
+        }
+
+        .curatorName {
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+
+    .curatorTextarea {
+        margin-top: 5px;
+    }
+}
