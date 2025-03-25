@@ -16,6 +16,7 @@
         "compile:tags": "node-sass tag/sass/style.scss tag/css/style.css --source-map tag/css/style.css.map --source-map-contents -w",
         "compile:curator": "node-sass curator/sass/style.scss curator/css/style.css --source-map curator/css/style.css.map --source-map-contents -w",
         "compile:region": "node-sass region/sass/style.scss region/css/style.css --source-map region/css/style.css.map --source-map-contents -w",
+        "compile:map": "node-sass map/sass/style.scss map/css/style.css --source-map map/css/style.css.map --source-map-contents -w",
         "serve": "serve"
     },
     "author": "",
