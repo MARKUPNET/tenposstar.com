@@ -20,7 +20,8 @@ a{
 }
 
 .wrap{
-    overflow: hidden;
+    // overflow: hidden;
+    overflow: clip
 }
 
 .contents{

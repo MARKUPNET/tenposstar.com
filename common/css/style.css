@@ -198,7 +198,7 @@ a {
       display: inherit; } }
 
 .wrap {
-  overflow: hidden; }
+  overflow: clip; }
 
 .contents {
   margin: 0 auto;
