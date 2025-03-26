@@ -1,0 +1,287 @@
+.contents{
+    padding-top: 10px;
+    padding-bottom: 80px;
+    @media  screen and (min-width: 768px) {
+        padding-top: 85px;
+        padding-bottom: 120px;
+    }
+}
+
+.buttonWrap{
+    margin-top: 50px;
+    margin-bottom: 80px;
+    @media  screen and (min-width: 768px) {
+        margin-top: 80px;
+        margin-bottom: 120px;
+    }
+
+    .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 30px;
+        width: 200px;
+        height: 60px;
+        font-size: 16px;
+        font-weight: 700;
+        background-color: var(--white);
+        border: 1px solid #707070;
+        border-radius: 30px;
+
+        @media  screen and (min-width: 768px) {
+            width: 260px;
+            height: 75px;
+            font-size: 18px;
+            border-radius: 38px;
+        }
+    
+        &:hover{
+            color: var(--white);
+            background-color: var(--orange);
+        }
+    }
+}
+
+.trouHeader{
+    @media  screen and (min-width: 768px) {
+        position: relative;
+    }
+
+    .buttonWrap{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        @media  screen and (min-width: 768px) {
+            margin-top: 0;
+            margin-bottom: 0;
+            position: absolute;
+            right: 0;
+            top: -10px;
+
+        }
+    }
+
+    .reserveButton{
+        width: 100%;
+        height: 55px;
+        @media  screen and (min-width: 768px) {
+            width: 260px;
+            height: 76px;
+        }
+    }
+}
+
+.mainvisual{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    @media  screen and (min-width: 768px) {
+        margin-top: 45px;
+        flex-wrap: nowrap;
+        gap: 0;
+    }
+    picture{
+        width: 100%;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+.eventTourSection{
+    margin-top: 50px;
+    @media  screen and (min-width: 768px) {
+        margin-top: 80px;
+    }
+
+    .sectionTitle{
+        @media  screen and (min-width: 768px) {
+            display: flex;
+            align-items: end;
+            gap: 0 26px;
+        }
+    }
+
+    .infoNote{
+        display: block;
+        margin-top: 10px;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.5;
+        text-wrap: auto;
+        @media  screen and (min-width: 768px) {
+            margin-top: 0;
+            width: calc(100% - 200px);
+            font-size: 13px;
+        }
+    }
+}
+
+.tableDefault{
+    margin-top: 20px;
+    width: 100%;
+    border-collapse:collapse;
+    table-layout: fixed;
+
+    tr{
+        border-top: 1px solid var(--gray);
+
+        &:last-child{
+            border-bottom: 1px solid var(--gray);
+        }
+    }
+
+    th{
+        padding:  15px 10px;
+        width: 85px;
+        font-size: 12px;
+        line-height: 1.4;
+        font-weight: 700;
+        text-align: left;
+        vertical-align: top;
+        background-color: #FFFCF4;
+        @media  screen and (min-width: 768px) {
+            padding: 22px 20px;
+            width: 208px;
+            font-size: 16px;
+        }
+    }
+
+    td{
+        padding: 10px 15px;
+        font-size: 12px;
+        vertical-align: top;
+        @media  screen and (min-width: 768px) {
+            padding: 20px 0 20px 22px;
+            font-size: 14px;
+            line-height: 2;
+        }
+    }
+}
+
+.eventTourTable{
+    margin-top: 30px;
+    @media  screen and (min-width: 768px) {
+        margin-top: 20px;
+    }
+
+    th{
+        padding: 0 0 0 8px;
+        font-size: 14px;
+        vertical-align: middle;
+        @media  screen and (min-width: 768px) {
+            padding: 20px 0 0 22px;
+            width: 220px;
+            font-size: 16px;
+            vertical-align: top;
+        }
+    }
+
+    td{
+        padding: 12px 10px 12px 20px;
+        font-size: 14px;
+        @media  screen and (min-width: 768px) {
+            padding: 20px 0 20px 40px;
+        }
+    }
+
+}
+
+.mapCamvasSection{
+    margin-top: 50px;
+    @media  screen and (min-width: 768px) {
+        margin-top: 100px;
+    }
+
+    .mapCamvas{
+        width: 100%;
+        height: 270px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-image: url(../images/map_sp.jpg);
+        position: relative;
+        @media  screen and (min-width: 768px) {
+            height: 465px;
+            background-image: url(../images/map_pc.jpg);
+        }
+    }
+
+    .mapPointer{
+        display: block;
+        width: 50px;
+        height: 54px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 0 0;
+        position: absolute;
+        @media  screen and (min-width: 768px) {
+            width: 70px;
+            height: 76px;
+        }
+
+        &.mark3{
+            background-image: url(../images/mark3.svg);
+            left: 43%;
+            top: 39%;
+            @media  screen and (min-width: 768px) {
+                left: 47%;
+                top: 42%;
+            }
+        }
+    }
+
+    .buttonWrap{
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+}
+
+.gallerySection{
+    margin-top: 60px;
+    @media  screen and (min-width: 768px) {
+        margin-top: 100px;
+    }
+
+    .galleryWrap{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 23px;
+        @media  screen and (min-width: 768px) {
+            gap: 40px;
+        }
+    
+        .galleryImage{
+            @media  screen and (min-width: 768px) {
+                width: calc(33.33% - 27px);
+            }
+        }
+    }
+
+    .buttonWrap{
+        margin-top: 44px;
+        margin-bottom: 80px;
+        @media  screen and (min-width: 768px) {
+            margin-top: 40px;
+            margin-bottom: 120px;
+        }
+    }
+}
+
+
+.relatedTourSection{
+    margin-top: 10px;
+    @media  screen and (min-width: 768px) {
+        margin-top: 80px;
+    }
+
+    
+    .cardWrap {
+        margin-top: 25px;
+        @media  screen and (min-width: 768px) {
+            margin-top: 20px;
+        }
+    }
+
+}
