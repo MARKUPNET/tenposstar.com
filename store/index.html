@@ -163,8 +163,12 @@
             <div class="storeHeader">
                 
                 <div class="mainvisual">
-                    <img src="./images/main1.jpg" alt="" class="isPC">
-                    <img src="./images/main2.jpg" alt="">
+                    <picture class="isPC">
+                        <img src="./images/main1.jpg" alt="">
+                    </picture>
+                    <picture>
+                        <img src="./images/main2.jpg" alt="">
+                    </picture>
                 </div>
 
                 <div class="storeInformation">
@@ -433,7 +437,9 @@
                                             <img src="./images/map_sp.jpg" alt="" class="mapImage isSP">
                                             <div id="canvas" class="mapCanvas"></div>
                                         </div>
-                                        <button type="button" class="routeButton">現在地からの経路</button>
+                                        <div class="buttonWrap">
+                                            <a href="#" class="btn routeButton">現在地からの経路</a>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr class="tableRow flex">

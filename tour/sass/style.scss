@@ -257,6 +257,17 @@
             @media  screen and (min-width: 768px) {
                 width: calc(33.33% - 27px);
             }
+
+            picture{
+                display: block;
+                width: 100%;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+
+            img{
+                width: 100%;
+            }
         }
     }
 
