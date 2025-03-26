@@ -47,6 +47,36 @@
   .iconStarOff::before {
     background-image: url(../images/icon_star_off.svg); }
 
+.buttonWrap {
+  margin-top: 50px;
+  margin-bottom: 80px; }
+  @media screen and (min-width: 768px) {
+    .buttonWrap {
+      margin-top: 80px;
+      margin-bottom: 120px; } }
+  .buttonWrap .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 200px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--white);
+    border: 1px solid #707070;
+    border-radius: 30px; }
+    @media screen and (min-width: 768px) {
+      .buttonWrap .btn {
+        width: 260px;
+        height: 75px;
+        font-size: 18px;
+        border-radius: 38px; } }
+    .buttonWrap .btn:hover {
+      color: var(--white);
+      background-color: var(--orange); }
+
 @media screen and (min-width: 768px) {
   .storeHeader {
     display: flex;
@@ -59,6 +89,9 @@
       order: 2;
       margin-top: 40px;
       display: flex; } }
+  .mainvisual picture {
+    display: block;
+    width: 100%; }
   .mainvisual img {
     width: 100%; }
 
@@ -326,12 +359,15 @@ section {
     .recommendedMenu .menuList .menuItem:last-child {
       border-bottom: 1px solid var(--gray); }
   .recommendedMenu .menuList .thumb {
-    width: 96px;
-    border-radius: 10px;
-    overflow: hidden; }
+    width: 96px; }
     @media screen and (min-width: 768px) {
       .recommendedMenu .menuList .thumb {
         width: 140px; } }
+    .recommendedMenu .menuList .thumb picture {
+      display: block;
+      width: 100%;
+      border-radius: 10px;
+      overflow: hidden; }
     .recommendedMenu .menuList .thumb img {
       width: 100%; }
   .recommendedMenu .menuList .menu {
@@ -576,19 +612,18 @@ section {
 .access .googleMap {
   margin-top: 20px; }
 
-.access .routeButton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 20px auto;
-  padding: 0 36px;
-  height: 50px;
-  border: 1px solid #707070;
-  border-radius: 25px; }
-  @media screen and (min-width: 768px) {
-    .access .routeButton {
-      margin: 20px 0 0;
-      padding: 0 30px; } }
+.access .buttonWrap {
+  margin: 20px 0; }
+  .access .buttonWrap .routeButton {
+    padding: 0 25px;
+    width: 170px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 400; }
+    @media screen and (min-width: 768px) {
+      .access .buttonWrap .routeButton {
+        margin: 20px 0 0;
+        padding: 0 25px; } }
 
 .facilityScene .facilityList {
   display: flex;

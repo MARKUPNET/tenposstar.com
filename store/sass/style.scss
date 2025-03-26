@@ -61,6 +61,42 @@
     }
 }
 
+.buttonWrap{
+    margin-top: 50px;
+    margin-bottom: 80px;
+    @media  screen and (min-width: 768px) {
+        margin-top: 80px;
+        margin-bottom: 120px;
+    }
+
+    .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 30px;
+        width: 200px;
+        height: 60px;
+        font-size: 16px;
+        font-weight: 700;
+        background-color: var(--white);
+        border: 1px solid #707070;
+        border-radius: 30px;
+
+        @media  screen and (min-width: 768px) {
+            width: 260px;
+            height: 75px;
+            font-size: 18px;
+            border-radius: 38px;
+        }
+    
+        &:hover{
+            color: var(--white);
+            background-color: var(--orange);
+        }
+    }
+}
+
 .storeHeader{
     @media  screen and (min-width: 768px) {
         display: flex;
@@ -74,6 +110,10 @@
         order: 2;
         margin-top: 40px;
         display: flex;
+    }
+    picture{
+        display: block;
+        width: 100%;
     }
     img{
         width: 100%;
@@ -428,10 +468,15 @@ section{
 
         .thumb{
             width: 96px;
-            border-radius: 10px;
-            overflow: hidden;
             @media  screen and (min-width: 768px) {
                 width: 140px;
+            }
+
+            picture{
+                display: block;
+                width: 100%;
+                border-radius: 10px;
+                overflow: hidden;
             }
 
             img{
@@ -772,18 +817,19 @@ section{
         margin-top: 20px;
     }
 
-    .routeButton{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 20px auto;
-        padding: 0 36px;
-        height: 50px;
-        border: 1px solid #707070;
-        border-radius: 25px;
-        @media  screen and (min-width: 768px) {
-            margin: 20px 0 0;
-            padding: 0 30px;
+    .buttonWrap{
+        margin: 20px 0;
+
+        .routeButton{
+            padding: 0 25px;
+            width: 170px;
+            height: 50px;
+            font-size: 14px;
+            font-weight: 400;
+            @media  screen and (min-width: 768px) {
+                margin: 20px 0 0;
+                padding: 0 25px;
+            }
         }
     }
 }

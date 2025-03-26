@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76.001" height="84.568" viewBox="0 0 76.001 84.568">
+  <defs>
+    <filter id="合体_1" x="0" y="0" width="76.001" height="84.568" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="グループ_185" data-name="グループ 185" transform="translate(9 6)">
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#合体_1)">
+      <path id="合体_1-2" data-name="合体 1" d="M28.239,65.482l-3.2-6.217C10.9,57.285,0,44.834,0,29.77,0,13.329,12.983,0,29,0S58,13.329,58,29.77A29.614,29.614,0,0,1,35.2,58.858L31.8,65.482a2,2,0,0,1-3.557,0Z" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <ellipse id="楕円形_43" data-name="楕円形 43" cx="23.49" cy="25.043" rx="23.49" ry="25.043" transform="translate(5.707 5.975)" fill="#ff7c2b"/>
+    <g id="グループ_104" data-name="グループ 104" transform="translate(18.713 15.756)">
+      <path id="パス_72" data-name="パス 72" d="M12.539,27.565l10.184-9.657a1.5,1.5,0,0,0-.524-1.422,1.5,1.5,0,0,0-1.422-.523l-6.4,6.753-3.568,3.762L1.193,36.613a.641.641,0,0,0-.019.9.641.641,0,0,0,.9-.019l7.487-7.1Z" transform="translate(-1.001 -12.837)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="パス_73" data-name="パス 73" d="M27.02,84.67a.621.621,0,1,0,1.173.408l4.942-13.066-2.981,2.827Z" transform="translate(-21.596 -57.284)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="パス_74" data-name="パス 74" d="M55.136,2.173a1.5,1.5,0,0,0-1.09-1.052,1.5,1.5,0,0,0-1.508.147L48.276,14.64l3.568-3.762Z" transform="translate(-38.471 -1)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
