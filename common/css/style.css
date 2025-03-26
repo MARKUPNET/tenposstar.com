@@ -376,6 +376,8 @@ a {
     @media screen and (min-width: 900px) {
       .tagCardWrap .tagCard .thumb {
         width: 408px; } }
+    .tagCardWrap .tagCard .thumb picture {
+      display: block; }
     .tagCardWrap .tagCard .thumb img {
       width: 100%; }
     .tagCardWrap .tagCard .cardContainer {
