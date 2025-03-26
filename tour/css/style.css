@@ -70,6 +70,7 @@
       flex-wrap: nowrap;
       gap: 0; } }
   .mainvisual picture {
+    display: block;
     width: 100%; }
   .mainvisual img {
     width: 100%; }
