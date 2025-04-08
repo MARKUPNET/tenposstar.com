@@ -2,6 +2,14 @@ a{
     text-decoration: none;
 }
 
+input[type="text"]{
+    background-color: var(--white);
+}
+
+button{
+    background-color: var(--white);
+}
+
 .hidden{
     display: none !important;
 }

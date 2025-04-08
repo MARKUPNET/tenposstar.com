@@ -184,6 +184,12 @@
 a {
   text-decoration: none; }
 
+input[type="text"] {
+  background-color: var(--white); }
+
+button {
+  background-color: var(--white); }
+
 .hidden {
   display: none !important; }
 
@@ -495,9 +501,11 @@ a {
     .paginationWrapper .pageNumbers span.currentPage {
       color: var(--white);
       background-color: var(--orange); }
-    .paginationWrapper .pageNumbers a:hover {
-      background-color: #EFEFEF;
-      border: 1px solid #EAE7E7; }
+    .paginationWrapper .pageNumbers a {
+      background-color: var(--white); }
+      .paginationWrapper .pageNumbers a:hover {
+        background-color: #EFEFEF;
+        border: 1px solid #EAE7E7; }
 
 @media screen and (max-width: 768px) {
   .paginationWrapper .pageNumbers a:nth-of-type(3),
