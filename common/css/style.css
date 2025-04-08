@@ -788,7 +788,9 @@ header {
   .headerScrollNavi .navIcon {
     display: none; }
 
-.naviFlexBox li:nth-of-type(n+2) a {
+.naviFlexBox li:nth-of-type(2) a,
+.naviFlexBox li:nth-of-type(3) a,
+.naviFlexBox li:nth-of-type(5) a {
   pointer-events: none;
   opacity: 0.4; }
 
@@ -935,6 +937,12 @@ header {
     .subMenuList.tagList a {
       font-size: 16px; }
 
+.hamburgerList li:nth-of-type(2) a,
+.hamburgerList li:nth-of-type(3) a,
+.hamburgerList li:nth-of-type(5) a {
+  pointer-events: none;
+  opacity: 0.4; }
+
 .footerNavigations {
   padding: 70px 18px 30px;
   background-color: var(--lightbeigepink); }
@@ -972,7 +980,9 @@ header {
           font-size: 16px;
           font-weight: 700; }
 
-.purposeSearch .items li:nth-of-type(n+2) a {
+.purposeSearch .items li:nth-of-type(2) a,
+.purposeSearch .items li:nth-of-type(3) a,
+.purposeSearch .items li:nth-of-type(5) a {
   pointer-events: none;
   color: var(--gray); }
 
