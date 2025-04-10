@@ -1,4 +1,29 @@
 document.addEventListener("DOMContentLoaded", () => {
+    /**
+     * クラス "thumbs" 内の要素を繰り返す
+     */
+    const thumbs = document.querySelector('.thumbs');
+    if (thumbs) {
+        const thumbsWidth = thumbs.offsetWidth; // thumbs の幅を取得
+        const browserWidth = window.innerWidth; // ブラウザの幅を取得 (ウィンドウの幅)
+        const repeatCount = Math.floor(browserWidth / thumbsWidth); // 繰り返す回数を計算
+
+        // ul 内の li 要素を複製して追加
+        const items = [...thumbs.querySelectorAll('li')];
+        const fragment = document.createDocumentFragment();
+
+        items.forEach(item => {
+            const clone = item.cloneNode(true); // li 要素を複製
+            fragment.appendChild(clone); // フラグメントに追加
+        });
+
+        for (let i = 0; i < repeatCount; i++) {
+            thumbs.appendChild(fragment.cloneNode(true)); // フラグメントをクローンして追加
+        }
+    } else {
+        console.log("thumbs 要素が見つかりませんでした。");
+    }
+
     // 共通の toggleVisibility 関数
     const toggleVisibility = (element, visibleClass) => {
         element.classList.toggle(visibleClass);
