@@ -29,15 +29,16 @@
     white-space: nowrap;
     overflow: auto; }
   .mainvisual .thumbs {
+    display: inline-block;
     white-space: nowrap; }
     .mainvisual .thumbs li {
       display: inline-block;
-      width: 126px;
-      height: 80px; }
+      width: 126px !important;
+      height: 80px !important; }
       @media screen and (min-width: 768px) {
         .mainvisual .thumbs li {
-          width: 190px;
-          height: 122px; } }
+          width: 190px !important;
+          height: 122px !important; } }
 
 .curatorSection {
   margin-top: 40px; }
@@ -112,5 +113,10 @@ section.bgGray {
       margin-top: 60px; } }
   .recommendSection .cardWrap {
     margin-top: 25px; }
+
+.bx-wrapper {
+  max-width: 100% !important;
+  box-shadow: 0 0 0 0 !important;
+  border: 0 !important; }
 
 /*# sourceMappingURL=style.css.map */

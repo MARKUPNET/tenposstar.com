@@ -41,15 +41,16 @@
     }
 
     .thumbs{
+        display: inline-block;
         white-space:nowrap;
 
         li{
             display: inline-block;
-            width: 126px;
-            height: 80px;
+            width: 126px !important;
+            height: 80px !important;
             @media  screen and (min-width: 768px) {
-                width: 190px;
-                height: 122px;
+                width: 190px !important;
+                height: 122px !important;
             }
         }
     }
@@ -154,4 +155,10 @@ section.bgGray{
     .cardWrap{
         margin-top: 25px;
     }
+}
+
+.bx-wrapper{
+    max-width: 100% !important;
+    box-shadow: 0 0 0 0 !important;
+    border: 0 !important;
 }
