@@ -9,6 +9,7 @@
     }
 
     .card{
+        flex: none;
         width: calc(50% - 10px);
         @media  screen and (min-width: 768px) {
             width: calc(25% - 15px);
@@ -121,7 +122,6 @@
 
 .cardWrap.inline{
     display: block;
-    white-space:nowrap;
     overflow-x: auto;
     margin-top: 0;
     @media  screen and (min-width: 768px) {
