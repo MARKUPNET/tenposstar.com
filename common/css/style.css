@@ -62,8 +62,7 @@
   overflow-wrap: break-word; }
 
 :where(h1, h2, h3) {
-  line-height: calc(1em + 0.5rem);
-  text-wrap: balance; }
+  line-height: calc(1em + 0.5rem); }
 
 :where(hr) {
   border: none;
@@ -259,6 +258,7 @@ button {
       gap: 60px 20px;
       margin-top: 90px; } }
   .cardWrap .card {
+    flex: none;
     width: calc(50% - 10px); }
     @media screen and (min-width: 768px) {
       .cardWrap .card {
@@ -338,7 +338,6 @@ button {
 
 .cardWrap.inline {
   display: block;
-  white-space: nowrap;
   overflow-x: auto;
   margin-top: 0; }
   @media screen and (min-width: 768px) {

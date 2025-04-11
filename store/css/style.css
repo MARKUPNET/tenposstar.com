@@ -772,6 +772,7 @@ section {
       overflow: hidden; } }
   @media screen and (min-width: 768px) {
     .recommendedSpots .gotoReco .card {
-      width: calc(33.33% - 15px); } }
+      width: calc(33.33% - 15px);
+      flex: none; } }
 
 /*# sourceMappingURL=style.css.map */
