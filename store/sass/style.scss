@@ -891,13 +891,33 @@ section{
     }
 }
 
+.reviewCommentWrapper{
+    margin-top: 20px;
+    @media  screen and (min-width: 768px) {
+        margin-top: 75px;
+    }
+}
+
+.reviewCommentWrapper.viewAll .reviewComment{
+    display: block !important;
+}
+
+.reviewCommentWrapper.viewAll + .buttonWrap{
+    display: none;
+}
+
 .reviewComment{
+    display: none;
     margin-top: 20px;
     padding: 20px;
     background-color: #F9FAF2;
     @media  screen and (min-width: 768px) {
-        margin-top: 75px;
+        margin-top: 40px;
         padding: 35px 45px;
+    }
+
+    &:first-child{
+        display: block;
     }
 
     .reviewerInfo{
