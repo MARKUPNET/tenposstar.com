@@ -141,5 +141,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 背景をクリックしたときにモーダルを閉じる
     modalBackground.addEventListener('click', closeModal);
-    
+
 });
+
+/**
+ * 店舗詳細ページ・・・すべて表示ボタンのクリックイベント
+ */
+function reviewMoreview() {
+    const reviewCommentWrapper = document.querySelector('.reviewCommentWrapper');
+    if (reviewCommentWrapper) {
+        reviewCommentWrapper.classList.add('viewAll');
+    }
+}    
