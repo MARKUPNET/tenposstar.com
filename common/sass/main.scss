@@ -6,14 +6,7 @@
 @import 'card';
 @import 'tag';
 @import 'pagination';
-
-// body{
-//     background-image: url(../../_mock/食体験ツアー_詳細.jpg);
-//     background-size: 100% auto;
-//     background-repeat: no-repeat;
-//     background-position: 50% -76px;
-//     opacity: 0.6;
-// }
+@import 'modalCategory';
 
 body{
     color: var(--black);

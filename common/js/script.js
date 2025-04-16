@@ -119,21 +119,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     /**
-     * 料理ジャンルから探すを表示する
+     * フィルター検索を表示する
      */
-    const modalGenreBtn = document.getElementById('modalGenreBtn');
-    const modalGenreWrap = document.getElementById('modalGenreWrap');
-    const modalCloseButton = modalGenreWrap.querySelector('.modalCloseButton');
-    const modalBackground = modalGenreWrap.querySelector('.modalBackground');
+    const modalFilterButton = document.getElementById('modalFilterButton');
+    const modalFilterWrap = document.getElementById('modalFilterWrap');
+    const modalCloseButton = modalFilterWrap.querySelector('.modalCloseButton');
+    const modalBackground = modalFilterWrap.querySelector('.modalBackground');
 
     // モーダルを開く関数
-    modalGenreBtn.addEventListener('click', () => {
-        modalGenreWrap.classList.add('visible');
+    modalFilterButton.addEventListener('click', () => {
+        modalFilterWrap.classList.add('visible');
     });
 
     // モーダルを閉じる関数
     const closeModal = () => {
-        modalGenreWrap.classList.remove('visible');
+        modalFilterWrap.classList.remove('visible');
     };
 
     // 閉じるボタンをクリックしたときにモーダルを閉じる
@@ -141,7 +141,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 背景をクリックしたときにモーダルを閉じる
     modalBackground.addEventListener('click', closeModal);
-
 });
 
 /**
