@@ -5,8 +5,8 @@
 		"../sass/style.scss"
 	],
 	"sourcesContent": [
-		".contents{\n    padding-bottom: 80px;\n    @media  screen and (min-width: 768px) {\n        padding-bottom: 130px;\n    }\n}\n\n.findjapanWrap{\n    margin-top: 10px;\n    @media  screen and (min-width: 768px) {\n        margin-top: 80px;\n    }\n\n    .pageTitle{\n        display: flex;\n        align-items: center;\n        font-size: 25px;\n        font-weight: 700;\n        @media  screen and (min-width: 768px) {\n            font-size: 50px;\n        }\n    }\n}\n"
+		".contents{\n    padding-bottom: 80px;\n    @media  screen and (min-width: 768px) {\n        padding-bottom: 130px;\n    }\n}\n\n.sightseeingjapanWrap{\n    margin-top: 10px;\n    @media  screen and (min-width: 768px) {\n        margin-top: 80px;\n    }\n\n    .pageTitle{\n        display: flex;\n        align-items: center;\n        font-size: 25px;\n        font-weight: 700;\n        @media  screen and (min-width: 768px) {\n            font-size: 50px;\n        }\n    }\n}\n"
 	],
 	"names": [],
-	"mappings": "AAAA,AAAA,SAAS,CAAA;EACL,cAAc,EAAE,IAAI,GAIvB;EAHG,MAAM,CAAE,MAAM,MAAM,SAAS,EAAE,KAAK;IAFxC,AAAA,SAAS,CAAA;MAGD,cAAc,EAAE,KAAK,GAE5B;;AAED,AAAA,cAAc,CAAA;EACV,UAAU,EAAE,IAAI,GAcnB;EAbG,MAAM,CAAE,MAAM,MAAM,SAAS,EAAE,KAAK;IAFxC,AAAA,cAAc,CAAA;MAGN,UAAU,EAAE,IAAI,GAYvB;EAfD,AAMI,cANU,CAMV,UAAU,CAAA;IACN,OAAO,EAAE,IAAI;IACb,WAAW,EAAE,MAAM;IACnB,SAAS,EAAE,IAAI;IACf,WAAW,EAAE,GAAG,GAInB;IAHG,MAAM,CAAE,MAAM,MAAM,SAAS,EAAE,KAAK;MAX5C,AAMI,cANU,CAMV,UAAU,CAAA;QAMF,SAAS,EAAE,IAAI,GAEtB"
+	"mappings": "AAAA,AAAA,SAAS,CAAA;EACL,cAAc,EAAE,IAAI,GAIvB;EAHG,MAAM,CAAE,MAAM,MAAM,SAAS,EAAE,KAAK;IAFxC,AAAA,SAAS,CAAA;MAGD,cAAc,EAAE,KAAK,GAE5B;;AAED,AAAA,qBAAqB,CAAA;EACjB,UAAU,EAAE,IAAI,GAcnB;EAbG,MAAM,CAAE,MAAM,MAAM,SAAS,EAAE,KAAK;IAFxC,AAAA,qBAAqB,CAAA;MAGb,UAAU,EAAE,IAAI,GAYvB;EAfD,AAMI,qBANiB,CAMjB,UAAU,CAAA;IACN,OAAO,EAAE,IAAI;IACb,WAAW,EAAE,MAAM;IACnB,SAAS,EAAE,IAAI;IACf,WAAW,EAAE,GAAG,GAInB;IAHG,MAAM,CAAE,MAAM,MAAM,SAAS,EAAE,KAAK;MAX5C,AAMI,qBANiB,CAMjB,UAAU,CAAA;QAMF,SAAS,EAAE,IAAI,GAEtB"
 }

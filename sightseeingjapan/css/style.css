@@ -4,18 +4,18 @@
     .contents {
       padding-bottom: 130px; } }
 
-.findjapanWrap {
+.sightseeingjapanWrap {
   margin-top: 10px; }
   @media screen and (min-width: 768px) {
-    .findjapanWrap {
+    .sightseeingjapanWrap {
       margin-top: 80px; } }
-  .findjapanWrap .pageTitle {
+  .sightseeingjapanWrap .pageTitle {
     display: flex;
     align-items: center;
     font-size: 25px;
     font-weight: 700; }
     @media screen and (min-width: 768px) {
-      .findjapanWrap .pageTitle {
+      .sightseeingjapanWrap .pageTitle {
         font-size: 50px; } }
 
 /*# sourceMappingURL=style.css.map */
