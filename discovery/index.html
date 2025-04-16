@@ -165,12 +165,12 @@
                 <ul class="genreIcons">
                     <li class="genreItem"><a href="#" class="iconGenre">日本を見つける</a></li>
                     <li class="genreItem"><a href="#" class="iconGenre">観光名所紹介</a></li>
-                    <li class="genreItem"><a href="#" class="iconGenre">ニッチ系コンテンツ</a></li>
+                    <li class="genreItem"><a href="#" class="iconGenre">旅の準備</a></li>
                 </ul>
             </section>
 
             <section class="gourmeSection">
-                <h2 class="sectionTitle">ご当地グルメ</h2>
+                <h2 class="sectionTitle">ご当地グルメ<button id="modalFilterButton" class="filterButton" type="button">都道府県</button></h2>
                 <div class="cardWrap gourmetList">
                     <article class="card">
                         <div class="thumb">
@@ -583,6 +583,67 @@
                     <a href="#" class="pageLink">15</a>
                 </div>
                 <a href="#" class="linkToBottom">最後へ</a>
+            </div>
+
+            <div id="modalFilterWrap" class="modalWrapper">
+                <div class="modalBackground"></div>
+                <div class="modalContent">
+                    <button type="button" class="modalCloseButton"><i class="iconClose"></i></button>
+                    <div class="modalBody">
+                        <h2 class="modalHeading">都道府県を選択</h2>
+                        <div class="filterListWrap">
+                            <ul class="filterList">
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">北海道</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">青森県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">岩手県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">宮城県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">秋田県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">山形県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">福島県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">茨城県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">栃木県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">群馬県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">埼玉県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">千葉県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">東京都</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">神奈川県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">新潟県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">富山県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">石川県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">福井県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">山梨県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">長野県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">岐阜県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">静岡県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">愛知県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">三重県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">滋賀県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">京都府</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">大阪府</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">兵庫県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">奈良県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">和歌山県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">鳥取県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">島根県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">岡山県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">広島県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">山口県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">徳島県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">香川県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">愛媛県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">高知県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">福岡県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">佐賀県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">長崎県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">熊本県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">大分県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">宮崎県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">鹿児島県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">沖縄県</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
