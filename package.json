@@ -21,6 +21,7 @@
         "compile:tour": "node-sass tour/sass/style.scss tour/css/style.css --source-map tour/css/style.css.map --source-map-contents -w",
         "compile:findjapan": "node-sass findjapan/sass/style.scss findjapan/css/style.css --source-map findjapan/css/style.css.map --source-map-contents -w",
         "compile:sightseeingjapan": "node-sass sightseeingjapan/sass/style.scss sightseeingjapan/css/style.css --source-map sightseeingjapan/css/style.css.map --source-map-contents -w",
+        "compile:travelprep": "node-sass travelprep/sass/style.scss travelprep/css/style.css --source-map travelprep/css/style.css.map --source-map-contents -w",
         "serve": "serve"
     },
     "author": "",
