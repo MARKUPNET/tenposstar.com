@@ -19,6 +19,7 @@
         "compile:map": "node-sass map/sass/style.scss map/css/style.css --source-map map/css/style.css.map --source-map-contents -w",
         "compile:moved": "node-sass moved/sass/style.scss moved/css/style.css --source-map moved/css/style.css.map --source-map-contents -w",
         "compile:tour": "node-sass tour/sass/style.scss tour/css/style.css --source-map tour/css/style.css.map --source-map-contents -w",
+        "compile:findjapan": "node-sass findjapan/sass/style.scss findjapan/css/style.css --source-map findjapan/css/style.css.map --source-map-contents -w",
         "serve": "serve"
     },
     "author": "",
