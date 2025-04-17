@@ -1259,4 +1259,38 @@ header {
         left: auto;
         top: 33px; } }
 
+@media screen and (max-width: 767px) {
+  .floatingButtonWrap {
+    position: relative;
+    padding-bottom: 20px; } }
+
+.floatingButton {
+  display: none; }
+  @media screen and (max-width: 767px) {
+    .floatingButton {
+      display: block;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0; }
+      .floatingButton a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 48px;
+        color: var(--white);
+        font-size: 15px;
+        font-weight: 700;
+        text-align: center;
+        background-color: var(--orange); }
+        .floatingButton a:before {
+          content: "";
+          display: inline-block;
+          margin-right: 5px;
+          width: 12px;
+          height: 16px;
+          background-image: url(../images/icon_picker_white.svg);
+          background-size: cover; } }
+
 /*# sourceMappingURL=style.css.map */
