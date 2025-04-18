@@ -348,18 +348,17 @@ button {
     width: calc(33% - 10px); } }
 
 .cardWrap.inline {
-  display: block;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
   overflow-x: auto;
   margin-top: 0; }
   @media screen and (min-width: 768px) {
     .cardWrap.inline {
-      display: flex;
-      flex-wrap: nowrap;
       gap: 40px;
       overflow-x: inherit; } }
   .cardWrap.inline .card {
     display: inline-block;
-    margin-right: 10px;
     width: 260px;
     vertical-align: top; }
     @media screen and (min-width: 768px) {
