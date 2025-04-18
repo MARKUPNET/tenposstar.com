@@ -14,15 +14,28 @@
     <title>トップページ</title>
 </head>
 <body>
-    <div class="wrap">
+    <div class="wrap floatingButtonWrap">
         <header>
             <div class="headerWrap">
                 <div class="headerFlexBox">
                     <div class="logo"><a href="#"><img src="../common/images/logo.svg" alt="TENPOS STAR"></a></div>
                     <div class="searchBox">
                         <form>
-                            <label><input type="text" name="s" value="" placeholder="レストラン、地名など"></label>
-                            <button class="searchButton" type="submit"><i class="icon iconScorp"></i><span class="isPC">検索</span></button>
+                            <div class="searchBoxInner">
+                                <div class="filterBox">
+                                    <button class="selectedItem" type="button">レストラン</button>
+                                    <ul class="filterSelector">
+                                        <li class="item selected">レストラン</li>
+                                        <li class="item">ご当地グルメ</li>
+                                        <li class="item">日本を見つける</li>
+                                        <li class="item">観光名所紹介</li>
+                                        <li class="item">旅の準備</li>
+                                    </ul>
+                                </div>
+                                <input type="hidden" name="category" value="レストラン">
+                                <input class="keywordInput" type="text" name="s" value="" placeholder="">
+                                <button class="searchButton" type="submit"><i class="icon iconScorp"></i><span class="isPC">検索</span></button>
+                            </div>
                         </form>
                     </div>
                     <div class="rightBox">
@@ -62,8 +75,21 @@
                     <div class="logo"><a href="#"><img src="../common/images/logo.svg" alt="TENPOS STAR"></a></div>
                     <div class="searchBox">
                         <form>
-                            <label><input type="text" name="s" value="" placeholder="レストラン、地名など"></label>
-                            <button class="searchButton" type="submit"><i class="icon iconScorp"></i></button>
+                            <div class="searchBoxInner">
+                                <div class="filterBox">
+                                    <button class="selectedItem" type="button">レストラン</button>
+                                    <ul class="filterSelector">
+                                        <li class="item selected">レストラン</li>
+                                        <li class="item">ご当地グルメ</li>
+                                        <li class="item">日本を見つける</li>
+                                        <li class="item">観光名所紹介</li>
+                                        <li class="item">旅の準備</li>
+                                    </ul>
+                                </div>
+                                <input type="hidden" name="category" value="レストラン">
+                                <input class="keywordInput" type="text" name="s" value="" placeholder="">
+                                <button class="searchButton" type="submit"><i class="icon iconScorp"></i></button>
+                            </div>
                         </form>
                     </div>
                     <nav class="headerNavigation">
@@ -643,6 +669,8 @@
                 </div>
             </div>
         </footer>
+
+        <div class="floatingButton"><a href="#">現在地からさがす</a></div>
     </div>
     <script src="../common/js/script.js"></script>
 </body>

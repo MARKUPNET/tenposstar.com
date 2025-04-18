@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     gap: 30px 20px;
     margin-top: 40px;
-    @media  screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
         gap: 60px 20px;
         margin-top: 90px;
     }
@@ -11,7 +11,7 @@
     .card{
         flex: none;
         width: calc(50% - 10px);
-        @media  screen and (min-width: 768px) {
+        @media screen and (min-width: 768px) {
             width: calc(25% - 15px);
         }
 
@@ -35,7 +35,7 @@
             font-size: 15px;
             font-weight: 700;
             line-height: 1.4;
-            @media  screen and (min-width: 768px) {
+            @media screen and (min-width: 768px) {
                 margin-top: 15px;
                 line-height: 1.5;
             }
@@ -45,7 +45,7 @@
             display: flex;
             margin-top: 5px;
             font-size: 12px;
-            @media  screen and (min-width: 768px) {
+            @media screen and (min-width: 768px) {
                 margin-top: 14px;
             }
 
@@ -53,7 +53,7 @@
                 display: inline-block;
                 width: 40px;
                 line-height: 1;
-                @media  screen and (min-width: 768px) {
+                @media screen and (min-width: 768px) {
                     width: 40px;
                     font-size: 13px;
                 }
@@ -72,7 +72,7 @@
             a{
                 color: #656565;
                 font-size: 12px;
-                @media  screen and (min-width: 768px) {
+                @media screen and (min-width: 768px) {
                     font-size: 13px;
                 }
             }
@@ -93,7 +93,7 @@
 
     .card{
         width: 100%;
-        @media  screen and (min-width: 768px) {
+        @media screen and (min-width: 768px) {
             width: calc(50% - 20px);
         }
     }
@@ -104,7 +104,7 @@
 
     .card{
         width: 100%;
-        @media  screen and (min-width: 768px) {
+        @media screen and (min-width: 768px) {
             width: calc(33% - 25px);
         }
     }
@@ -120,23 +120,34 @@
     }
 }
 
+
+.cardWrap.column-sp-2-pc-3{
+    @media screen and (min-width: 768px) {
+        margin-top: 30px;
+    }
+    .card{
+        @media screen and (min-width: 768px) {
+            width: calc(33% - 10px);
+        }
+    }
+}
+
 .cardWrap.inline{
-    display: block;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
     overflow-x: auto;
     margin-top: 0;
-    @media  screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: nowrap;
+    @media screen and (min-width: 768px) {
         gap: 40px;
         overflow-x: inherit;
     }
 
     .card{
         display: inline-block;
-        margin-right: 10px;
         width: 260px;
         vertical-align: top;
-        @media  screen and (min-width: 768px) {
+        @media screen and (min-width: 768px) {
             margin: 0;
             width: calc(33.33% - 28px);
         }

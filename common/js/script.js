@@ -1,4 +1,90 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+    /**
+     * ヘッダーフィルター選択ボックス
+     */
+    const headerWrap = document.querySelector('.headerWrap');
+    const headerScrollNavi = document.getElementById('scrollNavi');
+
+    const selectedItems = [
+        ...(headerWrap?.querySelectorAll('.searchBoxInner .filterBox .selectedItem') || []),
+        ...(headerScrollNavi?.querySelectorAll('.searchBoxInner .filterBox .selectedItem') || [])
+    ];
+
+    selectedItems.forEach(selectedItem => {
+        selectedItem.addEventListener('click', function () {
+            const filterSelector = this.nextElementSibling;
+            if (filterSelector && filterSelector.classList.contains('filterSelector')) {
+                filterSelector.classList.toggle('visible');
+            }
+        });
+    });
+
+    document.addEventListener('click', function (event) {
+        const clickedItem = event.target.closest('.filterSelector.visible .item');
+
+        if (clickedItem) {
+            const filterSelector = clickedItem.closest('.filterSelector');
+            const clickedText = clickedItem.textContent;
+
+            // 1. 両方の .filterSelector の item に selected クラスを付加
+            const allFilterSelectors = [
+                ...(headerWrap?.querySelectorAll('.searchBoxInner .filterBox .filterSelector') || []),
+                ...(headerScrollNavi?.querySelectorAll('.searchBoxInner .filterBox .filterSelector') || [])
+            ];
+            allFilterSelectors.forEach(selector => {
+                selector.querySelectorAll('.item').forEach(item => {
+                    item.classList.remove('selected');
+                    if (item.textContent === clickedText) {
+                        item.classList.add('selected');
+                    }
+                });
+            });
+
+            // 2. 両方の .selectedItem のテキストを置換
+            selectedItems.forEach(button => {
+                button.textContent = clickedText;
+            });
+
+            // 3. 両方の name="category" の value を更新
+            const categoryInputs = [
+                ...(headerWrap?.querySelectorAll('.searchBoxInner input[name="category"]') || []),
+                ...(headerScrollNavi?.querySelectorAll('.searchBoxInner input[name="category"]') || [])
+            ];
+            categoryInputs.forEach(input => {
+                input.value = clickedText;
+            });
+
+            // 4. クリックされたドロップダウンを閉じる
+            filterSelector.classList.remove('visible');
+        }
+    });
+
+    // ドロップダウンの外側をクリックしたら閉じる処理
+    document.addEventListener('click', function (event) {
+        const openSelectors = document.querySelectorAll('.filterSelector.visible');
+        openSelectors.forEach(selector => {
+            if (!event.target.closest('.filterBox') && !event.target.closest('.selectedItem')) {
+                selector.classList.remove('visible');
+            }
+        });
+    });
+
+    // フォーカスアウトで閉じる処理（必要に応じて）
+    selectedItems.forEach(selectedItem => {
+        selectedItem.addEventListener('blur', function () {
+            const filterSelector = this.nextElementSibling;
+            setTimeout(() => {
+                if (filterSelector && filterSelector.classList.contains('filterSelector') && !filterSelector.matches(':hover')) {
+                    filterSelector.classList.remove('visible');
+                }
+            }, 100);
+        });
+    });
+
+
+
+
     /**
      * クラス "thumbs" 内の要素を繰り返す
      */
@@ -113,7 +199,7 @@ document.addEventListener("DOMContentLoaded", () => {
         button.addEventListener('click', () => {
             const parentItem = button.closest('.hamburgerItem');
             if (parentItem) {
-            parentItem.classList.toggle('visible');
+                parentItem.classList.toggle('visible');
             }
         });
     });
