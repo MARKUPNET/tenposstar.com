@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    @media  screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
         gap: 30px;
     }
 
@@ -10,17 +10,17 @@
         box-shadow: 0 0 10px rgba(0,0,0,0.12);
         border-radius: 10px;
         overflow: hidden;
-        @media  screen and (min-width: 768px) {
+        @media screen and (min-width: 768px) {
             display: flex;
             flex-wrap: nowrap;
         }
 
         .thumb{
-            @media  screen and (min-width: 768px) {
+            @media screen and (min-width: 768px) {
                 width: 300px;
             }
 
-            @media  screen and (min-width: 900px) {
+            @media screen and (min-width: 900px) {
                 width: 408px;
             }
 
@@ -37,19 +37,19 @@
         .cardContainer{
             padding: 20px;
 
-            @media  screen and (min-width: 768px) {
+            @media screen and (min-width: 768px) {
                 padding: 30px 40px 20px;
                 width: calc(100% - 300px);
                 position: relative;
             }
 
-            @media  screen and (min-width: 900px) {
+            @media screen and (min-width: 900px) {
                 width: calc(100% - 408px);
             }
         }
 
         .contentWrapper{
-            @media  screen and (min-width: 768px) {
+            @media screen and (min-width: 768px) {
                 padding-right: 50px;
             }
             
@@ -57,14 +57,14 @@
                 font-size: 16px;
                 font-weight: 700;
                 text-wrap: inherit;
-                @media  screen and (min-width: 768px) {
+                @media screen and (min-width: 768px) {
                     font-size: 18px;
                 }
             }
 
             .shopInfo{
                 display: none;
-                @media  screen and (min-width: 768px) {
+                @media screen and (min-width: 768px) {
                     display: block;
                     margin-top: 13px;
                 }
@@ -80,7 +80,7 @@
 
             .curatorInfo{
                 display: none;
-                @media  screen and (min-width: 768px) {
+                @media screen and (min-width: 768px) {
                     display: block;
                     position: absolute;
                     right: 15px;
@@ -102,7 +102,7 @@
 
         .tagSection{
             margin-top: 20px;
-            @media  screen and (min-width: 768px) {
+            @media screen and (min-width: 768px) {
                 margin-top: 15px;
             }
 
@@ -123,7 +123,7 @@
                 font-weight: 700;
                 border-radius: 13px;
                 background-color: var(--orange);
-                @media  screen and (min-width: 768px) {
+                @media screen and (min-width: 768px) {
                     padding: 0 10px;
                     font-size: 14px;
                 }

@@ -5,7 +5,7 @@
 		"../sass/style.scss"
 	],
 	"sourcesContent": [
-		".contents{\r\n    padding-bottom: 80px;\r\n    @media  screen and (min-width: 768px) {\r\n        padding-bottom: 130px;\r\n    }\r\n}\r\n\r\n.sightseeingjapanWrap{\r\n    margin-top: 10px;\r\n    @media  screen and (min-width: 768px) {\r\n        margin-top: 80px;\r\n    }\r\n\r\n    .pageTitle{\r\n        display: flex;\r\n        align-items: center;\r\n        gap: 20px;\r\n        font-size: 25px;\r\n        font-weight: 700;\r\n        @media  screen and (min-width: 768px) {\r\n            font-size: 50px;\r\n        }\r\n    }\r\n}\r\n"
+		".contents{\r\n    padding-bottom: 80px;\r\n    @media screen and (min-width: 768px) {\r\n        padding-bottom: 130px;\r\n    }\r\n}\r\n\r\n.sightseeingjapanWrap{\r\n    margin-top: 10px;\r\n    @media screen and (min-width: 768px) {\r\n        margin-top: 80px;\r\n    }\r\n\r\n    .pageTitle{\r\n        display: flex;\r\n        align-items: center;\r\n        gap: 20px;\r\n        font-size: 25px;\r\n        font-weight: 700;\r\n        @media screen and (min-width: 768px) {\r\n            font-size: 50px;\r\n        }\r\n    }\r\n}\r\n"
 	],
 	"names": [],
 	"mappings": "AAAA,AAAA,SAAS,CAAA;EACL,cAAc,EAAE,IAAI,GAIvB;EAHG,MAAM,CAAE,MAAM,MAAM,SAAS,EAAE,KAAK;IAFxC,AAAA,SAAS,CAAA;MAGD,cAAc,EAAE,KAAK,GAE5B;;AAED,AAAA,qBAAqB,CAAA;EACjB,UAAU,EAAE,IAAI,GAenB;EAdG,MAAM,CAAE,MAAM,MAAM,SAAS,EAAE,KAAK;IAFxC,AAAA,qBAAqB,CAAA;MAGb,UAAU,EAAE,IAAI,GAavB;EAhBD,AAMI,qBANiB,CAMjB,UAAU,CAAA;IACN,OAAO,EAAE,IAAI;IACb,WAAW,EAAE,MAAM;IACnB,GAAG,EAAE,IAAI;IACT,SAAS,EAAE,IAAI;IACf,WAAW,EAAE,GAAG,GAInB;IAHG,MAAM,CAAE,MAAM,MAAM,SAAS,EAAE,KAAK;MAZ5C,AAMI,qBANiB,CAMjB,UAAU,CAAA;QAOF,SAAS,EAAE,IAAI,GAEtB"

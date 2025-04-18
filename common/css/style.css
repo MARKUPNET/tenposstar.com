@@ -336,6 +336,10 @@ button {
     .cardWrap.column-sp-1 .card {
       width: 100%; } }
 
+@media screen and (min-width: 768px) {
+  .cardWrap.column-sp-2-pc-3 .card {
+    width: calc(33% - 25px); } }
+
 .cardWrap.inline {
   display: block;
   overflow-x: auto;

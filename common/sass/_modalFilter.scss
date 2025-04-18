@@ -20,20 +20,20 @@
         border-style: solid;
         border-color: var(--black) transparent transparent transparent;
         border-width: 7px 4px 0px 4px;
-        @media  screen and (min-width: 768px) {
+        @media screen and (min-width: 768px) {
             border-color: var(--black) transparent transparent transparent;
         }
     }
 
     &:hover{
-        @media  screen and (min-width: 768px) {
+        @media screen and (min-width: 768px) {
             color: var(--white);
             background-color: var(--orange);
             border: 1px solid var(--orange);
         }
 
         &:before{
-            @media  screen and (min-width: 768px) {
+            @media screen and (min-width: 768px) {
                 border-color: var(--white) transparent transparent transparent;
             }
         }
@@ -78,7 +78,7 @@
         position: relative;
         z-index: 1;
 
-        @media  screen and (min-width: 768px) {
+        @media screen and (min-width: 768px) {
             padding: 36px 60px 0;
         }
     }
@@ -120,13 +120,13 @@
         font-size: 18px;
         font-weight: 700;
         text-align: center;
-        @media  screen and (min-width: 768px) {
+        @media screen and (min-width: 768px) {
             font-size: 24px;
             position: relative;
         }
         
         &::before{
-            @media  screen and (min-width: 768px) {
+            @media screen and (min-width: 768px) {
                 content: "";
                 display: block;
                 width: calc(100% + 30px);
@@ -142,13 +142,13 @@
     .filterListWrap{
         height: calc(100% - 50px);
         overflow-y: auto;
-        @media  screen and (min-width: 768px) {
+        @media screen and (min-width: 768px) {
             padding-top: 30px;
         }
     }
 
     .filterList{
-        @media  screen and (min-width: 768px) {
+        @media screen and (min-width: 768px) {
             display: flex;
             flex-wrap: wrap;
             gap: 13px;
@@ -158,14 +158,14 @@
 
     .filterItem{
         border-top: 1px solid #EAE7E7;
-        @media  screen and (min-width: 768px) {
+        @media screen and (min-width: 768px) {
             width: calc(20% - 12px);
             border: 0;
         }
 
         &:last-child{
             border-bottom: 1px solid #EAE7E7;
-            @media  screen and (min-width: 768px) {
+            @media screen and (min-width: 768px) {
                 border: 0;
             }
         }
@@ -174,7 +174,7 @@
     .filterLink{
         display: block;
         padding: 9px 0;
-        @media  screen and (min-width: 768px) {
+        @media screen and (min-width: 768px) {
             display: flex;
             align-items: center;
             justify-content: center;
