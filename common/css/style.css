@@ -523,6 +523,21 @@ button {
   .paginationWrapper .pageNumbers a:nth-of-type(6) {
     display: none; } }
 
+.filterWrap {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-top: 30px; }
+  @media screen and (min-width: 768px) {
+    .filterWrap {
+      gap: 20px;
+      margin-top: 34px; } }
+  .filterWrap h3 {
+    font-size: 15px; }
+    @media screen and (min-width: 768px) {
+      .filterWrap h3 {
+        font-size: 24px; } }
+
 .filterButton {
   padding: 6px 23px 6px 8px;
   color: var(--black);
@@ -759,6 +774,7 @@ header {
     height: 34px;
     font-size: 14px;
     font-weight: 700;
+    background-color: transparent;
     position: relative; }
     @media screen and (min-width: 768px) {
       .headerFlexBox .selectedItem {
