@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../common/css/style.css"></link>
     <link rel="stylesheet" href="./css/style.css"></link>
 
-    <title>旅の準備</title>
+    <title>北海道    レストラン</title>
 </head>
 <body>
     <div class="wrap">
@@ -186,12 +186,24 @@
 
         <div class="contents">
 
-            <section class="travelprepWrap">
-                <div class="filterWrap">
-                    <h1 class="pageTitle">旅の準備</h1>
-                    <button id="modalFilterButton" class="filterButton" type="button" data-modal="modalFilterWrap">都道府県</button>
+            <h1 class="pageTitle">北海道    レストラン</h1>
+
+            <section class="selectedWrap">
+                <div class="selectedBox">
+                    <div class="selectedItem"><span>北海道</span><button type="button" class="removeButton"><i class="icon iconClose"></i></button></div>
+                    <div class="selectedItem"><span>レストラン</span><button type="button" class="removeButton"><i class="icon iconClose"></i></button></div>
                 </div>
-                <div class="travelprepList cardWrap">
+            </section>
+
+            <section class="filterButtonWrap">
+                <button class="filterButton" type="button" data-modal="modalFilterWrap-1">都道府県</button>
+                <button class="filterButton" type="button" data-modal="modalFilterWrap-2">予算</button>
+                <button class="filterButton" type="button" data-modal="modalFilterWrap-3">ジャンル</button>
+                <button class="filterButton" type="button" data-modal="modalFilterWrap-4">こだわり</button>
+            </section>
+
+            <section class="resultWrap">
+                <div class="resultList cardWrap">
                     <article class="card">
                         <div class="thumb">
                             <picture>
@@ -572,67 +584,171 @@
                 <a href="#" class="linkToBottom">最後へ</a>
             </div>
 
-            <div id="modalFilterWrap" class="modalWrapper">
+            <div id="modalFilterWrap-1" class="modalWrapper">
                 <div class="modalBackground"></div>
-                <div class="modalMain">
-                    <button type="button" class="modalCloseButton"><i class="iconClose"></i></button>
+                <div class="modalMain filterButtonsSection overflow">
+                    <div class="overflowSign up"><i class="iconUp"></i></div>
+                    <button type="button" class="modalCloseButton circle"><i class="iconClose"></i></button>
                     <div class="modalBody">
                         <h2 class="modalHeading">都道府県を選択</h2>
-                        <div class="filterListWrap">
-                            <ul class="filterList">
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">北海道</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">青森県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">岩手県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">宮城県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">秋田県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">山形県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">福島県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">茨城県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">栃木県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">群馬県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">埼玉県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">千葉県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">東京都</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">神奈川県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">新潟県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">富山県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">石川県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">福井県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">山梨県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">長野県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">岐阜県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">静岡県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">愛知県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">三重県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">滋賀県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">京都府</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">大阪府</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">兵庫県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">奈良県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">和歌山県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">鳥取県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">島根県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">岡山県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">広島県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">山口県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">徳島県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">香川県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">愛媛県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">高知県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">福岡県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">佐賀県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">長崎県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">熊本県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">大分県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">宮崎県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">鹿児島県</span></a></li>
-                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">沖縄県</span></a></li>
+                        <div class="modalContent ">
+                            <ul class="prefectureList">
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="北海道">北海道</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="青森県">青森県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="岩手県">岩手県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="宮城県">宮城県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="秋田県">秋田県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="山形県">山形県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="福島県">福島県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="茨城県">茨城県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="栃木県">栃木県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="群馬県">群馬県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="埼玉県">埼玉県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="千葉県">千葉県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="東京都">東京都</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="神奈川県">神奈川県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="新潟県">新潟県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="富山県">富山県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="石川県">石川県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="福井県">福井県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="山梨県">山梨県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="長野県">長野県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="岐阜県">岐阜県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="静岡県">静岡県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="愛知県">愛知県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="三重県">三重県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="滋賀県">滋賀県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="京都府">京都府</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="大阪府">大阪府</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="兵庫県">兵庫県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="奈良県">奈良県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="和歌山県">和歌山県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="鳥取県">鳥取県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="島根県">島根県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="岡山県">岡山県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="広島県">広島県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="山口県">山口県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="徳島県">徳島県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="香川県">香川県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="愛媛県">愛媛県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="高知県">高知県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="福岡県">福岡県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="佐賀県">佐賀県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="長崎県">長崎県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="熊本県">熊本県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="大分県">大分県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="宮崎県">宮崎県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="鹿児島県">鹿児島県</label></li>
+                                <li class="prefectureItem"><label><input type="radio" name="prefecture" value="沖縄県">沖縄県</label></li>
                             </ul>
                         </div>
+                        <div class="buttonGroup">
+                            <button type="button" class="resetButton">リセット</button>
+                            <button type="button" class="submitButton">結果を表示</button>
+                        </div>
                     </div>
+                    <div class="overflowSign down"><i class="iconDown"></i></div>
                 </div>
             </div>
 
+            <div id="modalFilterWrap-2" class="modalWrapper">
+                <div class="modalBackground"></div>
+                <div class="modalMain filterButtonsSection">
+                    <div class="overflowSign up"><i class="iconUp"></i></div>
+                    <button type="button" class="modalCloseButton circle"><i class="iconClose"></i></button>
+                    <div class="modalBody">
+                        <h2 class="modalHeading">予算</h2>
+                        <div class="modalContent">
+                            <ul class="yosanList">
+                                <li class="yosanItem"><label><input type="checkbox" name="yosan[]" value="1,000円以下">1,000円以下</label></li>
+                                <li class="yosanItem"><label><input type="checkbox" name="yosan[]" value="1,001円～3,000円">1,001円～3,000円</label></li>
+                                <li class="yosanItem"><label><input type="checkbox" name="yosan[]" value="3,001円～5,000円">3,001円～5,000円</label></li>
+                                <li class="yosanItem"><label><input type="checkbox" name="yosan[]" value="5,001円～7,000円">5,001円～7,000円</label></li>
+                                <li class="yosanItem"><label><input type="checkbox" name="yosan[]" value="7,001円～10,000円">7,001円～10,000円</label></li>
+                                <li class="yosanItem"><label><input type="checkbox" name="yosan[]" value="10,001円以上">10,001円以上</label></li>
+                            </ul>
+                        </div>
+                        <div class="buttonGroup">
+                            <button type="button">絞り込む</button>
+                        </div>
+                    </div>
+                    <div class="overflowSign down"><i class="iconDown"></i></div>
+                </div>
+            </div>
+
+            <div id="modalFilterWrap-3" class="modalWrapper">
+                <div class="modalBackground"></div>
+                <div class="modalMain filterButtonsSection">
+                    <div class="overflowSign up"><i class="iconUp"></i></div>
+                    <button type="button" class="modalCloseButton circle"><i class="iconClose"></i></button>
+                    <div class="modalBody">
+                        <h2 class="modalHeading">ジャンル</h2>
+                        <div class="modalContent">
+                            <ul class="genreList">
+                                <li class="genreItem"><label><input type="checkbox" name="genre[]" value="和食">和食</label></li>
+                                <li class="genreItem"><label><input type="checkbox" name="genre[]" value="居酒屋・立ち飲み">居酒屋・立ち飲み</label></li>
+                                <li class="genreItem"><label><input type="checkbox" name="genre[]" value="定食・どんぶり">定食・どんぶり</label></li>
+                                <li class="genreItem"><label><input type="checkbox" name="genre[]" value="寿司">寿司</label></li>
+                                <li class="genreItem"><label><input type="checkbox" name="genre[]" value="焼鳥・串焼き">焼鳥・串焼き</label></li>
+                                <li class="genreItem"><label><input type="checkbox" name="genre[]" value="とんかつ・揚げ物">とんかつ・揚げ物</label></li>
+                                <li class="genreItem"><label><input type="checkbox" name="genre[]" value="天ぷら">天ぷら</label></li>
+                                <li class="genreItem"><label><input type="checkbox" name="genre[]" value="ふぐ・うなぎ・海鮮">ふぐ・うなぎ・海鮮</label></li>
+                                <li class="genreItem"><label><input type="checkbox" name="genre[]" value="天ぷら">天ぷら</label></li>
+                                <li class="genreItem"><label><input type="checkbox" name="genre[]" value="鍋料理（すき焼き・しゃぶしゃぶ等）">鍋料理（すき焼き・しゃぶしゃぶ等）</label></li>
+                                <li class="genreItem"><label><input type="checkbox" name="genre[]" value="お好み焼き・もんじゃ・たこ焼き">お好み焼き・もんじゃ・たこ焼き</label></li>
+                                <li class="genreItem"><label><input type="checkbox" name="genre[]" value="からあげ">からあげ</label></li>
+                                <li class="genreItem"><label><input type="checkbox" name="genre[]" value="ラーメン・つけ麺">ラーメン・つけ麺</label></li>
+                                <li class="genreItem"><label><input type="checkbox" name="genre[]" value="焼肉">焼肉</label></li>
+                                <li class="genreItem"><label><input type="checkbox" name="genre[]" value="鉄板焼・ステーキ・ハンバーグ">鉄板焼・ステーキ・ハンバーグ</label></li>
+                                <li class="genreItem"><label><input type="checkbox" name="genre[]" value="イタリア料理">イタリア料理</label></li>
+                                <li class="genreItem"><label><input type="checkbox" name="genre[]" value="フランス料理">フランス料理</label></li>
+                                <li class="genreItem"><label><input type="checkbox" name="genre[]" value="洋食・西洋料理">洋食・西洋料理</label></li>
+                                <li class="genreItem"><label><input type="checkbox" name="genre[]" value="中華料理">中華料理</label></li>
+                                <li class="genreItem"><label><input type="checkbox" name="genre[]" value="各国料理専門店">各国料理専門店</label></li>
+                                <li class="genreItem"><label><input type="checkbox" name="genre[]" value="カレー">カレー</label></li>
+                                <li class="genreItem"><label><input type="checkbox" name="genre[]" value="ハンバーガー">ハンバーガー</label></li>
+                                <li class="genreItem"><label><input type="checkbox" name="genre[]" value="ダイニング（和・洋・創作）">ダイニング（和・洋・創作）</label></li>
+                                <li class="genreItem"><label><input type="checkbox" name="genre[]" value="バー">バー</label></li>
+                                <li class="genreItem"><label><input type="checkbox" name="genre[]" value="カフェ・喫茶">カフェ・喫茶</label></li>
+                                <li class="genreItem"><label><input type="checkbox" name="genre[]" value="製菓・スイーツ">製菓・スイーツ</label></li>
+                                <li class="genreItem"><label><input type="checkbox" name="genre[]" value="惣菜・弁当">惣菜・弁当</label></li>
+                                <li class="genreItem"><label><input type="checkbox" name="genre[]" value="ファストフード">ファストフード</label></li>
+                                <li class="genreItem"><label><input type="checkbox" name="genre[]" value="アミューズメント（ダーツ・ゴルフ・カラオケ）">アミューズメント（ダーツ・ゴルフ・カラオケ）</label></li>
+                            </ul>
+                        </div>
+                        <div class="buttonGroup">
+                            <button type="button">絞り込む</button>
+                        </div>
+                    </div>
+                    <div class="overflowSign down"><i class="iconDown"></i></div>
+                </div>
+            </div>
+
+            <div id="modalFilterWrap-4" class="modalWrapper">
+                <div class="modalBackground"></div>
+                <div class="modalMain filterButtonsSection">
+                    <div class="overflowSign up"><i class="iconUp"></i></div>
+                    <button type="button" class="modalCloseButton circle"><i class="iconClose"></i></button>
+                    <div class="modalBody">
+                        <h2 class="modalHeading">こだわり</h2>
+                        <div class="modalContent">
+                            <ul class="kodawariList">
+                                <li class="kodawariItem"><label><input type="checkbox" name="kodawari[]" value="クレジットカード決済可">クレジットカード決済可</label></li>
+                                <li class="kodawariItem"><label><input type="checkbox" name="kodawari[]" value="英語対応可">英語対応可</label></li>
+                                <li class="kodawariItem"><label><input type="checkbox" name="kodawari[]" value="飲み放題あり">飲み放題あり</label></li>
+                                <li class="kodawariItem"><label><input type="checkbox" name="kodawari[]" value="全席禁煙">全席禁煙</label></li>
+                                <li class="kodawariItem"><label><input type="checkbox" name="kodawari[]" value="電話予約可">電話予約可</label></li>
+                                <li class="kodawariItem"><label><input type="checkbox" name="kodawari[]" value="日本酒あり">日本酒あり</label></li>
+                            </ul>
+                        </div>
+                        <div class="buttonGroup">
+                            <button type="button">絞り込む</button>
+                        </div>
+                    </div>
+                    <div class="overflowSign down"><i class="iconDown"></i></div>
+                </div>
+            </div>
+    
         </div>
 
         <footer>

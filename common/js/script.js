@@ -207,26 +207,97 @@ document.addEventListener("DOMContentLoaded", () => {
     /**
      * フィルター検索を表示する
      */
-    const modalFilterButton = document.getElementById('modalFilterButton');
-    const modalFilterWrap = document.getElementById('modalFilterWrap');
-    const modalCloseButton = modalFilterWrap.querySelector('.modalCloseButton');
-    const modalBackground = modalFilterWrap.querySelector('.modalBackground');
+    const filterButtons = document.querySelectorAll('.filterButton');
+    const modalWrappers = document.querySelectorAll('.modalWrapper');
+    const overflowThreshold = 260; // ウィンドウの高さから引く固定値
 
-    // モーダルを開く関数
-    modalFilterButton.addEventListener('click', () => {
-        modalFilterWrap.classList.add('visible');
-    });
+    /**
+     * モーダル要素のメインコンテンツが閾値を超えた場合に overflow クラスを付与/削除する
+     * @param {HTMLElement} modalWrapper - モーダルラッパー要素
+     */
+    const toggleOverflowClass = (modalWrapper) => {
+        const modalMain = modalWrapper.querySelector('.modalMain');
+        if (!modalMain) {
+            console.error('.modalMain というクラス名を持つ要素が見つかりません。');
+            return;
+        }
 
-    // モーダルを閉じる関数
-    const closeModal = () => {
-        modalFilterWrap.classList.remove('visible');
+        const threshold = window.innerHeight - overflowThreshold;
+        if (modalMain.offsetHeight > threshold) {
+            modalMain.classList.add('overflow');
+        } else {
+            modalMain.classList.remove('overflow');
+        }
     };
 
-    // 閉じるボタンをクリックしたときにモーダルを閉じる
-    modalCloseButton.addEventListener('click', closeModal);
+    /**
+     * モーダルを表示する
+     * @param {string} modalId - 表示するモーダルのID
+     */
+    const showModal = (modalId) => {
+        const modalElement = document.querySelector(`#${modalId}`);
+        if (modalElement) {
+            modalElement.classList.add('visible');
+            const modalWrapper = modalElement.closest('.modalWrapper');
+            if (modalWrapper) {
+                toggleOverflowClass(modalWrapper);
+            }
+        }
+    };
 
-    // 背景をクリックしたときにモーダルを閉じる
-    modalBackground.addEventListener('click', closeModal);
+    /**
+     * モーダルを非表示にする
+     * @param {HTMLElement} modalWrapper - 非表示にするモーダルラッパー要素
+     */
+    const hideModal = (modalWrapper) => {
+        modalWrapper.classList.remove('visible');
+    };
+
+    // フィルターボタンのイベントリスナー
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const modalId = this.dataset.modal;
+            showModal(modalId);
+        });
+    });
+
+    // モーダルラッパーのイベントリスナー（閉じる処理）
+    modalWrappers.forEach(modalWrapper => {
+        const modalCloseButton = modalWrapper.querySelector('.modalCloseButton');
+        const modalBackground = modalWrapper.querySelector('.modalBackground');
+
+        if (modalCloseButton) {
+            modalCloseButton.addEventListener('click', () => {
+                hideModal(modalWrapper);
+            });
+        }
+
+        if (modalBackground) {
+            modalBackground.addEventListener('click', () => {
+                hideModal(modalWrapper);
+            });
+        }
+    });
+
+    // ウィンドウリサイズ時の処理
+    window.addEventListener('resize', () => {
+        modalWrappers.forEach(toggleOverflowClass);
+    });
+
+
+    /**
+     * リセットボタンのイベント
+     */
+    const resetButton = document.querySelector('.resetButton');
+    const prefectureRadios = document.querySelectorAll('input[name="prefecture"]');
+    
+    resetButton.addEventListener('click', () => {
+      prefectureRadios.forEach(radio => {
+        radio.checked = false;
+      });
+    });
+
+    
 });
 
 /**
@@ -237,4 +308,4 @@ function reviewMoreview() {
     if (reviewCommentWrapper) {
         reviewCommentWrapper.classList.add('viewAll');
     }
-}    
+}
