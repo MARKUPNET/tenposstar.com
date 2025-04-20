@@ -180,6 +180,32 @@
   background-color: var(--orange);
   border-radius: 12px; }
 
+.iconUp, .iconDown {
+  display: block;
+  width: 7px;
+  height: 4px;
+  position: relative; }
+  .iconUp::before, .iconDown::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 0; }
+
+.iconUp::before {
+  border-style: solid;
+  border-color: transparent transparent #313131 transparent;
+  border-width: 0px 3.5px 4px 3.5px; }
+
+.iconDown::before {
+  border-style: solid;
+  border-color: #313131 transparent transparent transparent;
+  border-width: 4px 3.5px 0px 3.5px; }
+
 html {
   scroll-behavior: smooth; }
 
@@ -539,9 +565,9 @@ button {
         font-size: 24px; } }
 
 .filterButton {
-  padding: 6px 23px 6px 8px;
+  padding: 6px 23px 6px 6px;
   color: var(--black);
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   line-height: 1;
   background-color: var(--white);
@@ -553,12 +579,12 @@ button {
     position: absolute;
     right: 10px;
     top: 50%;
-    margin-top: -4px;
+    transform: translateY(-50%);
     width: 0;
     height: 0;
     border-style: solid;
-    border-color: var(--black) transparent transparent transparent;
-    border-width: 7px 4px 0px 4px; }
+    border-color: #313131 transparent transparent transparent;
+    border-width: 4px 3.5px 0px 3.5px; }
     @media screen and (min-width: 768px) {
       .filterButton:before {
         border-color: var(--black) transparent transparent transparent; } }
@@ -592,24 +618,27 @@ button {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3); }
-  .modalWrapper .modalContent {
+  .modalWrapper .modalMain {
     margin: 0 auto;
     padding: 26px 15px 0;
     width: 100%;
-    height: 100%;
     max-width: 950px;
+    max-height: 100%;
     background-color: var(--white);
     box-shadow: 0 0 16px;
     border-top: 6px solid var(--orange);
     position: relative;
     z-index: 1; }
     @media screen and (min-width: 768px) {
-      .modalWrapper .modalContent {
+      .modalWrapper .modalMain {
         padding: 36px 60px 0; } }
+    .modalWrapper .modalMain.overflow {
+      height: 100%; }
   .modalWrapper .modalCloseButton {
     position: absolute;
     top: -55px;
     right: 0;
+    z-index: 1;
     width: 42px;
     height: 42px;
     background-color: var(--white);
@@ -626,6 +655,24 @@ button {
       transform: translate(-50%, -50%) rotate(45deg); }
     .modalWrapper .modalCloseButton::after {
       transform: translate(-50%, -50%) rotate(-45deg); }
+    .modalWrapper .modalCloseButton.circle {
+      width: 26px;
+      height: 26px;
+      background-color: #EAE7E7;
+      border-radius: 50%;
+      top: 21px;
+      right: 10px;
+      box-shadow: none; }
+      @media screen and (min-width: 768px) {
+        .modalWrapper .modalCloseButton.circle {
+          width: 36px;
+          height: 36px;
+          background-color: var(--white);
+          top: 24px;
+          right: 20px; } }
+      @media screen and (min-width: 768px) {
+        .modalWrapper .modalCloseButton.circle:hover {
+          background-color: #EAE7E7; } }
   .modalWrapper .modalBody {
     height: 100%; }
   .modalWrapper .modalHeading {
@@ -691,6 +738,71 @@ button {
       color: var(--white);
       background-color: var(--orange);
       border: 1px solid var(--orange); }
+  .modalWrapper .filterButtonsSection.overflow {
+    position: relative; }
+    .modalWrapper .filterButtonsSection.overflow .overflowSign {
+      display: flex; }
+  .modalWrapper .filterButtonsSection .modalBody {
+    padding-bottom: 80px;
+    position: relative; }
+    @media screen and (min-width: 768px) {
+      .modalWrapper .filterButtonsSection .modalBody {
+        padding-bottom: 130px; } }
+  .modalWrapper .filterButtonsSection .modalContent {
+    height: calc(100% - 80px);
+    overflow-y: auto; }
+    @media screen and (min-width: 768px) {
+      .modalWrapper .filterButtonsSection .modalContent {
+        height: calc(100% - 60px); } }
+    .modalWrapper .filterButtonsSection .modalContent input[type=radio], .modalWrapper .filterButtonsSection .modalContent input[type=checkbox] {
+      margin-right: 5px; }
+  .modalWrapper .filterButtonsSection .overflowSign {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 16px;
+    background-color: #EAE7E7;
+    position: absolute;
+    left: 0; }
+    .modalWrapper .filterButtonsSection .overflowSign.up {
+      top: 0; }
+    .modalWrapper .filterButtonsSection .overflowSign.down {
+      bottom: 82px; }
+      @media screen and (min-width: 768px) {
+        .modalWrapper .filterButtonsSection .overflowSign.down {
+          bottom: 120px; } }
+  .modalWrapper .buttonGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 20px; }
+    @media screen and (min-width: 768px) {
+      .modalWrapper .buttonGroup {
+        gap: 30px;
+        bottom: 40px; } }
+    .modalWrapper .buttonGroup button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 140px;
+      height: 46px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1;
+      background-color: var(--orange);
+      border-radius: 8px; }
+      .modalWrapper .buttonGroup button:hover {
+        opacity: 0.8; }
+      .modalWrapper .buttonGroup button.resetButton {
+        color: var(----balck);
+        background-color: var(--white);
+        border: 1px solid #D5D5D5; }
 
 body {
   color: var(--black);

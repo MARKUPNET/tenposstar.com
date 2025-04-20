@@ -187,7 +187,10 @@
         <div class="contents">
 
             <section class="eatWrap">
-                <h1 class="pageTitle">食べる<button id="modalFilterButton" class="filterButton" type="button">ジャンル</button></h1>
+                <div class="filterWrap">
+                    <h1 class="pageTitle">食べる</h1>
+                    <button id="modalFilterButton" class="filterButton" type="button" data-modal="modalFilterWrap">ジャンル</button>
+                </div>
                 <div class="eatList cardWrap">
                     <article class="card">
                         <div class="thumb">
@@ -571,7 +574,7 @@
 
             <div id="modalFilterWrap" class="modalWrapper">
                 <div class="modalBackground"></div>
-                <div class="modalContent">
+                <div class="modalMain">
                     <button type="button" class="modalCloseButton"><i class="iconClose"></i></button>
                     <div class="modalBody">
                         <h2 class="modalHeading">料理ジャンルから探す</h2>

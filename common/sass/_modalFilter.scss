@@ -18,9 +18,9 @@
 }
 
 .filterButton{
-    padding: 6px 23px 6px 8px;
+    padding: 6px 23px 6px 6px;
     color: var(--black);
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
     line-height: 1;
     background-color: var(--white);
@@ -33,12 +33,12 @@
         position: absolute;
         right: 10px;
         top: 50%;
-        margin-top: -4px;
+        transform: translateY(-50%);
         width: 0;
         height: 0;
         border-style: solid;
-        border-color: var(--black) transparent transparent transparent;
-        border-width: 7px 4px 0px 4px;
+        border-color: #313131 transparent transparent transparent;
+        border-width: 4px 3.5px 0px 3.5px;
         @media screen and (min-width: 768px) {
             border-color: var(--black) transparent transparent transparent;
         }
@@ -85,12 +85,12 @@
         background-color: rgba(0,0,0,0.3);
     }
 
-    .modalContent{
+    .modalMain{
         margin: 0 auto;
         padding: 26px 15px 0;
         width: 100%;
-        height: 100%;
         max-width: 950px;
+        max-height: 100%;
         background-color: var(--white);
         box-shadow: 0 0 16px;
         border-top: 6px solid var(--orange);
@@ -100,12 +100,17 @@
         @media screen and (min-width: 768px) {
             padding: 36px 60px 0;
         }
+
+        &.overflow{
+            height: 100%;
+        }
     }
 
     .modalCloseButton{
         position: absolute;
         top: -55px;
         right: 0;
+        z-index: 1;
         width: 42px;
         height: 42px;
         background-color: var(--white);
@@ -127,6 +132,29 @@
            
         &::after {
             transform: translate(-50%,-50%) rotate(-45deg);
+        }
+
+        &.circle{
+            width: 26px;
+            height: 26px;
+            background-color: #EAE7E7;
+            border-radius: 50%;
+            top: 21px;
+            right: 10px;
+            box-shadow: none;
+            @media screen and (min-width: 768px) {
+                width: 36px;
+                height: 36px;
+                background-color: var(--white);
+                top: 24px;
+                right: 20px;
+            }
+
+            &:hover{
+                @media screen and (min-width: 768px) {
+                    background-color: #EAE7E7;
+                }
+            }
         }
     }
 
@@ -212,6 +240,97 @@
             color: var(--white);
             background-color: var(--orange);
             border: 1px solid var(--orange);
+        }
+    }
+
+    .filterButtonsSection{
+
+        &.overflow{
+            position: relative;
+
+            .overflowSign{
+                display: flex;
+            }
+        }
+
+        .modalBody{
+            padding-bottom: 80px;
+            position: relative;
+            @media screen and (min-width: 768px) {
+                padding-bottom: 130px;
+            }
+        }
+
+        .modalContent{
+            height: calc(100% - 80px);
+            overflow-y: auto;
+            @media screen and (min-width: 768px) {
+                height: calc(100% - 60px);
+            }
+
+            input[type=radio], input[type=checkbox]{
+                margin-right: 5px;
+            }
+        }
+
+        .overflowSign{
+            display: none;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 16px;
+            background-color: #EAE7E7;
+            position: absolute;
+            left: 0;
+
+            &.up{
+                top: 0;
+            }
+            &.down{
+                bottom: 82px;
+                @media screen and (min-width: 768px) {
+                    bottom: 120px;
+                }
+            }
+        }
+    }
+
+    .buttonGroup{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        @media screen and (min-width: 768px) {
+            gap: 30px;
+            bottom: 40px;
+        }
+
+        button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 140px;
+            height: 46px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1;
+            background-color: var(--orange);
+            border-radius: 8px;
+
+            &:hover{
+                opacity: 0.8;
+            }
+
+            &.resetButton{
+                color: var(----balck);
+                background-color: var(--white);
+                border: 1px solid #D5D5D5;
+            }
         }
     }
 }

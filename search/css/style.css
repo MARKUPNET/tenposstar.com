@@ -1,0 +1,104 @@
+.contents {
+  padding-top: 10px;
+  padding-bottom: 80px; }
+  @media screen and (min-width: 768px) {
+    .contents {
+      padding-top: 85px;
+      padding-bottom: 120px; } }
+
+.selectedBox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 100%;
+  margin-top: 10px; }
+  @media screen and (min-width: 768px) {
+    .selectedBox {
+      margin-top: 16px; } }
+
+.selectedItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 26px;
+  background-color: var(--orange);
+  border-radius: 13px;
+  padding: 0 33px 0 10px;
+  position: relative; }
+  .selectedItem span {
+    display: inline-block;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1; }
+  .selectedItem .removeButton {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/removeButton.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%); }
+
+.filterButtonWrap {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  margin-top: 40px; }
+  @media screen and (min-width: 768px) {
+    .filterButtonWrap {
+      margin-top: 20px; } }
+
+.resultList {
+  margin-top: 30px; }
+  @media screen and (min-width: 768px) {
+    .resultList {
+      margin-top: 34px; } }
+
+.prefectureList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px; }
+  @media screen and (min-width: 768px) {
+    .prefectureList {
+      margin-top: 40px; } }
+
+.prefectureItem {
+  width: calc(33.33% - 10px); }
+  @media screen and (min-width: 768px) {
+    .prefectureItem {
+      width: calc(20% - 10px); } }
+
+.yosanList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px; }
+
+.yosanItem {
+  width: 100%; }
+
+.genreList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px; }
+
+.kodawariList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px; }
+
+.kodawariItem {
+  width: 100%; }
+
+/*# sourceMappingURL=../../travelprep/css/style.css.map */
