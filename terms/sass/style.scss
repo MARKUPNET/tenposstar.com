@@ -1,0 +1,25 @@
+.contents{
+    padding-top: 10px;
+    padding-bottom: 80px;
+    @media screen and (min-width: 768px) {
+        padding-top: 85px;
+        padding-bottom: 120px;
+    }
+}
+
+.termsWrap{
+    margin: 20px auto 0;
+    @media screen and (min-width: 768px) {
+        margin-top: 85px;
+    }
+
+    .article_ttl{
+        margin: 40px auto 20px;
+        font-weight: 700;
+    }
+
+    .article_txt{
+        margin: 20px auto;
+    }
+
+}

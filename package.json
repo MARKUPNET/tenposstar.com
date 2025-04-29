@@ -25,6 +25,7 @@
         "compile:search": "node-sass search/sass/style.scss search/css/style.css --source-map search/css/style.css.map --source-map-contents -w",
         "compile:searchgourmet": "node-sass searchgourmet/sass/style.scss searchgourmet/css/style.css --source-map searchgourmet/css/style.css.map --source-map-contents -w",
         "compile:privacypolicy": "node-sass privacypolicy/sass/style.scss privacypolicy/css/style.css --source-map privacypolicy/css/style.css.map --source-map-contents -w",
+        "compile:terms": "node-sass terms/sass/style.scss terms/css/style.css --source-map terms/css/style.css.map --source-map-contents -w",
         "serve": "serve"
     },
     "author": "",
