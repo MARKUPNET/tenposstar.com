@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../sass/style.scss"
+	],
+	"sourcesContent": [
+		".contents{\r\n    padding-top: 10px;\r\n    padding-bottom: 80px;\r\n    @media screen and (min-width: 768px) {\r\n        padding-top: 85px;\r\n        padding-bottom: 120px;\r\n    }\r\n}\r\n\r\n.privacypolicyWrap{\r\n    margin: 20px auto 0;\r\n    @media screen and (min-width: 768px) {\r\n        margin-top: 85px;\r\n    }\r\n\r\n    .article_ttl{\r\n        margin: 40px auto 20px;\r\n        font-weight: 700;\r\n    }\r\n\r\n    .article_txt{\r\n        margin: 20px auto;\r\n    }\r\n\r\n}"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,SAAS,CAAA;EACL,WAAW,EAAE,IAAI;EACjB,cAAc,EAAE,IAAI,GAKvB;EAJG,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;IAHvC,AAAA,SAAS,CAAA;MAID,WAAW,EAAE,IAAI;MACjB,cAAc,EAAE,KAAK,GAE5B;;AAED,AAAA,kBAAkB,CAAA;EACd,MAAM,EAAE,WAAW,GActB;EAbG,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;IAFvC,AAAA,kBAAkB,CAAA;MAGV,UAAU,EAAE,IAAI,GAYvB;EAfD,AAMI,kBANc,CAMd,YAAY,CAAA;IACR,MAAM,EAAE,cAAc;IACtB,WAAW,EAAE,GAAG,GACnB;EATL,AAWI,kBAXc,CAWd,YAAY,CAAA;IACR,MAAM,EAAE,SAAS,GACpB"
+}
