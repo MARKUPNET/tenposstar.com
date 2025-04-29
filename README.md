@@ -32,6 +32,21 @@ npm run sass
         "compile:postdetail": "node-sass postdetail/sass/style.scss postdetail/css/style.css --source-map postdetail/css/style.css.map --source-map-contents -w",
         "compile:store": "node-sass store/sass/style.scss store/css/style.css --source-map store/css/style.css.map --source-map-contents -w",
         "compile:toppage": "node-sass toppage/sass/style.scss toppage/css/style.css --source-map toppage/css/style.css.map --source-map-contents -w",
+        "compile:gourmet": "node-sass gourmet/sass/style.scss gourmet/css/style.css --source-map gourmet/css/style.css.map --source-map-contents -w",
+        "compile:tags": "node-sass tag/sass/style.scss tag/css/style.css --source-map tag/css/style.css.map --source-map-contents -w",
+        "compile:curator": "node-sass curator/sass/style.scss curator/css/style.css --source-map curator/css/style.css.map --source-map-contents -w",
+        "compile:region": "node-sass region/sass/style.scss region/css/style.css --source-map region/css/style.css.map --source-map-contents -w",
+        "compile:map": "node-sass map/sass/style.scss map/css/style.css --source-map map/css/style.css.map --source-map-contents -w",
+        "compile:moved": "node-sass moved/sass/style.scss moved/css/style.css --source-map moved/css/style.css.map --source-map-contents -w",
+        "compile:tour": "node-sass tour/sass/style.scss tour/css/style.css --source-map tour/css/style.css.map --source-map-contents -w",
+        "compile:findjapan": "node-sass findjapan/sass/style.scss findjapan/css/style.css --source-map findjapan/css/style.css.map --source-map-contents -w",
+        "compile:sightseeingjapan": "node-sass sightseeingjapan/sass/style.scss sightseeingjapan/css/style.css --source-map sightseeingjapan/css/style.css.map --source-map-contents -w",
+        "compile:travelprep": "node-sass travelprep/sass/style.scss travelprep/css/style.css --source-map travelprep/css/style.css.map --source-map-contents -w",
+        "compile:search": "node-sass search/sass/style.scss search/css/style.css --source-map search/css/style.css.map --source-map-contents -w",
+        "compile:searchgourmet": "node-sass searchgourmet/sass/style.scss searchgourmet/css/style.css --source-map searchgourmet/css/style.css.map --source-map-contents -w",
+        "compile:privacypolicy": "node-sass privacypolicy/sass/style.scss privacypolicy/css/style.css --source-map privacypolicy/css/style.css.map --source-map-contents -w",
+        "compile:terms": "node-sass terms/sass/style.scss terms/css/style.css --source-map terms/css/style.css.map --source-map-contents -w",
+        "compile:about": "node-sass about/sass/style.scss about/css/style.css --source-map about/css/style.css.map --source-map-contents -w",
         "serve": "serve"
     },
 ```
@@ -54,4 +69,13 @@ npm run sass
 12.移動する・・・moved
 13.食体験ツアー詳細・・・tour
 
+14.日本を見つける・・・findjapan
+15.観光名所紹介・・・sightseeingjapan
+16.旅の準備・・・travelprep
+17.北海道　レストラン・・・search
+18.北海道　ご当地グルメ・・・searchgourmet
+
+19.プライバシーポリシー・・・privacypolicy
+20.利用規約・・・terms
+21.加盟店募集中・・・about
 ```
