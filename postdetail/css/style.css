@@ -191,12 +191,76 @@
         margin-top: 10px; } }
 
 .buttonWrap {
-  margin-top: 70px;
-  margin-bottom: 80px; }
+  margin: 70px auto;
+  text-align: center; }
   @media screen and (min-width: 768px) {
     .buttonWrap {
-      margin-top: 80px;
-      margin-bottom: 120px; } }
+      margin: 80px auto; } }
+  .buttonWrap .button-1 {
+    margin: 60px auto 20px; }
+    .buttonWrap .button-1 a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px auto;
+      padding: 0 30px;
+      height: 50px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1;
+      background-color: var(--orange);
+      border-radius: 25px; }
+      @media screen and (min-width: 768px) {
+        .buttonWrap .button-1 a {
+          font-size: 20px; } }
+  .buttonWrap .button-2 {
+    margin: 20px auto; }
+    .buttonWrap .button-2 .recruit {
+      margin: 20px auto;
+      font-size: 16px;
+      font-weight: 700; }
+      @media screen and (min-width: 768px) {
+        .buttonWrap .button-2 .recruit {
+          font-size: 20px; } }
+      .buttonWrap .button-2 .recruit span {
+        display: inline-block;
+        position: relative; }
+        .buttonWrap .button-2 .recruit span::before, .buttonWrap .button-2 .recruit span::after {
+          content: "";
+          display: block;
+          width: 26px;
+          height: 2px;
+          border-top: 2px solid var(--black);
+          position: absolute; }
+        .buttonWrap .button-2 .recruit span::before {
+          top: 50%;
+          left: -50px;
+          transform: rotate(40deg); }
+        .buttonWrap .button-2 .recruit span::after {
+          top: 50%;
+          right: -50px;
+          transform: rotate(-40deg); }
+    .buttonWrap .button-2 a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px auto;
+      padding: 0 60px;
+      height: 50px;
+      color: var(--black);
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1;
+      background-color: var(--white);
+      border: 1px solid #707070;
+      border-radius: 25px; }
+      @media screen and (min-width: 768px) {
+        .buttonWrap .button-2 a {
+          font-size: 20px; } }
+      .buttonWrap .button-2 a:hover {
+        color: var(--white);
+        background-color: var(--orange); }
 
 .recommendSection {
   margin-top: 70px;
