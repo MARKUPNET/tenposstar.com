@@ -18,15 +18,33 @@
         .thumb{
             width: 100%;
 
-            picture{
+            a{
                 display: block;
+                padding-top: 68%;
                 width: 100%;
                 border-radius: 10px;
                 overflow: hidden;
+                position: relative;
+            }
+
+            picture{
+                display: block;
+                width: 100%;
+                max-width: 100%;
+                border-radius: 10px;
+                overflow: hidden;
+                position: absolute;
+                top: 0;
+                left: 0;
             }
 
             img{
-                width: 100%;
+                width: auto;
+                min-width: 100%;
+                max-width: 100%;
+                height: auto;
+                min-height: 100%;
+                max-height: 100%;
             }
         }
 
@@ -85,6 +103,12 @@
 
     .card{
         width: 100%;
+
+        .thumb{
+            a{
+                padding-top: 33%;
+            }
+        }
     }
 }
 
