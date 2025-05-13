@@ -409,6 +409,8 @@ button {
       .cardWrap.inline .card {
         margin: 0;
         width: calc(33.33% - 28px); } }
+    .cardWrap.inline .card .thumb a {
+      padding-top: 100%; }
     .cardWrap.inline .card .tagWrap {
       margin-top: 14px;
       font-size: 13px; }
