@@ -106,18 +106,120 @@
 
 .mainvisual{
     margin: 0;
+    position: relative;
     @media screen and (min-width: 768px) {
         order: 2;
         margin-top: 40px;
+    }
+}
+
+.slider{
+
+    &Wrap{
         display: flex;
-    }
-    picture{
-        display: block;
         width: 100%;
+        overflow: hidden;
+        // overflow-x: scroll; // ←←スクロールしたいときはこちら
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
     }
-    img{
+
+    &Item{
+        flex: 0 0 100%;
+        margin: 0;
+        padding: 0;
+        scroll-snap-align: start;
+
+        @media screen and (min-width: 768px) {
+            flex: 0 0 50%;
+        }
+
+        picture{
+            display: block;
+            padding-top: 68%;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            
+        }
+        img{
+            width: auto;
+            height: auto;
+            min-width: 100%;
+            min-height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &Buttons{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
         width: 100%;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+
+        .slider_btn{
+            width: 32px;
+            height: 32px;
+            background: none;
+            position: relative;
+            transition: all 0.3s ease;
+            @media screen and (min-width: 768px) {
+                width: 50px;
+                height: 50px;
+            }
+
+            &:before{
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                background-image: url(../images/icon_arrow.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+        }
+
+        .btn_prev{
+            transform: rotate(-180deg);
+
+            &:before{
+                left: -10px;
+                @media screen and (min-width: 768px) {
+                    left: -15px;
+                }
+            }
+
+            &:hover{
+                transform: rotate(-180deg) translateX(5px);
+            }
+        }
+
+        .btn_next{
+            &:before{
+                right: 10px;
+                @media screen and (min-width: 768px) {
+                    right: 15px;
+                }
+            }
+
+            &:hover{
+                transform: translateX(5px);
+            }
+        }
     }
+
 }
 
 .storeInformation{
