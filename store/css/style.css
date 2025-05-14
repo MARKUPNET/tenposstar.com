@@ -83,17 +83,91 @@
     flex-direction: column; } }
 
 .mainvisual {
-  margin: 0; }
+  margin: 0;
+  position: relative; }
   @media screen and (min-width: 768px) {
     .mainvisual {
       order: 2;
-      margin-top: 40px;
-      display: flex; } }
-  .mainvisual picture {
+      margin-top: 40px; } }
+
+.sliderWrap {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; }
+
+.sliderItem {
+  flex: 0 0 100%;
+  margin: 0;
+  padding: 0;
+  scroll-snap-align: start; }
+  @media screen and (min-width: 768px) {
+    .sliderItem {
+      flex: 0 0 50%; } }
+  .sliderItem picture {
     display: block;
-    width: 100%; }
-  .mainvisual img {
-    width: 100%; }
+    padding-top: 68%;
+    width: 100%;
+    overflow: hidden;
+    position: relative; }
+  .sliderItem img {
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+.sliderButtons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%); }
+  .sliderButtons .slider_btn {
+    width: 32px;
+    height: 32px;
+    background: none;
+    position: relative;
+    transition: all 0.3s ease; }
+    @media screen and (min-width: 768px) {
+      .sliderButtons .slider_btn {
+        width: 50px;
+        height: 50px; } }
+    .sliderButtons .slider_btn:before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      background-image: url(../images/icon_arrow.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center; }
+  .sliderButtons .btn_prev {
+    transform: rotate(-180deg); }
+    .sliderButtons .btn_prev:before {
+      left: -10px; }
+      @media screen and (min-width: 768px) {
+        .sliderButtons .btn_prev:before {
+          left: -15px; } }
+    .sliderButtons .btn_prev:hover {
+      transform: rotate(-180deg) translateX(5px); }
+  .sliderButtons .btn_next:before {
+    right: 10px; }
+    @media screen and (min-width: 768px) {
+      .sliderButtons .btn_next:before {
+        right: 15px; } }
+  .sliderButtons .btn_next:hover {
+    transform: translateX(5px); }
 
 .storeInformation {
   margin-top: 12px; }
