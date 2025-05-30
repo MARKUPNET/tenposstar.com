@@ -277,6 +277,30 @@ button {
     color: var(--white);
     background-color: var(--orange); }
 
+a.defaultLink {
+  transition: all 0.3s ease; }
+  a.defaultLink:hover {
+    color: var(--orange); }
+
+.defaultButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0 0;
+  padding: 20px 40px;
+  height: 55px;
+  font-weight: 700;
+  background-color: var(--white);
+  border: 1px solid #707070;
+  border-radius: 40px;
+  transition: all 0.3s ease; }
+  @media screen and (min-width: 768px) {
+    .defaultButton {
+      height: 76px; } }
+  .defaultButton:hover {
+    color: var(--white);
+    background-color: var(--orange); }
+
 .cardWrap {
   display: flex;
   flex-wrap: wrap;
