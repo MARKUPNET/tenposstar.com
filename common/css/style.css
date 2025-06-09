@@ -593,6 +593,19 @@ a.defaultLink {
   .paginationWrapper .pageNumbers a:nth-of-type(6) {
     display: none; } }
 
+.breadcrumb {
+  margin: 10px auto;
+  padding: 0 20px;
+  max-width: 1140px; }
+  .breadcrumb-item {
+    display: inline; }
+    .breadcrumb-item:not(:last-child) {
+      margin-right: 10px; }
+      .breadcrumb-item:not(:last-child)::after {
+        content: ">";
+        display: inline-block;
+        margin-left: 10px; }
+
 .filterWrap {
   display: flex;
   align-items: center;

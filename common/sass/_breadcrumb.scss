@@ -1,0 +1,19 @@
+.breadcrumb{
+    margin: 10px auto;
+    padding: 0 20px;
+    max-width: 1140px;
+
+    &-item{
+        display: inline;
+
+        &:not(:last-child){
+            margin-right: 10px;
+
+            &::after{
+                content: ">";
+                display: inline-block;
+                margin-left: 10px;
+            }
+        }
+    }
+}
