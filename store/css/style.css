@@ -864,4 +864,20 @@ section {
       width: calc(33.33% - 15px);
       flex: none; } }
 
+.pr_elements_wrapper {
+  margin-top: 10px; }
+  @media screen and (min-width: 768px) {
+    .pr_elements_wrapper {
+      margin-top: 28px; } }
+
+.pr_store_instagram,
+.pr_tenposstar_instagram,
+.pr_banner {
+  margin: 10px 0; }
+  @media screen and (min-width: 768px) {
+    .pr_store_instagram,
+    .pr_tenposstar_instagram,
+    .pr_banner {
+      margin: 28px 0; } }
+
 /*# sourceMappingURL=style.css.map */

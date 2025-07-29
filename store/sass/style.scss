@@ -1150,3 +1150,20 @@ section{
         }
     }
 }
+
+.pr_elements_wrapper{
+    margin-top: 10px;
+    @media screen and (min-width: 768px) {
+        margin-top: 28px;
+    }
+
+}
+
+.pr_store_instagram,
+.pr_tenposstar_instagram,
+.pr_banner{
+    margin: 10px 0;
+    @media screen and (min-width: 768px) {
+        margin: 28px 0;
+    }
+}
