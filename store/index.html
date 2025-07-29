@@ -822,5 +822,91 @@
         <div class="floatingButton"><a href="#">現在地からさがす</a></div>
     </div>
     <script src="../common/js/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // --- PC広告の管理 ---
+            const sidebar = document.querySelector('.rightSide');
+            const pc_ad_html = '<div class="pr_elements_wrapper"><div class="pr_store_instagram"></div><div class="pr_tenposstar_instagram"></div><div class="pr_banner"></div></div>';
+
+            const managePcAds = () => {
+                const existingContent = sidebar.querySelector('.pr_elements_wrapper');
+                // 画面幅が768px以上の場合 (PC)
+                if (window.innerWidth >= 768) {
+                    // まだコンテンツが追加されていない場合のみ追加
+                    if (!existingContent) {
+                        sidebar.insertAdjacentHTML('beforeend', pc_ad_html);
+                    }
+                } else {
+                    // PCサイズでない場合は削除
+                    if (existingContent) {
+                        existingContent.remove();
+                    }
+                }
+            };
+
+            // --- SP広告の管理 ---
+            const pr_position_1 = document.querySelector('.curatorComment');
+            const pr_position_2 = document.querySelector('.recommendedMenu');
+            const pr_position_3 = document.querySelector('.basicInfo');
+
+            // SP専用の広告HTML（管理用のsp-adクラスを付与）
+            const sp_ad_html_1 = '<div class="pr_store_instagram sp-ad"></div>';
+            const sp_ad_html_2 = '<div class="pr_tenposstar_instagram sp-ad"></div>';
+            const sp_ad_html_3 = '<div class="pr_banner sp-ad"></div>';
+
+            const manageSpAds = () => {
+                const isSp = window.innerWidth < 768;
+                const spAdsExist = document.querySelector('.sp-ad');
+
+                // 画面幅が767px以下の場合 (SP)
+                if (isSp) {
+                    // まだ広告が挿入されていなければ挿入する
+                    if (!spAdsExist) {
+                        if (pr_position_1) pr_position_1.insertAdjacentHTML('afterend', sp_ad_html_1);
+                        if (pr_position_2) pr_position_2.insertAdjacentHTML('afterend', sp_ad_html_2);
+                        if (pr_position_3) pr_position_3.insertAdjacentHTML('afterend', sp_ad_html_3);
+                    }
+                } else {
+                    // SPでない場合は、もし広告が存在すれば削除する
+                    if (spAdsExist) {
+                        document.querySelectorAll('.sp-ad').forEach(ad => ad.remove());
+                    }
+                }
+            };
+
+            // --- 広告コンテンツの挿入 ---
+            const populateAdImages = () => {
+                // pr_store_instagramに広告を表示する
+                const pr_store_instagram = document.querySelector('.pr_store_instagram');
+                if (pr_store_instagram) {
+                    pr_store_instagram.innerHTML = '<img src="./images/pr_1.jpg" alt="pr_store_instagram">';
+                }
+
+                // pr_tenposstar_instagramに広告を表示する
+                const pr_tenposstar_instagram = document.querySelector('.pr_tenposstar_instagram');
+                if (pr_tenposstar_instagram) {
+                    pr_tenposstar_instagram.innerHTML = '<img src="./images/pr_2.jpg" alt="pr_tenposstar_instagram">';
+                }
+
+                // pr_bannerに広告を表示する
+                const pr_banner = document.querySelector('.pr_banner');
+                if (pr_banner) {
+                    pr_banner.innerHTML = '<img src="./images/pr_3.jpg" alt="pr_banner">';
+                }
+            };
+
+            // --- 実行 ---
+            // ページ読み込み時とウィンドウリサイズ時に両方の広告管理処理を実行
+            const manageAllAds = () => {
+                managePcAds();
+                manageSpAds();
+                // 広告コンテナが作成/削除された後に、コンテンツを挿入する
+                populateAdImages();
+            };
+
+            manageAllAds();
+            window.addEventListener('resize', manageAllAds);
+        });
+    </script>
 </body>
 </html>
