@@ -119,4 +119,24 @@ section.bgGray {
   box-shadow: 0 0 0 0 !important;
   border: 0 !important; }
 
+.snsSection {
+  margin-top: 40px; }
+  @media screen and (min-width: 768px) {
+    .snsSection {
+      margin-top: 60px; } }
+
+.snsSection .cardWrap {
+  margin-top: 25px;
+  overflow: auto;
+  height: 598px; }
+  @media screen and (min-width: 768px) {
+    .snsSection .cardWrap {
+      margin-top: 20px; } }
+
+.snsSection .cardWrap .card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 326px; }
+
 /*# sourceMappingURL=style.css.map */
