@@ -1,0 +1,64 @@
+.contents{
+    padding-top: 0;
+    padding-bottom: 80px;
+    @media screen and (min-width: 768px) {
+        padding-top: 0;
+        padding-bottom: 120px;
+    }
+}
+
+.mainvisual{
+    position: relative;
+
+    .imageContainer{
+        position: relative;
+
+        img{
+            width: 100%;
+        }
+        
+        .overText{
+            position: absolute;
+            left: 5.3%;
+            top: 50%;
+            transform: translateY(-50%);
+            @media screen and (min-width: 768px) {
+                left: 10.87%;
+           }
+        }
+
+        .overTextTitle{
+            color: var(--white);
+            font-size: 25px;
+            font-weight: 700;
+            @media screen and (min-width: 768px) {
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+.gourmetWrap{
+    margin-top: 10px;
+    @media screen and (min-width: 768px) {
+        margin-top: 80px;
+    }
+
+    .pageTitle{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 25px;
+        font-weight: 700;
+        @media screen and (min-width: 768px) {
+            font-size: 50px;
+        }
+    }
+}
+
+.gourmetList {
+    margin-top: 20px;
+    @media screen and (min-width: 768px) {
+        margin-top: 140px;
+    }
+}

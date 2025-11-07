@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../common/css/style.css"></link>
+    <link rel="stylesheet" href="./css/style.css"></link>
+
+    <title>旅の準備</title>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="headerWrap">
+                <div class="headerFlexBox">
+                    <div class="logo"><a href="#"><img src="../common/images/logo.svg" alt="TENPOS STAR"></a></div>
+                    <div class="rightGroup">
+                        <nav class="naviBox">
+                            <ul>
+                                <li><button id="eatButton">食べる</button></li>
+                                <li><a href="#">ご当地グルメ</a></li>
+                                <li><a href="#">日本を見つける</a></li>
+                                <li><a href="#">観光名所</a></li>
+                                <li><a href="#">旅の準備</a></li>
+                            </ul>
+                        </nav>
+                        <div class="searchBox">
+                            <form>
+                                <div class="searchBoxInner">
+                                    <div class="filterBox">
+                                        <button id="searchBoxSelectedButton" class="selectedItem" type="button">食べる</button>
+                                        <ul class="filterSelector">
+                                            <li class="item">食べる</li>
+                                            <li class="item">ご当地グルメ</li>
+                                            <li class="item">日本を見つける</li>
+                                            <li class="item">観光名所紹介</li>
+                                            <li class="item">旅の準備</li>
+                                        </ul>
+                                    </div>
+                                    <input type="hidden" name="category" value="レストラン">
+                                    <input class="keywordInput" type="text" name="s" value="" placeholder="地域、料理名、店名など">
+                                    <button class="searchButton" type="submit"></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="rightBox">
+                            <button id="searchBtn" class="searchBtn"><i class="icon iconScorpOrange"></i></button>
+                            <div class="translation">
+                                <button id="langBtn"><i class="icon iconGlobe languageIcon"></i><span>EN</span></button>
+                                <ul class="languages">
+                                    <li><a href="#">EN</a></li>
+                                    <li><a href="#">JP</a></li>
+                                    <li><a href="#">CN</a></li>
+                                    <li><a href="#">KO</a></li>
+                                    <li><a href="#">ES</a></li>
+                                    <li><a href="#">TH</a></li>
+                                    <li><a href="#">FR</a></li>
+                                    <li><a href="#">DE</a></li>
+                                    <li><a href="#">AR</a></li>
+                                </ul>
+                            </div>
+                            <div class="mapButton">
+                                <button id="mapBtn"><i class="icon iconPicker mapIcon"></i><span>MAP</span></button>
+                            </div>
+                            <button type="button" class="menuBtn" id="hamburgerMenuBtn"></button>
+                        </div>
+                    </div>
+                    <div class="eatMenuContent">
+                        <div class="eatMenu">
+                            <ul class="eatMenuButtons">
+                                <li><a href="#">食べるTOP</a></li>
+                                <li><a href="#">現在地から探す</a></li>
+                            </ul>
+                        </div>
+                        <div class="eatGenre">
+                            <h3 class="eatGenreTitle">料理ジャンルから探す</h3>
+                            <ul class="eatGenreButtons">
+                                <li><a href="#">和食</a></li>
+                                <li><a href="#">居酒屋・立ち飲み</a></li>
+                                <li><a href="#">定食・どんぶり</a></li>
+                                <li><a href="#">寿司</a></li>
+                                <li><a href="#">焼鳥・串焼き</a></li>
+                                <li><a href="#">とんかつ・揚げ物</a></li>
+                                <li><a href="#">天ぷら</a></li>
+                                <li><a href="#">ふぐ・うなぎ・海鮮</a></li>
+                                <li><a href="#">鍋料理（すき焼き・しゃぶしゃぶ等）</a></li>
+                                <li><a href="#">うどん・そば</a></li>
+                                <li><a href="#">お好み焼き・もんじゃ・たこ焼き</a></li>
+                                <li><a href="#">からあげ</a></li>
+                                <li><a href="#">ラーメン・つけ麺</a></li>
+                                <li><a href="#">鉄板焼・ステーキ・ハンバーグ</a></li>
+                                <li><a href="#">イタリア料理</a></li>
+                                <li><a href="#">フランス料理</a></li>
+                                <li><a href="#">洋食・西洋料理</a></li>
+                                <li><a href="#">中華料理</a></li>
+                                <li><a href="#">各国料理専門店</a></li>
+                                <li><a href="#">カレー</a></li>
+                                <li><a href="#">ハンバーガー</a></li>
+                                <li><a href="#">ダイニング（和・洋・創作）</a></li>
+                                <li><a href="#">バー</a></li>
+                                <li><a href="#">カフェ・喫茶</a></li>
+                                <li><a href="#">製菓・スイーツ</a></li>
+                                <li><a href="#">惣菜・弁当</a></li>
+                                <li><a href="#">ファストフード</a></li>
+                                <li><a href="#">アミューズメント（ダーツ・ゴルフ・カラオケ）</a></li>
+                                <li><a href="#">ベーカリー</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <nav class="headerNavigation">
+                    <ul class="naviFlexBox">
+                        <li><a href="#">食べる</a></li>
+                        <li><a href="#">ご当地グルメ</a></li>
+                        <li><a href="#">日本を見つける</a></li>
+                        <li><a href="#">観光名所</a></li>
+                        <li><a href="#">旅の準備</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hamburgerWrapper">
+                <div class="hamburgerBg"></div>
+                <div class="hamburgerContent">
+                    <div class="hamburgerHeader">
+                        <a href="#"><img src="../common/images/logo-white.svg" alt=""></a>
+                        <button type="button" class="closeBtn" id="hamburgerMenuCloseBtn"></button>
+                    </div>
+                    <div class="hamburgerBody">
+                        <ul class="hamburgerList">
+                            <li class="hamburgerItem"><span>食べる</span><button type="button" class="subMenuBtn"></button>
+                                <div class="subMenu">
+                                    <ul class="subMenuList">
+                                        <li><a href="#">食べるTOP</a></li>
+                                        <li><a href="#">現在地から探す</a></li>
+                                        <li><span>料理ジャンルから探す</span>
+                                            <ul class="subsubMenuList">
+                                                <li><a href="#">和食</a></li>
+                                                <li><a href="#">居酒屋・立ち飲み</a></li>
+                                                <li><a href="#">定食・どんぶり</a></li>
+                                                <li><a href="#">寿司</a></li>
+                                                <li><a href="#">焼鳥・串焼き</a></li>
+                                                <li><a href="#">とんかつ・揚げ物</a></li>
+                                                <li><a href="#">天ぷら</a></li>
+                                                <li><a href="#">ふぐ・うなぎ・海鮮</a></li>
+                                                <li><a href="#">鍋料理（すき焼き・しゃぶしゃぶ等）</a></li>
+                                                <li><a href="#">うどん・そば</a></li>
+                                                <li><a href="#">お好み焼き・もんじゃ・たこ焼き</a></li>
+                                                <li><a href="#">からあげ</a></li>
+                                                <li><a href="#">ラーメン・つけ麺</a></li>
+                                                <li><a href="#">鉄板焼・ステーキ・ハンバーグ</a></li>
+                                                <li><a href="#">イタリア料理</a></li>
+                                                <li><a href="#">フランス料理</a></li>
+                                                <li><a href="#">洋食・西洋料理</a></li>
+                                                <li><a href="#">中華料理</a></li>
+                                                <li><a href="#">各国料理専門店</a></li>
+                                                <li><a href="#">カレー</a></li>
+                                                <li><a href="#">ハンバーガー</a></li>
+                                                <li><a href="#">ダイニング（和・洋・創作）</a></li>
+                                                <li><a href="#">バー</a></li>
+                                                <li><a href="#">カフェ・喫茶</a></li>
+                                                <li><a href="#">製菓・スイーツ</a></li>
+                                                <li><a href="#">惣菜・弁当</a></li>
+                                                <li><a href="#">ファストフード</a></li>
+                                                <li><a href="#">アミューズメント（ダーツ・ゴルフ・カラオケ）</a></li>
+                                                <li><a href="#">ベーカリー</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="hamburgerItem"><a href="#"><span>ご当地グルメ</span></a></li>
+                            <li class="hamburgerItem"><a href="#"><span>日本を見つける</span></a></li>
+                            <li class="hamburgerItem"><a href="#"><span>観光名所紹介</span></a></li>
+                            <li class="hamburgerItem"><a href="#"><span>旅の準備</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="searchKeywordForm">
+            <div class="searchKeywordFormInner">
+                <form>
+                    <input type="hidden" name="category" value="レストラン">
+                    <input class="keywordInput" type="text" name="s" value="" placeholder="地域、料理名、店名などで絞り込む">
+                    <button class="searchButton" type="submit"><i class="icon iconScorpOrange"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="mainvisual">
+            <div class="imageContainer">
+                <picture>
+                    <source srcset="./images/mv.jpg" media="(min-width: 768px)">
+                    <img src="./images/mv_sp.jpg" alt="">
+                </picture>
+                <div class="overText">
+                    <h1 class="overTextTitle">旅の準備</h1>
+                </div>
+            </div>
+        </div>
+
+        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="#" itemprop="item"><span  itemprop="name">HOME</span></a>
+                <meta itemprop="position" content="1" />
+            </li>
+            <li class="breadcrumb-item active">ご当地グルメ</li>
+        </ol>
+
+        <div class="contents">
+
+            <section class="gourmetWrap">
+                <div class="gourmetList cardWrap">
+                    <article class="card">
+                        <div class="thumb">
+                            <a href="#">
+                                <picture>
+                                    <img src="./images/thumb1.jpg" alt="">
+                                </picture>
+                            </a>
+                        </div>
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="thumb">
+                            <a href="#">
+                                <picture>
+                                    <img src="./images/thumb2.jpg" alt="">
+                                </picture>
+                            </a>
+                        </div>
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="thumb">
+                            <a href="#">
+                                <picture>
+                                    <img src="./images/thumb3.jpg" alt="">
+                                </picture>
+                            </a>
+                        </div>
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="thumb">
+                            <a href="#">
+                                <picture>
+                                    <img src="./images/thumb4.jpg" alt="">
+                                </picture>
+                            </a>
+                        </div>
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="thumb">
+                            <a href="#">
+                                <picture>
+                                    <img src="./images/thumb1.jpg" alt="">
+                                </picture>
+                            </a>
+                        </div>
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="thumb">
+                            <a href="#">
+                                <picture>
+                                    <img src="./images/thumb2.jpg" alt="">
+                                </picture>
+                            </a>
+                        </div>
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="thumb">
+                            <a href="#">
+                                <picture>
+                                    <img src="./images/thumb3.jpg" alt="">
+                                </picture>
+                            </a>
+                        </div>
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="thumb">
+                            <a href="#">
+                                <picture>
+                                    <img src="./images/thumb4.jpg" alt="">
+                                </picture>
+                            </a>
+                        </div>
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="thumb">
+                            <a href="#">
+                                <picture>
+                                    <img src="./images/thumb1.jpg" alt="">
+                                </picture>
+                            </a>
+                        </div>
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="thumb">
+                            <a href="#">
+                                <picture>
+                                    <img src="./images/thumb2.jpg" alt="">
+                                </picture>
+                            </a>
+                        </div>
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="thumb">
+                            <a href="#">
+                                <picture>
+                                    <img src="./images/thumb3.jpg" alt="">
+                                </picture>
+                            </a>
+                        </div>
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="thumb">
+                            <a href="#">
+                                <picture>
+                                    <img src="./images/thumb4.jpg" alt="">
+                                </picture>
+                            </a>
+                        </div>
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="thumb">
+                            <a href="#">
+                                <picture>
+                                    <img src="./images/thumb1.jpg" alt="">
+                                </picture>
+                            </a>
+                        </div>
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="thumb">
+                            <a href="#">
+                                <picture>
+                                    <img src="./images/thumb2.jpg" alt="">
+                                </picture>
+                            </a>
+                        </div>
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="thumb">
+                            <a href="#">
+                                <picture>
+                                    <img src="./images/thumb3.jpg" alt="">
+                                </picture>
+                            </a>
+                        </div>
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="thumb">
+                            <a href="#">
+                                <picture>
+                                    <img src="./images/thumb4.jpg" alt="">
+                                </picture>
+                            </a>
+                        </div>
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="thumb">
+                            <a href="#">
+                                <picture>
+                                    <img src="./images/thumb1.jpg" alt="">
+                                </picture>
+                            </a>
+                        </div>
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="thumb">
+                            <a href="#">
+                                <picture>
+                                    <img src="./images/thumb2.jpg" alt="">
+                                </picture>
+                            </a>
+                        </div>
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="thumb">
+                            <a href="#">
+                                <picture>
+                                    <img src="./images/thumb3.jpg" alt="">
+                                </picture>
+                            </a>
+                        </div>
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="thumb">
+                            <a href="#">
+                                <picture>
+                                    <img src="./images/thumb4.jpg" alt="">
+                                </picture>
+                            </a>
+                        </div>
+                        <h3>◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯</h3>
+                        <div class="tagWrap"><span class="ttl">タグ：</span>
+                            <ul class="tags">
+                                <li class="tag"><a href="#">タグ1</a>、</li>
+                                <li class="tag"><a href="#">タグ2</a>、</li>
+                                <li class="tag"><a href="#">タグ3</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <div class="paginationWrapper">
+                <a href="#" class="linkToTop">最初へ</a>
+                <div class="pageNumbers">
+                    <span class="currentPage">1</span>
+                    <a href="#" class="pageLink">2</a>
+                    <a href="#" class="pageLink">3</a>
+                    <a href="#" class="pageLink">4</a>
+                    <a href="#" class="pageLink">5</a>
+                    <a href="#" class="pageLink">6</a>
+                    <span class="ellipsis">…</span>
+                    <a href="#" class="pageLink">13</a>
+                    <a href="#" class="pageLink">14</a>
+                    <a href="#" class="pageLink">15</a>
+                </div>
+                <a href="#" class="linkToBottom">最後へ</a>
+            </div>
+
+            <div id="modalFilterWrap" class="modalWrapper">
+                <div class="modalBackground"></div>
+                <div class="modalMain">
+                    <button type="button" class="modalCloseButton"><i class="iconClose"></i></button>
+                    <div class="modalBody">
+                        <h2 class="modalHeading">都道府県を選択</h2>
+                        <div class="filterListWrap">
+                            <ul class="filterList">
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">北海道</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">青森県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">岩手県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">宮城県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">秋田県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">山形県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">福島県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">茨城県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">栃木県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">群馬県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">埼玉県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">千葉県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">東京都</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">神奈川県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">新潟県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">富山県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">石川県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">福井県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">山梨県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">長野県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">岐阜県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">静岡県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">愛知県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">三重県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">滋賀県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">京都府</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">大阪府</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">兵庫県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">奈良県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">和歌山県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">鳥取県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">島根県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">岡山県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">広島県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">山口県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">徳島県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">香川県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">愛媛県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">高知県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">福岡県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">佐賀県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">長崎県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">熊本県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">大分県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">宮崎県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">鹿児島県</span></a></li>
+                                <li class="filterItem"><a href="#" class="filterLink"><span class="filterText">沖縄県</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="footerNavigations">
+                <div class="inner">
+                    <div class="navigationBox purposeSearch">
+                        <h3 class="title">目的から探す</h3>
+                        <ul class="items">
+                            <li><a href="#">食べる</a></li>
+                            <li><a href="#">泊まる</a></li>
+                            <li><a href="#">体験する</a></li>
+                            <li><a href="#">発見する</a></li>
+                            <li><a href="#">移動する</a></li>
+                        </ul>
+                    </div>
+                    <div class="navigationBox">
+                        <h3 class="title">タグから探す</h3>
+                        <ul class="items">
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                            <li><a href="#">タグ名</a></li>
+                        </ul>
+                    </div>
+                    <div class="navigationBox">
+                        <h3 class="title">キュレーターから探す</h3>
+                        <ul class="items">
+                            <li><a href="#">キュレーター名</a></li>
+                            <li><a href="#">キュレーター名</a></li>
+                            <li><a href="#">キュレーター名</a></li>
+                            <li><a href="#">キュレーター名</a></li>
+                        </ul>
+                    </div>
+                    <div class="navigationBox">
+                        <ul class="items">
+                            <li><a href="#" class="title">地図から探す</a></li>
+                            <li><a href="#" class="title">地名から探す</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footerTranslation">
+                <div class="inner">
+                    <ul class="languages">
+                        <li><a href="#">EN</a></li>
+                        <li><a href="#">JP</a></li>
+                        <li><a href="#">CN</a></li>
+                        <li><a href="#">KO</a></li>
+                        <li><a href="#">ES</a></li>
+                        <li><a href="#">TH</a></li>
+                        <li><a href="#">FR</a></li>
+                        <li><a href="#">DE</a></li>
+                        <li><a href="#">AR</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerInfomation">
+                <div class="inner">
+                    <div class="infoItems">
+                        <div class="logo"><a href="#"><img src="../common/images/logo.svg" alt="TENPOS STAR"></a></div>
+                        <ul class="links">
+                            <li><a href="#">利用規約</a></li>
+                            <li><a href="#">プライバシーポリシー</a></li>
+                        </ul>
+                        <div class="copyright">Copyright © tenpos busters. All Rights Reserved.</div>
+                    </div>
+                    <div class="japanLogo">
+                        <img src="../common/images/logo_japan_endless_discovery.svg" alt="Japan. Endress Discovery">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../common/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34">
+  <defs>
+    <filter id="楕円形_145" x="0" y="0" width="34" height="34" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="グループ_525" data-name="グループ 525" transform="translate(-115.695 -65.539)">
+    <g transform="matrix(1, 0, 0, 1, 115.7, 65.54)" filter="url(#楕円形_145)">
+      <circle id="楕円形_145-2" data-name="楕円形 145" cx="8" cy="8" r="8" transform="translate(9 9)" fill="#fff"/>
+    </g>
+    <path id="パス_176" data-name="パス 176" d="M3.9,0l3.9,5.206H0Z" transform="translate(136.827 85.557) rotate(180)" fill="#ff7c2b"/>
+  </g>
+</svg>

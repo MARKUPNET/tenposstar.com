@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../sass/style.scss"
+	],
+	"sourcesContent": [
+		".contents{\r\n    padding-top: 0;\r\n    padding-bottom: 80px;\r\n    @media screen and (min-width: 768px) {\r\n        padding-top: 0;\r\n        padding-bottom: 120px;\r\n    }\r\n}\r\n\r\n.gourmetWrap{\r\n    margin-top: 10px;\r\n    @media screen and (min-width: 768px) {\r\n        margin-top: 80px;\r\n    }\r\n\r\n    .pageTitle{\r\n        display: flex;\r\n        align-items: center;\r\n        gap: 20px;\r\n        font-size: 25px;\r\n        font-weight: 700;\r\n        @media screen and (min-width: 768px) {\r\n            font-size: 50px;\r\n        }\r\n    }\r\n}\r\n\r\n.gourmetList {\r\n    margin-top: 20px;\r\n    @media screen and (min-width: 768px) {\r\n        margin-top: 140px;\r\n    }\r\n}\r\n"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,SAAS,CAAA;EACL,WAAW,EAAE,CAAC;EACd,cAAc,EAAE,IAAI,GAKvB;EAJG,MAAM,CAAE,MAAM,MAAM,SAAS,EAAE,KAAK;IAHxC,AAAA,SAAS,CAAA;MAID,WAAW,EAAE,CAAC;MACd,cAAc,EAAE,KAAK,GAE5B;;AAED,AAAA,YAAY,CAAA;EACR,UAAU,EAAE,IAAI,GAenB;EAdG,MAAM,CAAE,MAAM,MAAM,SAAS,EAAE,KAAK;IAFxC,AAAA,YAAY,CAAA;MAGJ,UAAU,EAAE,IAAI,GAavB;EAhBD,AAMI,YANQ,CAMR,UAAU,CAAA;IACN,OAAO,EAAE,IAAI;IACb,WAAW,EAAE,MAAM;IACnB,GAAG,EAAE,IAAI;IACT,SAAS,EAAE,IAAI;IACf,WAAW,EAAE,GAAG,GAInB;IAHG,MAAM,CAAE,MAAM,MAAM,SAAS,EAAE,KAAK;MAZ5C,AAMI,YANQ,CAMR,UAAU,CAAA;QAOF,SAAS,EAAE,IAAI,GAEtB;;AAGL,AAAA,YAAY,CAAC;EACT,UAAU,EAAE,IAAI,GAInB;EAHG,MAAM,CAAE,MAAM,MAAM,SAAS,EAAE,KAAK;IAFxC,AAAA,YAAY,CAAC;MAGL,UAAU,EAAE,KAAK,GAExB"
+}

@@ -1,0 +1,46 @@
+@media screen and (min-width: 768px) {
+  .contents {
+    padding-top: 40px; } }
+
+.mainvisual {
+  position: relative; }
+  .mainvisual .imageContainer {
+    position: relative; }
+    .mainvisual .imageContainer img {
+      width: 100%; }
+    .mainvisual .imageContainer .overText {
+      position: absolute;
+      left: 5.3%;
+      top: 50%;
+      transform: translateY(-50%); }
+      @media screen and (min-width: 768px) {
+        .mainvisual .imageContainer .overText {
+          left: 10.87%; } }
+    .mainvisual .imageContainer .overTextTitle {
+      color: var(--white);
+      font-size: 25px;
+      font-weight: 700; }
+      @media screen and (min-width: 768px) {
+        .mainvisual .imageContainer .overTextTitle {
+          font-size: 50px; } }
+
+.recommendSection {
+  margin-top: 40px; }
+  @media screen and (min-width: 768px) {
+    .recommendSection {
+      margin-top: 60px; } }
+  .recommendSection .cardWrap {
+    margin-top: 25px; }
+    @media screen and (min-width: 768px) {
+      .recommendSection .cardWrap {
+        margin-top: 20px; } }
+
+.buttonWrap {
+  margin-top: 50px;
+  margin-bottom: 80px; }
+  @media screen and (min-width: 768px) {
+    .buttonWrap {
+      margin-top: 80px;
+      margin-bottom: 120px; } }
+
+/*# sourceMappingURL=../../about/css/style.css.map */

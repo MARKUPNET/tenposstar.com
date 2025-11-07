@@ -19,108 +19,109 @@
             <div class="headerWrap">
                 <div class="headerFlexBox">
                     <div class="logo"><a href="#"><img src="../common/images/logo.svg" alt="TENPOS STAR"></a></div>
-                    <div class="searchBox">
-                        <form>
-                            <div class="searchBoxInner">
-                                <div class="filterBox">
-                                    <button class="selectedItem" type="button">レストラン</button>
-                                    <ul class="filterSelector">
-                                        <li class="item selected">レストラン</li>
-                                        <li class="item">ご当地グルメ</li>
-                                        <li class="item">日本を見つける</li>
-                                        <li class="item">観光名所紹介</li>
-                                        <li class="item">旅の準備</li>
-                                    </ul>
+                    <div class="rightGroup">
+                        <nav class="naviBox">
+                            <ul>
+                                <li><button id="eatButton">食べる</button></li>
+                                <li><a href="#">ご当地グルメ</a></li>
+                                <li><a href="#">日本を見つける</a></li>
+                                <li><a href="#">観光名所</a></li>
+                                <li><a href="#">旅の準備</a></li>
+                            </ul>
+                        </nav>
+                        <div class="searchBox">
+                            <form>
+                                <div class="searchBoxInner">
+                                    <div class="filterBox">
+                                        <button id="searchBoxSelectedButton" class="selectedItem" type="button">食べる</button>
+                                        <ul class="filterSelector">
+                                            <li class="item">食べる</li>
+                                            <li class="item">ご当地グルメ</li>
+                                            <li class="item">日本を見つける</li>
+                                            <li class="item">観光名所紹介</li>
+                                            <li class="item">旅の準備</li>
+                                        </ul>
+                                    </div>
+                                    <input type="hidden" name="category" value="レストラン">
+                                    <input class="keywordInput" type="text" name="s" value="" placeholder="地域、料理名、店名など">
+                                    <button class="searchButton" type="submit"></button>
                                 </div>
-                                <input type="hidden" name="category" value="レストラン">
-                                <input class="keywordInput" type="text" name="s" value="" placeholder="">
-                                <button class="searchButton" type="submit"><i class="icon iconScorp"></i><span class="isPC">検索</span></button>
+                            </form>
+                        </div>
+                        <div class="rightBox">
+                            <button id="searchBtn" class="searchBtn"><i class="icon iconScorpOrange"></i></button>
+                            <div class="translation">
+                                <button id="langBtn"><i class="icon iconGlobe languageIcon"></i><span>EN</span></button>
+                                <ul class="languages">
+                                    <li><a href="#">EN</a></li>
+                                    <li><a href="#">JP</a></li>
+                                    <li><a href="#">CN</a></li>
+                                    <li><a href="#">KO</a></li>
+                                    <li><a href="#">ES</a></li>
+                                    <li><a href="#">TH</a></li>
+                                    <li><a href="#">FR</a></li>
+                                    <li><a href="#">DE</a></li>
+                                    <li><a href="#">AR</a></li>
+                                </ul>
                             </div>
-                        </form>
+                            <div class="mapButton">
+                                <button id="mapBtn"><i class="icon iconPicker mapIcon"></i><span>MAP</span></button>
+                            </div>
+                            <button type="button" class="menuBtn" id="hamburgerMenuBtn"></button>
+                        </div>
                     </div>
-                    <div class="rightBox">
-                        <button id="searchBtn" class="searchBtn"><i class="icon iconScorp"></i></button>
-                        <div class="translation">
-                            <span id="langBtn">EN</span>
-                            <ul class="languages">
-                                <li><a href="#">EN</a></li>
-                                <li><a href="#">JP</a></li>
-                                <li><a href="#">CN</a></li>
-                                <li><a href="#">KO</a></li>
-                                <li><a href="#">ES</a></li>
-                                <li><a href="#">TH</a></li>
-                                <li><a href="#">FR</a></li>
-                                <li><a href="#">DE</a></li>
-                                <li><a href="#">AR</a></li>
+                    <div class="eatMenuContent">
+                        <div class="eatMenu">
+                            <ul class="eatMenuButtons">
+                                <li><a href="#">食べるTOP</a></li>
+                                <li><a href="#">現在地から探す</a></li>
                             </ul>
                         </div>
-                        <div class="mapButton">
-                            <button id="mapBtn"><i class="icon iconPicker mapIcon"></i><span>MAP</span></button>
+                        <div class="eatGenre">
+                            <h3 class="eatGenreTitle">料理ジャンルから探す</h3>
+                            <ul class="eatGenreButtons">
+                                <li><a href="#">和食</a></li>
+                                <li><a href="#">居酒屋・立ち飲み</a></li>
+                                <li><a href="#">定食・どんぶり</a></li>
+                                <li><a href="#">寿司</a></li>
+                                <li><a href="#">焼鳥・串焼き</a></li>
+                                <li><a href="#">とんかつ・揚げ物</a></li>
+                                <li><a href="#">天ぷら</a></li>
+                                <li><a href="#">ふぐ・うなぎ・海鮮</a></li>
+                                <li><a href="#">鍋料理（すき焼き・しゃぶしゃぶ等）</a></li>
+                                <li><a href="#">うどん・そば</a></li>
+                                <li><a href="#">お好み焼き・もんじゃ・たこ焼き</a></li>
+                                <li><a href="#">からあげ</a></li>
+                                <li><a href="#">ラーメン・つけ麺</a></li>
+                                <li><a href="#">鉄板焼・ステーキ・ハンバーグ</a></li>
+                                <li><a href="#">イタリア料理</a></li>
+                                <li><a href="#">フランス料理</a></li>
+                                <li><a href="#">洋食・西洋料理</a></li>
+                                <li><a href="#">中華料理</a></li>
+                                <li><a href="#">各国料理専門店</a></li>
+                                <li><a href="#">カレー</a></li>
+                                <li><a href="#">ハンバーガー</a></li>
+                                <li><a href="#">ダイニング（和・洋・創作）</a></li>
+                                <li><a href="#">バー</a></li>
+                                <li><a href="#">カフェ・喫茶</a></li>
+                                <li><a href="#">製菓・スイーツ</a></li>
+                                <li><a href="#">惣菜・弁当</a></li>
+                                <li><a href="#">ファストフード</a></li>
+                                <li><a href="#">アミューズメント（ダーツ・ゴルフ・カラオケ）</a></li>
+                                <li><a href="#">ベーカリー</a></li>
+                            </ul>
                         </div>
-                        <button type="button" class="menuBtn" id="hamburgerMenuBtn"></button>
                     </div>
                 </div>
                 <nav class="headerNavigation">
                     <ul class="naviFlexBox">
-                        <li><a href="#"><i class="navIcon icon cate1"></i><span>食べる</span></a></li>
-                        <li><a href="#"><i class="navIcon icon cate2"></i><span>泊まる</span></a></li>
-                        <li><a href="#"><i class="navIcon icon cate3"></i><span>体験する</span></a></li>
-                        <li><a href="#"><i class="navIcon icon cate4"></i><span>発見する</span></a></li>
-                        <li><a href="#"><i class="navIcon icon cate5"></i><span>移動する</span></a></li>
+                        <li><a href="#">食べる</a></li>
+                        <li><a href="#">ご当地グルメ</a></li>
+                        <li><a href="#">日本を見つける</a></li>
+                        <li><a href="#">観光名所</a></li>
+                        <li><a href="#">旅の準備</a></li>
                     </ul>
                 </nav>
-            </div>
-            <div id="scrollNavi" class="headerScrollNavi">
-                <div class="headerFlexBox">
-                    <div class="logo"><a href="#"><img src="../common/images/logo.svg" alt="TENPOS STAR"></a></div>
-                    <div class="searchBox">
-                        <form>
-                            <div class="searchBoxInner">
-                                <div class="filterBox">
-                                    <button class="selectedItem" type="button">レストラン</button>
-                                    <ul class="filterSelector">
-                                        <li class="item selected">レストラン</li>
-                                        <li class="item">ご当地グルメ</li>
-                                        <li class="item">日本を見つける</li>
-                                        <li class="item">観光名所紹介</li>
-                                        <li class="item">旅の準備</li>
-                                    </ul>
-                                </div>
-                                <input type="hidden" name="category" value="レストラン">
-                                <input class="keywordInput" type="text" name="s" value="" placeholder="">
-                                <button class="searchButton" type="submit"><i class="icon iconScorp"></i></button>
-                            </div>
-                        </form>
-                    </div>
-                    <nav class="headerNavigation">
-                        <ul class="naviFlexBox">
-                            <li><a href="#"><i class="navIcon icon cate1"></i><span>食べる</span></a></li>
-                            <li><a href="#"><i class="navIcon icon cate2"></i><span>泊まる</span></a></li>
-                            <li><a href="#"><i class="navIcon icon cate3"></i><span>体験する</span></a></li>
-                            <li><a href="#"><i class="navIcon icon cate4"></i><span>発見する</span></a></li>
-                            <li><a href="#"><i class="navIcon icon cate5"></i><span>移動する</span></a></li>
-                        </ul>
-                    </nav>
-                    <div class="rightBox">
-                        <div class="translation">
-                            <span id="langBtn_sub">EN</span>
-                            <ul class="languages_sub">
-                                <li><a href="#">EN</a></li>
-                                <li><a href="#">JP</a></li>
-                                <li><a href="#">CN</a></li>
-                                <li><a href="#">KO</a></li>
-                                <li><a href="#">ES</a></li>
-                                <li><a href="#">TH</a></li>
-                                <li><a href="#">FR</a></li>
-                                <li><a href="#">DE</a></li>
-                                <li><a href="#">AR</a></li>
-                            </ul>
-                        </div>
-                        <div class="mapButton">
-                            <button id="mapBtn"><i class="icon iconPicker mapIcon"></i><span>MAP</span></button>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div class="hamburgerWrapper">
                 <div class="hamburgerBg"></div>
@@ -131,53 +132,51 @@
                     </div>
                     <div class="hamburgerBody">
                         <ul class="hamburgerList">
-                            <li class="hamburgerItem"><a href="#"><i class="icon cate1"></i><span>食べる</span></a></li>
-                            <li class="hamburgerItem"><a href="#"><i class="icon cate2"></i><span>泊まる</span></a></li>
-                            <li class="hamburgerItem"><a href="#"><i class="icon cate3"></i><span>体験する</span></a></li>
-                            <li class="hamburgerItem"><a href="#"><i class="icon cate4"></i><span>発見する</span></a></li>
-                            <li class="hamburgerItem"><a href="#"><i class="icon cate5"></i><span>移動する</span></a></li>
-                            <li class="hamburgerItem"><span>料理ジャンルから探す</span><button type="button" class="subMenuBtn"></button></a>
-                                <div class="subMenu genreMenu">
-                                    <ul class="subMenuList genreIcons">
-                                        <li class="subMenuItem"><a href="#" class="iconGenre">居酒屋</a></li>
-                                        <li class="subMenuItem"><a href="#" class="iconGenre">立ち飲み</a></li>
-                                        <li class="subMenuItem"><a href="#" class="iconGenre">焼鳥</a></li>
-                                        <li class="subMenuItem"><a href="#" class="iconGenre">串焼き</a></li>
-                                        <li class="subMenuItem"><a href="#" class="iconGenre">居酒屋</a></li>
-                                        <li class="subMenuItem"><a href="#" class="iconGenre">立ち飲み</a></li>
-                                        <li class="subMenuItem"><a href="#" class="iconGenre">焼鳥</a></li>
-                                        <li class="subMenuItem"><a href="#" class="iconGenre">お好み焼き</a></li>
-                                        <li class="subMenuItem"><a href="#" class="iconGenre">居酒屋</a></li>
-                                        <li class="subMenuItem"><a href="#" class="iconGenre">立ち飲み</a></li>
-                                    </ul>
-                                </div>
-                            
-                            </li>
-                            <li class="hamburgerItem"><span>キュレーターから探す</span><button type="button" class="subMenuBtn"></button></a>
-                                <div class="subMenu curatorMenu">
-                                    <ul class="subMenuList curatorList">
-                                        <li class="subMenuItem"><a href="#">山田太郎</a></li>
-                                        <li class="subMenuItem"><a href="#">山田太郎</a></li>
-                                        <li class="subMenuItem"><a href="#">山田太郎</a></li>
-                                        <li class="subMenuItem"><a href="#">山田太郎</a></li>
-                                    </ul>
-                                </div>
-                            
-                            </li>
-                            <li class="hamburgerItem"><a href="#"><span>地図から探す</span></a></li>
-                            <li class="hamburgerItem"><a href="#"><span>地名から探す</span></a></li>
-                            <li class="hamburgerItem"><span>タグから探す</span><button type="button" class="subMenuBtn"></button></a>
-                                <div class="subMenu tagMenu">
-                                    <ul class="subMenuList tagList">
-                                        <li class="subMenuItem"><a href="#">タグ1</a></li>
-                                        <li class="subMenuItem"><a href="#">タグ2</a></li>
-                                        <li class="subMenuItem"><a href="#">タグ3</a></li>
-                                        <li class="subMenuItem"><a href="#">タグ4</a></li>
-                                        <li class="subMenuItem"><a href="#">タグ5</a></li>
-                                        <li class="subMenuItem"><a href="#">タグ6</a></li>
+                            <li class="hamburgerItem"><span>食べる</span><button type="button" class="subMenuBtn"></button>
+                                <div class="subMenu">
+                                    <ul class="subMenuList">
+                                        <li><a href="#">食べるTOP</a></li>
+                                        <li><a href="#">現在地から探す</a></li>
+                                        <li><span>料理ジャンルから探す</span>
+                                            <ul class="subsubMenuList">
+                                                <li><a href="#">和食</a></li>
+                                                <li><a href="#">居酒屋・立ち飲み</a></li>
+                                                <li><a href="#">定食・どんぶり</a></li>
+                                                <li><a href="#">寿司</a></li>
+                                                <li><a href="#">焼鳥・串焼き</a></li>
+                                                <li><a href="#">とんかつ・揚げ物</a></li>
+                                                <li><a href="#">天ぷら</a></li>
+                                                <li><a href="#">ふぐ・うなぎ・海鮮</a></li>
+                                                <li><a href="#">鍋料理（すき焼き・しゃぶしゃぶ等）</a></li>
+                                                <li><a href="#">うどん・そば</a></li>
+                                                <li><a href="#">お好み焼き・もんじゃ・たこ焼き</a></li>
+                                                <li><a href="#">からあげ</a></li>
+                                                <li><a href="#">ラーメン・つけ麺</a></li>
+                                                <li><a href="#">鉄板焼・ステーキ・ハンバーグ</a></li>
+                                                <li><a href="#">イタリア料理</a></li>
+                                                <li><a href="#">フランス料理</a></li>
+                                                <li><a href="#">洋食・西洋料理</a></li>
+                                                <li><a href="#">中華料理</a></li>
+                                                <li><a href="#">各国料理専門店</a></li>
+                                                <li><a href="#">カレー</a></li>
+                                                <li><a href="#">ハンバーガー</a></li>
+                                                <li><a href="#">ダイニング（和・洋・創作）</a></li>
+                                                <li><a href="#">バー</a></li>
+                                                <li><a href="#">カフェ・喫茶</a></li>
+                                                <li><a href="#">製菓・スイーツ</a></li>
+                                                <li><a href="#">惣菜・弁当</a></li>
+                                                <li><a href="#">ファストフード</a></li>
+                                                <li><a href="#">アミューズメント（ダーツ・ゴルフ・カラオケ）</a></li>
+                                                <li><a href="#">ベーカリー</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
+                            <li class="hamburgerItem"><a href="#"><span>ご当地グルメ</span></a></li>
+                            <li class="hamburgerItem"><a href="#"><span>日本を見つける</span></a></li>
+                            <li class="hamburgerItem"><a href="#"><span>観光名所紹介</span></a></li>
+                            <li class="hamburgerItem"><a href="#"><span>旅の準備</span></a></li>
                         </ul>
                     </div>
                 </div>

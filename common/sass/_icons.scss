@@ -55,6 +55,22 @@ $icons: (
     }
 }
 
+.iconScorpOrange{
+    width: 20px;
+    height: 20px;
+    &::before {
+        background-image: url(../images/icon_scorp_orange.svg);
+    }
+}
+
+.iconGlobe{
+    width: 20px;
+    height: 20px;
+    &::before {
+        background-image: url(../images/icon_globe.svg);
+    }
+}
+
 .iconPicker{
     width: 16px;
     height: 24px;

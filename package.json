@@ -27,6 +27,11 @@
         "compile:privacypolicy": "node-sass privacypolicy/sass/style.scss privacypolicy/css/style.css --source-map privacypolicy/css/style.css.map --source-map-contents -w",
         "compile:terms": "node-sass terms/sass/style.scss terms/css/style.css --source-map terms/css/style.css.map --source-map-contents -w",
         "compile:about": "node-sass about/sass/style.scss about/css/style.css --source-map about/css/style.css.map --source-map-contents -w",
+        "compile:eat": "node-sass eat/sass/style.scss eat/css/style.css --source-map about/css/style.css.map --source-map-contents -w",
+        "compile:local-gourmet": "node-sass local-gourmet/sass/style.scss local-gourmet/css/style.css --source-map about/css/style.css.map --source-map-contents -w",
+        "compile:discover": "node-sass discover/sass/style.scss discover/css/style.css --source-map about/css/style.css.map --source-map-contents -w",
+        "compile:spots": "node-sass spots/sass/style.scss spots/css/style.css --source-map about/css/style.css.map --source-map-contents -w",
+        "compile:prepare": "node-sass prepare/sass/style.scss prepare/css/style.css --source-map about/css/style.css.map --source-map-contents -w",
         "serve": "serve"
     },
     "author": "",
